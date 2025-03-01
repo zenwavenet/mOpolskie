@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f7f7">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="mOpolskie"
+            android:textColor="#151515"
+            android:textFontWeight="800"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Wersja DEV-0.0.1"
+            android:textColor="#151515"
+            android:textFontWeight="500"
+            android:textSize="12dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Aktualna data"
+                        android:layout_gravity="center"
+                        android:textColor="#151515"
+                        android:textSize="15dp"
+                        android:textFontWeight="800"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:padding="20dp"
+                    android:background="@drawable/corner_icon"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="00.00.0000"
+                            android:textColor="#151515"
+                            android:textSize="16dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Poniedziałek"
+                            android:textColor="#151515"
+                            android:textSize="20dp"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="00:00"
+                            android:textColor="#151515"
+                            android:textSize="24dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Usługi"
+                    android:layout_gravity="center"
+                    android:textColor="#151515"
+                    android:textSize="15dp"
+                    android:textFontWeight="800"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_gravity="center"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingEnd="15dp"
+                    android:paddingStart="15dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:background="@drawable/corner_pulpit"
+                    android:layout_marginBottom="2dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Wszystkie"
+                        android:layout_gravity="center"
+                        android:textColor="#2c548e"
+                        android:textSize="13dp"
+                        android:textFontWeight="600"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_gravity="center"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.2" />
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingEnd="25dp"
+                        android:paddingStart="25dp"
+                        android:paddingBottom="25dp"
+                        android:paddingTop="25dp"
+                        android:background="@drawable/corner_icon"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="30sp"
+                            android:layout_height="30sp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/bench_tree"
+                            android:backgroundTint="#8E892C"
+                            android:padding="5sp"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Atrakcje"
+                        android:textSize="11sp"
+                        android:textFontWeight="500"
+                        android:textColor="#151515"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_gravity="center"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingEnd="25dp"
+                        android:paddingStart="25dp"
+                        android:paddingBottom="25dp"
+                        android:paddingTop="25dp"
+                        android:background="@drawable/corner_icon"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="30sp"
+                            android:layout_height="30sp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/trash"
+                            android:backgroundTint="#3E8E2C"
+                            android:padding="5sp"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Wywóz śmieci"
+                        android:textSize="11sp"
+                        android:textFontWeight="500"
+                        android:textColor="#151515"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_gravity="center"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingEnd="25dp"
+                        android:paddingStart="25dp"
+                        android:paddingBottom="25dp"
+                        android:paddingTop="25dp"
+                        android:background="@drawable/corner_icon"
+                        android:layout_marginBottom="2dp"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="30sp"
+                            android:layout_height="30sp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/bank"
+                            android:backgroundTint="#8E2C2C"
+                            android:padding="5sp"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Starostwa"
+                        android:textSize="11sp"
+                        android:textFontWeight="500"
+                        android:textColor="#151515"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_gravity="center"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_gravity="center"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.2" />
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingEnd="25dp"
+                        android:paddingStart="25dp"
+                        android:paddingBottom="25dp"
+                        android:paddingTop="25dp"
+                        android:background="@drawable/corner_icon"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="30sp"
+                            android:layout_height="30sp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/building"
+                            android:backgroundTint="#2C8E8C"
+                            android:padding="5sp"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Urzędy"
+                        android:textSize="11sp"
+                        android:textFontWeight="500"
+                        android:textColor="#151515"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_gravity="center"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingEnd="25dp"
+                        android:paddingStart="25dp"
+                        android:paddingBottom="25dp"
+                        android:paddingTop="25dp"
+                        android:background="@drawable/corner_icon"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="30sp"
+                            android:layout_height="30sp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/heart"
+                            android:backgroundTint="#622C8E"
+                            android:padding="5sp"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Apteki"
+                        android:textSize="11sp"
+                        android:textFontWeight="500"
+                        android:textColor="#151515"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_gravity="center"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingEnd="25dp"
+                        android:paddingStart="25dp"
+                        android:paddingBottom="25dp"
+                        android:paddingTop="25dp"
+                        android:background="@drawable/corner_icon"
+                        android:layout_marginBottom="2dp"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="30sp"
+                            android:layout_height="30sp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/recycle_bin"
+                            android:backgroundTint="#2C3E8E"
+                            android:padding="5sp"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Jak sortować"
+                        android:textSize="11sp"
+                        android:textFontWeight="500"
+                        android:textColor="#151515"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_gravity="center"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.2" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:layout_height="0dp"
+                android:layout_weight="0.2" />
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingEnd="20dp"
+                    android:paddingStart="20dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:background="@drawable/corner_pulpit"
+                    android:layout_marginBottom="2dp"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="22sp"
+                        android:layout_height="22sp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/home_active"
+                        android:backgroundTint="#2c548e"
+                        android:padding="10sp"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Pulpit"
+                    android:textSize="12sp"
+                    android:textFontWeight="800"
+                    android:textColor="#2c548e"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingEnd="20dp"
+                    android:paddingStart="20dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:layout_marginBottom="2dp"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="22sp"
+                        android:layout_height="22sp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/folder"
+                        android:backgroundTint="#151515"
+                        android:padding="10sp"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Usługi"
+                    android:textSize="12sp"
+                    android:textFontWeight="800"
+                    android:textColor="#151515"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingEnd="20dp"
+                    android:paddingStart="20dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:layout_marginBottom="2dp"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="22sp"
+                        android:layout_height="22sp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/circle_ellipsis"
+                        android:backgroundTint="#151515"
+                        android:padding="10sp"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Więcej"
+                    android:textSize="12sp"
+                    android:textFontWeight="800"
+                    android:textColor="#151515"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:layout_height="0dp"
+                android:layout_weight="0.2" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
