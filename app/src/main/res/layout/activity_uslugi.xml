@@ -398,6 +398,542 @@
                         </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pozostałe"
+                        android:textSize="12sp"
+                        android:textFontWeight="500"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="#151515"/>
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingEnd="25dp"
+                            android:paddingStart="25dp"
+                            android:paddingBottom="25dp"
+                            android:paddingTop="25dp"
+                            android:background="@drawable/corner_icon"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="30sp"
+                                android:layout_height="30sp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/court_order"
+                                android:backgroundTint="#2C848E"
+                                android:padding="5sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Sądy"
+                                android:textSize="15sp"
+                                android:textFontWeight="500"
+                                android:layout_marginLeft="15dp"
+                                android:textColor="#151515"/>
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_gravity="center"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <View
+                                android:layout_width="30sp"
+                                android:layout_height="30sp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/angle_circle_right"
+                                android:backgroundTint="#151515"
+                                android:padding="5sp"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingEnd="25dp"
+                            android:paddingStart="25dp"
+                            android:paddingBottom="25dp"
+                            android:paddingTop="25dp"
+                            android:background="@drawable/corner_icon"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="30sp"
+                                android:layout_height="30sp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/car_garage"
+                                android:backgroundTint="#8E4D2C"
+                                android:padding="5sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="WORD"
+                                android:textSize="15sp"
+                                android:textFontWeight="500"
+                                android:layout_marginLeft="15dp"
+                                android:textColor="#151515"/>
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_gravity="center"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <View
+                                android:layout_width="30sp"
+                                android:layout_height="30sp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/angle_circle_right"
+                                android:backgroundTint="#151515"
+                                android:padding="5sp"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingEnd="25dp"
+                            android:paddingStart="25dp"
+                            android:paddingBottom="25dp"
+                            android:paddingTop="25dp"
+                            android:background="@drawable/corner_icon"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="30sp"
+                                android:layout_height="30sp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/hospital"
+                                android:backgroundTint="#772C8E"
+                                android:padding="5sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Szpitale"
+                                android:textSize="15sp"
+                                android:textFontWeight="500"
+                                android:layout_marginLeft="15dp"
+                                android:textColor="#151515"/>
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_gravity="center"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <View
+                                android:layout_width="30sp"
+                                android:layout_height="30sp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/angle_circle_right"
+                                android:backgroundTint="#151515"
+                                android:padding="5sp"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingEnd="25dp"
+                            android:paddingStart="25dp"
+                            android:paddingBottom="25dp"
+                            android:paddingTop="25dp"
+                            android:background="@drawable/corner_icon"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="30sp"
+                                android:layout_height="30sp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/user_md"
+                                android:backgroundTint="#378E2C"
+                                android:padding="5sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Przychodnie"
+                                android:textSize="15sp"
+                                android:textFontWeight="500"
+                                android:layout_marginLeft="15dp"
+                                android:textColor="#151515"/>
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_gravity="center"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <View
+                                android:layout_width="30sp"
+                                android:layout_height="30sp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/angle_circle_right"
+                                android:backgroundTint="#151515"
+                                android:padding="5sp"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingEnd="25dp"
+                            android:paddingStart="25dp"
+                            android:paddingBottom="25dp"
+                            android:paddingTop="25dp"
+                            android:background="@drawable/corner_icon"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="30sp"
+                                android:layout_height="30sp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/dumbbell_fitness"
+                                android:backgroundTint="#8E812C"
+                                android:padding="5sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Sport i rekreacja"
+                                android:textSize="15sp"
+                                android:textFontWeight="500"
+                                android:layout_marginLeft="15dp"
+                                android:textColor="#151515"/>
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_gravity="center"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <View
+                                android:layout_width="30sp"
+                                android:layout_height="30sp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/angle_circle_right"
+                                android:backgroundTint="#151515"
+                                android:padding="5sp"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingEnd="25dp"
+                            android:paddingStart="25dp"
+                            android:paddingBottom="25dp"
+                            android:paddingTop="25dp"
+                            android:background="@drawable/corner_icon"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="30sp"
+                                android:layout_height="30sp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/graduation_cap"
+                                android:backgroundTint="#8E2C77"
+                                android:padding="5sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Szkoły i uczelnie"
+                                android:textSize="15sp"
+                                android:textFontWeight="500"
+                                android:layout_marginLeft="15dp"
+                                android:textColor="#151515"/>
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_gravity="center"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <View
+                                android:layout_width="30sp"
+                                android:layout_height="30sp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/angle_circle_right"
+                                android:backgroundTint="#151515"
+                                android:padding="5sp"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingEnd="25dp"
+                            android:paddingStart="25dp"
+                            android:paddingBottom="25dp"
+                            android:paddingTop="25dp"
+                            android:background="@drawable/corner_icon"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="30sp"
+                                android:layout_height="30sp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/hand_heart"
+                                android:backgroundTint="#8E2C2C"
+                                android:padding="5sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Pomoc społeczna"
+                                android:textSize="15sp"
+                                android:textFontWeight="500"
+                                android:layout_marginLeft="15dp"
+                                android:textColor="#151515"/>
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_gravity="center"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <View
+                                android:layout_width="30sp"
+                                android:layout_height="30sp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/angle_circle_right"
+                                android:backgroundTint="#151515"
+                                android:padding="5sp"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingEnd="25dp"
+                            android:paddingStart="25dp"
+                            android:paddingBottom="25dp"
+                            android:paddingTop="25dp"
+                            android:background="@drawable/corner_icon"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="30sp"
+                                android:layout_height="30sp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/books"
+                                android:backgroundTint="#2C848E"
+                                android:padding="5sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Biblioteki"
+                                android:textSize="15sp"
+                                android:textFontWeight="500"
+                                android:layout_marginLeft="15dp"
+                                android:textColor="#151515"/>
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_gravity="center"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <View
+                                android:layout_width="30sp"
+                                android:layout_height="30sp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/angle_circle_right"
+                                android:backgroundTint="#151515"
+                                android:padding="5sp"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingEnd="25dp"
+                            android:paddingStart="25dp"
+                            android:paddingBottom="25dp"
+                            android:paddingTop="25dp"
+                            android:background="@drawable/corner_icon"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="30sp"
+                                android:layout_height="30sp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/bed"
+                                android:backgroundTint="#2C8E50"
+                                android:padding="5sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Hotele"
+                                android:textSize="15sp"
+                                android:textFontWeight="500"
+                                android:layout_marginLeft="15dp"
+                                android:textColor="#151515"/>
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_gravity="center"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <View
+                                android:layout_width="30sp"
+                                android:layout_height="30sp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/angle_circle_right"
+                                android:backgroundTint="#151515"
+                                android:padding="5sp"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingEnd="25dp"
+                            android:paddingStart="25dp"
+                            android:paddingBottom="25dp"
+                            android:paddingTop="25dp"
+                            android:background="@drawable/corner_icon"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="30sp"
+                                android:layout_height="30sp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/popcorn"
+                                android:backgroundTint="#8C2C8E"
+                                android:padding="5sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Kultura i rozrywka"
+                                android:textSize="15sp"
+                                android:textFontWeight="500"
+                                android:layout_marginLeft="15dp"
+                                android:textColor="#151515"/>
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_gravity="center"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <View
+                                android:layout_width="30sp"
+                                android:layout_height="30sp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/angle_circle_right"
+                                android:backgroundTint="#151515"
+                                android:padding="5sp"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
             </LinearLayout>
         </ScrollView>
 
