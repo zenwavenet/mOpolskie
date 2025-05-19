@@ -1,0 +1,982 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#043FB3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/mo_logo"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/border_img"
+            android:scaleType="centerCrop"
+            android:clipToOutline="true"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Opolska aplikacja"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp"
+                android:textFontWeight="800"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="mobilna mOpolskie"
+                android:textColor="#FFFFFF"
+                android:textFontWeight="500"
+                android:textSize="12dp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <View
+            android:id="@+id/anno"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bell_notification_social_media"
+            android:backgroundTint="#FFFFFF"
+            android:padding="10sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none"
+        android:background="@drawable/corner_bg_menu_help">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Numery alarmowe"
+                    android:textColor="#151515"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:textFontWeight="800"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/corner_bg_help"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ogólne"
+                    android:textColor="#151515"
+                    android:textSize="14dp"
+                    android:layout_marginBottom="10dp"
+                    android:textFontWeight="800"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="@drawable/corner_phone_help"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="112"
+                        android:textColor="#151515"
+                        android:textSize="12dp"
+                        android:textFontWeight="800"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Uniwersalny numer alarmowy w UE"
+                        android:textColor="#151515"
+                        android:textSize="10dp"
+                        android:textFontWeight="800"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/corner_bg_help"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bezpieczeństwo i porządek publiczny"
+                    android:textColor="#151515"
+                    android:textSize="14dp"
+                    android:layout_marginBottom="10dp"
+                    android:textFontWeight="800"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/corner_phone_help"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="997"
+                        android:textColor="#151515"
+                        android:textSize="12dp"
+                        android:textFontWeight="800"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Policja"
+                        android:textColor="#151515"
+                        android:textSize="10dp"
+                        android:textFontWeight="800"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/corner_phone_help"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="996"
+                        android:textColor="#151515"
+                        android:textSize="12dp"
+                        android:textFontWeight="800"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Straż Ochrony Kolei (SOK)"
+                        android:textColor="#151515"
+                        android:textSize="10dp"
+                        android:textFontWeight="800"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="@drawable/corner_phone_help"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="987"
+                        android:textColor="#151515"
+                        android:textSize="12dp"
+                        android:textFontWeight="800"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Obrona Cywilna"
+                        android:textColor="#151515"
+                        android:textSize="10dp"
+                        android:textFontWeight="800"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/corner_bg_help"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ratownictwo i straż pożarna"
+                    android:textColor="#151515"
+                    android:textSize="14dp"
+                    android:layout_marginBottom="10dp"
+                    android:textFontWeight="800"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="@drawable/corner_phone_help"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="998"
+                        android:textColor="#151515"
+                        android:textSize="12dp"
+                        android:textFontWeight="800"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Straż Pożarna"
+                        android:textColor="#151515"
+                        android:textSize="10dp"
+                        android:textFontWeight="800"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/corner_bg_help"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Medyczne i ratunkowe"
+                    android:textColor="#151515"
+                    android:textSize="14dp"
+                    android:layout_marginBottom="10dp"
+                    android:textFontWeight="800"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/corner_phone_help"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="999"
+                        android:textColor="#151515"
+                        android:textSize="12dp"
+                        android:textFontWeight="800"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pogotowie Ratunkowe"
+                        android:textColor="#151515"
+                        android:textSize="10dp"
+                        android:textFontWeight="800"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/corner_phone_help"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="116 123"
+                        android:textColor="#151515"
+                        android:textSize="12dp"
+                        android:textFontWeight="800"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Telefon wsparcia emocjonalnego"
+                        android:textColor="#151515"
+                        android:textSize="10dp"
+                        android:textFontWeight="800"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="@drawable/corner_phone_help"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="116 111"
+                        android:textColor="#151515"
+                        android:textSize="12dp"
+                        android:textFontWeight="800"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Telefon Zaufania dla Dzieci"
+                        android:textColor="#151515"
+                        android:textSize="10dp"
+                        android:textFontWeight="800"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/corner_bg_help"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pomoc drogowa i techniczna"
+                    android:textColor="#151515"
+                    android:textSize="14dp"
+                    android:layout_marginBottom="10dp"
+                    android:textFontWeight="800"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/corner_phone_help"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="981"
+                        android:textColor="#151515"
+                        android:textSize="12dp"
+                        android:textFontWeight="800"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pomoc Drogowa (GDDKiA)"
+                        android:textColor="#151515"
+                        android:textSize="10dp"
+                        android:textFontWeight="800"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="@drawable/corner_phone_help"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="985"
+                        android:textColor="#151515"
+                        android:textSize="12dp"
+                        android:textFontWeight="800"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="WOPR (Wodne) i GOPR (Górskie)"
+                        android:textColor="#151515"
+                        android:textSize="10dp"
+                        android:textFontWeight="800"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/corner_bg_help"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Awarie techniczne"
+                    android:textColor="#151515"
+                    android:textSize="14dp"
+                    android:layout_marginBottom="10dp"
+                    android:textFontWeight="800"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/corner_phone_help"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="991"
+                        android:textColor="#151515"
+                        android:textSize="12dp"
+                        android:textFontWeight="800"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pogotowie Energetyczne"
+                        android:textColor="#151515"
+                        android:textSize="10dp"
+                        android:textFontWeight="800"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/corner_phone_help"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="992"
+                        android:textColor="#151515"
+                        android:textSize="12dp"
+                        android:textFontWeight="800"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pogotowie Gazowe"
+                        android:textColor="#151515"
+                        android:textSize="10dp"
+                        android:textFontWeight="800"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/corner_phone_help"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="993"
+                        android:textColor="#151515"
+                        android:textSize="12dp"
+                        android:textFontWeight="800"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pogotowie Ciepłownicze"
+                        android:textColor="#151515"
+                        android:textSize="10dp"
+                        android:textFontWeight="800"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/corner_phone_help"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="994"
+                        android:textColor="#151515"
+                        android:textSize="12dp"
+                        android:textFontWeight="800"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pogotowie Wodociągowe"
+                        android:textColor="#151515"
+                        android:textSize="10dp"
+                        android:textFontWeight="800"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="@drawable/corner_phone_help"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="995"
+                        android:textColor="#151515"
+                        android:textSize="12dp"
+                        android:textFontWeight="800"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Centrum ds. bezpieczeństwa"
+                        android:textColor="#151515"
+                        android:textSize="10dp"
+                        android:textFontWeight="800"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/corner_bg_help"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wsparcie społeczne"
+                    android:textColor="#151515"
+                    android:textSize="14dp"
+                    android:layout_marginBottom="10dp"
+                    android:textFontWeight="800"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/corner_phone_help"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="116 000"
+                        android:textColor="#151515"
+                        android:textSize="12dp"
+                        android:textFontWeight="800"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Zaginione Dzieci"
+                        android:textColor="#151515"
+                        android:textSize="10dp"
+                        android:textFontWeight="800"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/corner_phone_help"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="116 006"
+                        android:textColor="#151515"
+                        android:textSize="12dp"
+                        android:textFontWeight="800"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ofiary Przestępstw"
+                        android:textColor="#151515"
+                        android:textSize="10dp"
+                        android:textFontWeight="800"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/corner_phone_help"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="116 117"
+                        android:textColor="#151515"
+                        android:textSize="12dp"
+                        android:textFontWeight="800"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pomoc Medyczna (poza godzinami pracy)"
+                        android:textColor="#151515"
+                        android:textSize="10dp"
+                        android:textFontWeight="800"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="@drawable/corner_phone_help"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="988"
+                        android:textColor="#151515"
+                        android:textSize="12dp"
+                        android:textFontWeight="800"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Wsparcie psychiczne"
+                        android:textColor="#151515"
+                        android:textSize="10dp"
+                        android:textFontWeight="800"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@drawable/corner_border_nav_main">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_height="0dp"
+            android:layout_weight="0.2" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/pulpit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="22sp"
+                    android:layout_height="22sp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/home"
+                    android:backgroundTint="#151515"
+                    android:padding="10sp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Pulpit"
+                android:textSize="12sp"
+                android:textFontWeight="800"
+                android:textColor="#151515"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/services"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="22sp"
+                    android:layout_height="22sp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/folder"
+                    android:backgroundTint="#151515"
+                    android:padding="10sp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Usługi"
+                android:textSize="12sp"
+                android:textFontWeight="800"
+                android:textColor="#151515"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:background="@drawable/corner_pulpit"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="22sp"
+                    android:layout_height="22sp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/emergency_call"
+                    android:backgroundTint="#2c548e"
+                    android:padding="10sp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Pomoc"
+                android:textSize="12sp"
+                android:textFontWeight="800"
+                android:textColor="#2c548e"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="22sp"
+                    android:layout_height="22sp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/circle_ellipsis"
+                    android:backgroundTint="#151515"
+                    android:padding="10sp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Więcej"
+                android:textSize="12sp"
+                android:textFontWeight="800"
+                android:textColor="#151515"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_height="0dp"
+            android:layout_weight="0.2" />
+    </LinearLayout>
+</LinearLayout>

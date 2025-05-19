@@ -2,6 +2,18 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -10,18 +22,49 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
         android:theme="@style/Theme.MOpolskie"
         tools:targetApi="35">
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.MOpolskie">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".HelpActivity"
+            android:theme="@style/Theme.MOpolskie"/>
+
+        <activity
+            android:name=".ServicesActivity"
+            android:theme="@style/Theme.MOpolskie"/>
+
+        <activity
+            android:name=".MoreActivity"
+            android:theme="@style/Theme.MOpolskie"/>
+
+        <activity
+            android:name=".HelpTechnicActivity"
+            android:theme="@style/Theme.MOpolskie"/>
+
+        <activity
+            android:name=".AboutActivity"
+            android:theme="@style/Theme.MOpolskie"/>
+
+        <activity
+            android:name=".DevActivity"
+            android:theme="@style/Theme.MOpolskie"/>
+
+        <activity
+            android:name=".WordActivity"
+            android:theme="@style/Theme.MOpolskie"/>
     </application>
 
 </manifest>

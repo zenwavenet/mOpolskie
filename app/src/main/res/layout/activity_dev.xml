@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#043FB3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/mo_logo"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/border_img"
+            android:scaleType="centerCrop"
+            android:clipToOutline="true"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Opolska aplikacja"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp"
+                android:textFontWeight="800"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="mobilna mOpolskie"
+                android:textColor="#FFFFFF"
+                android:textFontWeight="500"
+                android:textSize="12dp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <View
+            android:id="@+id/anno"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bell_notification_social_media"
+            android:backgroundTint="#FFFFFF"
+            android:padding="10sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/corner_bg_menu_help"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Twórcy aplikacji"
+                    android:textSize="18sp"
+                    android:textFontWeight="500"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="#151515"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Poznaj zespół, który stworzył aplikację mOpolskie. Dzięki ich pracy masz dostęp do innowacyjnych funkcji i regularnych aktualizacji. Chcesz dowiedzieć się więcej o twórcach aplikacji?"
+                    android:textSize="12sp"
+                    android:textFontWeight="500"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="#151515"/>
+
+                <TextView
+                    android:id="@+id/url"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Odwiedź naszą stronę mopolskie.goflux.pl"
+                    android:textSize="12sp"
+                    android:textFontWeight="500"
+                    android:textColor="#043FB3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingEnd="10dp"
+                        android:paddingStart="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:background="@drawable/corner_box_uslugi"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="0dp"
+                            app:cardBackgroundColor="@android:color/transparent">
+
+                            <ImageView
+                                android:layout_width="55dp"
+                                android:layout_height="55dp"
+                                android:background="@drawable/ijakepl"
+                                android:scaleType="centerCrop" />
+                        </androidx.cardview.widget.CardView>
+
+                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Jakub Jan Burzyński"
+                                android:textSize="15sp"
+                                android:textFontWeight="500"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="#151515"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Twórca aplikacji mOpolskie, pasjonat technologii i programowania. Zajmuje się tworzeniem nowoczesnych rozwiązań, które poprawiają komfort użytkowników. Jego celem jest rozwijanie aplikacji, by dostarczać innowacyjne funkcje i usprawnienia, które odpowiadają na potrzeby współczesnych użytkowników."
+                                android:textSize="10sp"
+                                android:textFontWeight="400"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="#151515"/>
+
+                            <TextView
+                                android:id="@+id/github"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Odwiedź profil GitHub"
+                                android:textSize="10sp"
+                                android:textFontWeight="500"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="#043FB3"/>
+
+                            <TextView
+                                android:id="@+id/linkedIn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Odwiedź profil LinkedIn"
+                                android:textSize="10sp"
+                                android:textFontWeight="500"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="#043FB3"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@drawable/corner_border_nav_main">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_height="0dp"
+            android:layout_weight="0.2" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/pulpit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="22sp"
+                    android:layout_height="22sp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/home"
+                    android:backgroundTint="#151515"
+                    android:padding="10sp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Pulpit"
+                android:textSize="12sp"
+                android:textFontWeight="800"
+                android:textColor="#151515"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/services"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="22sp"
+                    android:layout_height="22sp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/folder"
+                    android:backgroundTint="#151515"
+                    android:padding="10sp"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Usługi"
+                android:textSize="12sp"
+                android:textFontWeight="800"
+                android:textColor="#151515"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="22sp"
+                    android:layout_height="22sp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/emergency_call_2"
+                    android:backgroundTint="#151515"
+                    android:padding="10sp"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Pomoc"
+                android:textSize="12sp"
+                android:textFontWeight="800"
+                android:textColor="#151515"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="22sp"
+                    android:layout_height="22sp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/circle_ellipsis"
+                    android:backgroundTint="#151515"
+                    android:padding="10sp"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Więcej"
+                android:textSize="12sp"
+                android:textFontWeight="800"
+                android:textColor="#151515"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_height="0dp"
+            android:layout_weight="0.2" />
+    </LinearLayout>
+</LinearLayout>

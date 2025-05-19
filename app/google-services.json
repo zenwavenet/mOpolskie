@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "784265780270",
+    "project_id": "mopolskie",
+    "storage_bucket": "mopolskie.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:784265780270:android:8f199997290a433be653bf",
+        "android_client_info": {
+          "package_name": "net.gf.mopolskie"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2epl0QEuAgpm5Yn4mTwOHS6VfW0qKNBg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
