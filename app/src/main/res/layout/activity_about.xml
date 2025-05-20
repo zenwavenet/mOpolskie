@@ -3,7 +3,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#043FB3">
+    android:background="#256bc9">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -143,7 +143,7 @@
                                 android:layout_width="25sp"
                                 android:layout_height="25sp"
                                 android:layout_gravity="center"
-                                android:background="@drawable/info"
+                                android:background="@drawable/interrogation"
                                 android:backgroundTint="#151515"
                                 android:padding="5sp"/>
                         </LinearLayout>

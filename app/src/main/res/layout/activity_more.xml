@@ -3,7 +3,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#043FB3">
+    android:background="#256bc9">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -69,29 +69,38 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="15dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:padding="15dp">
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Więcej"
-                    android:layout_gravity="center"
                     android:textColor="#151515"
                     android:textSize="15dp"
+                    android:layout_marginBottom="10dp"
                     android:textFontWeight="800"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Zakładka „Więcej” zawiera dodatkowe informacje i opcje związane z aplikacją. Znajdziesz tu sekcję O aplikacji, która przedstawia cel i funkcjonalności narzędzia, Pomoc techniczną w razie problemów oraz dostęp do kodu źródłowego dla osób zainteresowanych działaniem aplikacji od środka. Wszystko w jednym miejscu – przejrzyście i wygodnie."
+                    android:textSize="12sp"
+                    android:textFontWeight="500"
+                    android:layout_marginBottom="15dp"
+                    android:textColor="#151515"/>
+
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="15dp">
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -275,6 +284,71 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:text="Kod źródłowy"
+                            android:textSize="15sp"
+                            android:textFontWeight="500"
+                            android:layout_marginLeft="15dp"
+                            android:textColor="#151515"/>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_gravity="center"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+
+                        <View
+                            android:layout_width="20sp"
+                            android:layout_height="20sp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/angle_circle_right"
+                            android:backgroundTint="#151515"
+                            android:padding="5sp"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/discord"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingEnd="10dp"
+                        android:paddingStart="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:background="@drawable/corner_box_uslugi"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingEnd="15dp"
+                            android:paddingStart="15dp"
+                            android:paddingBottom="15dp"
+                            android:paddingTop="15dp"
+                            android:background="@drawable/corner_img_uslugi"
+                            android:orientation="vertical">
+
+                            <View
+                                android:layout_width="25sp"
+                                android:layout_height="25sp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/discord"
+                                android:backgroundTint="#151515"
+                                android:padding="5sp"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Serwer Discord"
                             android:textSize="15sp"
                             android:textFontWeight="500"
                             android:layout_marginLeft="15dp"

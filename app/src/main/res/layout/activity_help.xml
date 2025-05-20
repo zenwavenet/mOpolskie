@@ -3,7 +3,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#043FB3">
+    android:background="#256bc9">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -75,7 +75,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -85,6 +85,16 @@
                     android:textSize="15dp"
                     android:layout_marginBottom="10dp"
                     android:textFontWeight="800"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Numery alarmowe to kluczowe kontakty, które umożliwiają natychmiastowe wezwanie pomocy w sytuacjach zagrożenia życia, zdrowia lub mienia. W Polsce dostępne są numery do Policji, Straży Pożarnej, Pogotowia oraz uniwersalny numer 112. Aplikacja ułatwia szybki dostęp do tych informacji – prosto i wygodnie z poziomu telefonu."
+                    android:textSize="12sp"
+                    android:textFontWeight="500"
+                    android:layout_marginBottom="15dp"
+                    android:textColor="#151515"/>
+
 
             </LinearLayout>
 
@@ -131,7 +141,7 @@
                         android:text="Uniwersalny numer alarmowy w UE"
                         android:textColor="#151515"
                         android:textSize="10dp"
-                        android:textFontWeight="800"/>
+                        android:textFontWeight="500"/>
                 </LinearLayout>
             </LinearLayout>
 
@@ -180,7 +190,7 @@
                         android:text="Policja"
                         android:textColor="#151515"
                         android:textSize="10dp"
-                        android:textFontWeight="800"/>
+                        android:textFontWeight="500"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -211,7 +221,7 @@
                         android:text="Straż Ochrony Kolei (SOK)"
                         android:textColor="#151515"
                         android:textSize="10dp"
-                        android:textFontWeight="800"/>
+                        android:textFontWeight="500"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -241,7 +251,7 @@
                         android:text="Obrona Cywilna"
                         android:textColor="#151515"
                         android:textSize="10dp"
-                        android:textFontWeight="800"/>
+                        android:textFontWeight="500"/>
                 </LinearLayout>
             </LinearLayout>
 
@@ -289,7 +299,7 @@
                         android:text="Straż Pożarna"
                         android:textColor="#151515"
                         android:textSize="10dp"
-                        android:textFontWeight="800"/>
+                        android:textFontWeight="500"/>
                 </LinearLayout>
             </LinearLayout>
 
@@ -338,7 +348,7 @@
                         android:text="Pogotowie Ratunkowe"
                         android:textColor="#151515"
                         android:textSize="10dp"
-                        android:textFontWeight="800"/>
+                        android:textFontWeight="500"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -369,7 +379,7 @@
                         android:text="Telefon wsparcia emocjonalnego"
                         android:textColor="#151515"
                         android:textSize="10dp"
-                        android:textFontWeight="800"/>
+                        android:textFontWeight="500"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -399,7 +409,7 @@
                         android:text="Telefon Zaufania dla Dzieci"
                         android:textColor="#151515"
                         android:textSize="10dp"
-                        android:textFontWeight="800"/>
+                        android:textFontWeight="500"/>
                 </LinearLayout>
             </LinearLayout>
 
@@ -448,7 +458,7 @@
                         android:text="Pomoc Drogowa (GDDKiA)"
                         android:textColor="#151515"
                         android:textSize="10dp"
-                        android:textFontWeight="800"/>
+                        android:textFontWeight="500"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -478,7 +488,7 @@
                         android:text="WOPR (Wodne) i GOPR (Górskie)"
                         android:textColor="#151515"
                         android:textSize="10dp"
-                        android:textFontWeight="800"/>
+                        android:textFontWeight="500"/>
                 </LinearLayout>
             </LinearLayout>
 
@@ -527,7 +537,7 @@
                         android:text="Pogotowie Energetyczne"
                         android:textColor="#151515"
                         android:textSize="10dp"
-                        android:textFontWeight="800"/>
+                        android:textFontWeight="500"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -558,7 +568,7 @@
                         android:text="Pogotowie Gazowe"
                         android:textColor="#151515"
                         android:textSize="10dp"
-                        android:textFontWeight="800"/>
+                        android:textFontWeight="500"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -589,7 +599,7 @@
                         android:text="Pogotowie Ciepłownicze"
                         android:textColor="#151515"
                         android:textSize="10dp"
-                        android:textFontWeight="800"/>
+                        android:textFontWeight="500"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -620,7 +630,7 @@
                         android:text="Pogotowie Wodociągowe"
                         android:textColor="#151515"
                         android:textSize="10dp"
-                        android:textFontWeight="800"/>
+                        android:textFontWeight="500"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -650,7 +660,7 @@
                         android:text="Centrum ds. bezpieczeństwa"
                         android:textColor="#151515"
                         android:textSize="10dp"
-                        android:textFontWeight="800"/>
+                        android:textFontWeight="500"/>
                 </LinearLayout>
             </LinearLayout>
 
@@ -699,7 +709,7 @@
                         android:text="Zaginione Dzieci"
                         android:textColor="#151515"
                         android:textSize="10dp"
-                        android:textFontWeight="800"/>
+                        android:textFontWeight="500"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -730,7 +740,7 @@
                         android:text="Ofiary Przestępstw"
                         android:textColor="#151515"
                         android:textSize="10dp"
-                        android:textFontWeight="800"/>
+                        android:textFontWeight="500"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -761,7 +771,7 @@
                         android:text="Pomoc Medyczna (poza godzinami pracy)"
                         android:textColor="#151515"
                         android:textSize="10dp"
-                        android:textFontWeight="800"/>
+                        android:textFontWeight="500"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -791,7 +801,7 @@
                         android:text="Wsparcie psychiczne"
                         android:textColor="#151515"
                         android:textSize="10dp"
-                        android:textFontWeight="800"/>
+                        android:textFontWeight="500"/>
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>

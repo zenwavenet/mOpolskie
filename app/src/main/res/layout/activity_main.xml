@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#043FB3">
+    android:background="#256bc9">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -19,7 +20,7 @@
             android:layout_marginRight="10dp"
             android:background="@drawable/border_img"
             android:scaleType="centerCrop"
-            android:clipToOutline="true"/>
+            android:clipToOutline="true" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -32,7 +33,7 @@
                 android:text="Opolska aplikacja"
                 android:textColor="#FFFFFF"
                 android:textSize="18dp"
-                android:textFontWeight="800"/>
+                android:textFontWeight="800" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -40,7 +41,7 @@
                 android:text="mobilna mOpolskie"
                 android:textColor="#FFFFFF"
                 android:textFontWeight="500"
-                android:textSize="12dp"/>
+                android:textSize="12dp" />
         </LinearLayout>
 
         <View
@@ -80,7 +81,7 @@
                 android:text="Moje Opolskie"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
-                android:textSize="16dp"/>
+                android:textSize="16dp" />
 
             <View
                 android:layout_width="0dp"
@@ -95,7 +96,7 @@
                 android:text="Aktualna data i godzina"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
-                android:textSize="12dp"/>
+                android:textSize="12dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -115,7 +116,7 @@
                     android:layout_height="wrap_content"
                     android:text="00.00.0000"
                     android:textColor="#FFFFFF"
-                    android:textSize="16dp"/>
+                    android:textSize="16dp" />
 
                 <TextView
                     android:id="@+id/dayText"
@@ -123,7 +124,7 @@
                     android:layout_height="wrap_content"
                     android:text="Poniedziałek"
                     android:textColor="#FFFFFF"
-                    android:textSize="20dp"/>
+                    android:textSize="20dp" />
             </LinearLayout>
 
             <View
@@ -144,8 +145,44 @@
                     android:layout_height="wrap_content"
                     android:text="00:00"
                     android:textColor="#FFFFFF"
-                    android:textSize="24dp"/>
+                    android:textSize="24dp" />
             </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:background="@drawable/corner_search_main">
+
+            <View
+                android:layout_width="22sp"
+                android:layout_height="22sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/search"
+                android:backgroundTint="#2c548e"
+                android:padding="10sp"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Szukaj usług, urzędów, aptek..."
+                android:padding="8dp"
+                android:background="@android:color/transparent"
+                android:textSize="16sp"
+                android:inputType="text"
+                android:imeOptions="actionSearch"/>
         </LinearLayout>
     </LinearLayout>
 
@@ -155,7 +192,6 @@
         android:layout_weight="1"
         android:paddingEnd="10dp"
         android:paddingStart="10dp"
-        android:layout_marginTop="30dp"
         android:scrollbars="none"
         android:background="@drawable/corner_bg_menu_main">
 
@@ -224,10 +260,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:paddingEnd="10dp"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
+                        android:paddingEnd="8dp"
+                        android:paddingStart="8dp"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
                         android:background="@drawable/circle_lv_main"
                         android:layout_marginBottom="5dp"
                         android:orientation="vertical">
@@ -244,8 +280,8 @@
                             android:orientation="vertical">
 
                             <View
-                                android:layout_width="30sp"
-                                android:layout_height="30sp"
+                                android:layout_width="32sp"
+                                android:layout_height="32sp"
                                 android:layout_gravity="center"
                                 android:background="@drawable/bench_tree"
                                 android:backgroundTint="#8E892C"
@@ -279,10 +315,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:paddingEnd="10dp"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
+                        android:paddingEnd="8dp"
+                        android:paddingStart="8dp"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
                         android:background="@drawable/circle_lv_main"
                         android:layout_marginBottom="5dp"
                         android:orientation="vertical">
@@ -299,8 +335,8 @@
                             android:orientation="vertical">
 
                             <View
-                                android:layout_width="30sp"
-                                android:layout_height="30sp"
+                                android:layout_width="32sp"
+                                android:layout_height="32sp"
                                 android:layout_gravity="center"
                                 android:background="@drawable/heart"
                                 android:backgroundTint="#622C8E"
@@ -333,10 +369,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:paddingEnd="10dp"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
+                        android:paddingEnd="8dp"
+                        android:paddingStart="8dp"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
                         android:background="@drawable/circle_lv_main"
                         android:layout_marginBottom="5dp"
                         android:orientation="vertical">
@@ -353,8 +389,8 @@
                             android:orientation="vertical">
 
                             <View
-                                android:layout_width="30sp"
-                                android:layout_height="30sp"
+                                android:layout_width="32sp"
+                                android:layout_height="32sp"
                                 android:layout_gravity="center"
                                 android:background="@drawable/bank"
                                 android:backgroundTint="#8E2C2C"
@@ -388,10 +424,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:paddingEnd="10dp"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
+                        android:paddingEnd="8dp"
+                        android:paddingStart="8dp"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
                         android:background="@drawable/circle_lv_main"
                         android:layout_marginBottom="5dp"
                         android:orientation="vertical">
@@ -408,8 +444,8 @@
                             android:orientation="vertical">
 
                             <View
-                                android:layout_width="30sp"
-                                android:layout_height="30sp"
+                                android:layout_width="32sp"
+                                android:layout_height="32sp"
                                 android:layout_gravity="center"
                                 android:background="@drawable/building"
                                 android:backgroundTint="#2C8E8C"
@@ -443,10 +479,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:paddingEnd="10dp"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
+                        android:paddingEnd="8dp"
+                        android:paddingStart="8dp"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
                         android:background="@drawable/circle_lv_main"
                         android:layout_marginBottom="5dp"
                         android:orientation="vertical">
@@ -463,8 +499,8 @@
                             android:orientation="vertical">
 
                             <View
-                                android:layout_width="30sp"
-                                android:layout_height="30sp"
+                                android:layout_width="32sp"
+                                android:layout_height="32sp"
                                 android:layout_gravity="center"
                                 android:background="@drawable/trash"
                                 android:backgroundTint="#3E8E2C"
@@ -489,6 +525,7 @@
                     android:layout_weight="1" />
 
                 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/segregacja"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -497,10 +534,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:paddingEnd="10dp"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
+                        android:paddingEnd="8dp"
+                        android:paddingStart="8dp"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
                         android:background="@drawable/circle_lv_main"
                         android:layout_marginBottom="5dp"
                         android:orientation="vertical">
@@ -517,8 +554,8 @@
                             android:orientation="vertical">
 
                             <View
-                                android:layout_width="30sp"
-                                android:layout_height="30sp"
+                                android:layout_width="32sp"
+                                android:layout_height="32sp"
                                 android:layout_gravity="center"
                                 android:background="@drawable/recycle_bin"
                                 android:backgroundTint="#2C3E8E"

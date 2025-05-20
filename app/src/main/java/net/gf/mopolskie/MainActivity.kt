@@ -52,6 +52,14 @@ class MainActivity : ComponentActivity() {
             finish()
             overridePendingTransition(0, 0)
         }
+
+        val SegButton = findViewById<LinearLayout>(R.id.segregacja)
+        SegButton.setOnClickListener {
+            val intent = Intent(this, SegregacjaActivity::class.java)
+            startActivity(intent)
+            finish()
+            overridePendingTransition(0, 0)
+        }
     }
 
     override fun onDestroy() {

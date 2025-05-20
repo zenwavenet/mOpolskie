@@ -5,10 +5,10 @@ import android.os.Bundle
 import android.widget.LinearLayout
 import androidx.activity.ComponentActivity
 
-class ServicesActivity : ComponentActivity() {
+class SegregacjaActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_uslugi)
+        setContentView(R.layout.activity_segregacja)
 
         window.statusBarColor = resources.getColor(R.color.status_bar_color, theme)
         window.decorView.systemUiVisibility = 0
@@ -29,25 +29,17 @@ class ServicesActivity : ComponentActivity() {
             overridePendingTransition(0, 0)
         }
 
+        val ServicesButton = findViewById<LinearLayout>(R.id.services)
+        ServicesButton.setOnClickListener {
+            val intent = Intent(this, ServicesActivity::class.java)
+            startActivity(intent)
+            finish()
+            overridePendingTransition(0, 0)
+        }
+
         val MoreButton = findViewById<LinearLayout>(R.id.more)
         MoreButton.setOnClickListener {
             val intent = Intent(this, MoreActivity::class.java)
-            startActivity(intent)
-            finish()
-            overridePendingTransition(0, 0)
-        }
-
-        val WordButton = findViewById<LinearLayout>(R.id.word)
-        WordButton.setOnClickListener {
-            val intent = Intent(this, WordActivity::class.java)
-            startActivity(intent)
-            finish()
-            overridePendingTransition(0, 0)
-        }
-
-        val SegButton = findViewById<LinearLayout>(R.id.segregacja)
-        SegButton.setOnClickListener {
-            val intent = Intent(this, SegregacjaActivity::class.java)
             startActivity(intent)
             finish()
             overridePendingTransition(0, 0)

@@ -57,6 +57,10 @@ class MoreActivity : ComponentActivity() {
         findViewById<LinearLayout>(R.id.github)?.setOnClickListener {
             openWebsite("https://github.com/gofluxpl/mOpolskie")
         }
+
+        findViewById<LinearLayout>(R.id.discord)?.setOnClickListener {
+            openWebsite("https://discord.gg/VY8d7auENv")
+        }
     }
 
     private fun openWebsite(url: String) {

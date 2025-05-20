@@ -65,6 +65,10 @@
         <activity
             android:name=".WordActivity"
             android:theme="@style/Theme.MOpolskie"/>
+
+        <activity
+            android:name=".SegregacjaActivity"
+            android:theme="@style/Theme.MOpolskie"/>
     </application>
 
 </manifest>

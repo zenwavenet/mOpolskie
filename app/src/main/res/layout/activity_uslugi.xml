@@ -3,7 +3,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#043FB3">
+    android:background="#256bc9">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -69,29 +69,38 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="15dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:padding="15dp">
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Dostępne Usługi"
-                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
                     android:textColor="#151515"
                     android:textSize="15dp"
                     android:textFontWeight="800"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Zakładka „Dostępne usługi” zawiera rozbudowaną listę miejsc i instytucji publicznych oraz prywatnych, które mogą być przydatne na co dzień. Znajdziesz tu m.in. atrakcje turystyczne, apteki, starostwa, urzędy, sądy, oddziały WORD, szpitale, przychodnie, szkoły, biblioteki, hotele i wiele innych. Wszystko zebrane w jednym miejscu, by ułatwić szybki dostęp do ważnych informacji w Twoim regionie."
+                    android:textSize="12sp"
+                    android:textFontWeight="500"
+                    android:layout_marginBottom="15dp"
+                    android:textColor="#151515"/>
+
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="15dp">
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -423,6 +432,7 @@
                 </LinearLayout>
 
                 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/segregacja"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -490,8 +500,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="15dp">
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
