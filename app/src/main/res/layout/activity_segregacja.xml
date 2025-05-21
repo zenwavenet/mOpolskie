@@ -113,6 +113,7 @@
                 android:padding="15dp">
 
                 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/black"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -198,6 +199,7 @@
                 </LinearLayout>
 
                 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/brown"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -282,6 +284,7 @@
                     </LinearLayout>
 
                     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/yellow"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
@@ -367,6 +370,7 @@
                     </LinearLayout>
 
                     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/green"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
@@ -452,6 +456,7 @@
                     </LinearLayout>
 
                     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/blue"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">

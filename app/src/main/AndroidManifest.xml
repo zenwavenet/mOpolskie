@@ -69,6 +69,26 @@
         <activity
             android:name=".SegregacjaActivity"
             android:theme="@style/Theme.MOpolskie"/>
+
+        <activity
+            android:name=".SegregacjaBlackActivity"
+            android:theme="@style/Theme.MOpolskie"/>
+
+        <activity
+            android:name=".SegregacjaBlueActivity"
+            android:theme="@style/Theme.MOpolskie"/>
+
+        <activity
+            android:name=".SegregacjaBrownActivity"
+            android:theme="@style/Theme.MOpolskie"/>
+
+        <activity
+            android:name=".SegregacjaGreenActivity"
+            android:theme="@style/Theme.MOpolskie"/>
+
+        <activity
+            android:name=".SegregacjaYellowActivity"
+            android:theme="@style/Theme.MOpolskie"/>
     </application>
 
 </manifest>

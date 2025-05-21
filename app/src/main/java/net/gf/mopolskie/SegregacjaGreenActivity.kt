@@ -3,12 +3,13 @@ package net.gf.mopolskie
 import android.content.Intent
 import android.os.Bundle
 import android.widget.LinearLayout
+import android.widget.TextView
 import androidx.activity.ComponentActivity
 
-class SegregacjaActivity : ComponentActivity() {
+class SegregacjaGreenActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_segregacja)
+        setContentView(R.layout.activity_segregacja_green)
 
         window.statusBarColor = resources.getColor(R.color.status_bar_color, theme)
         window.decorView.systemUiVisibility = 0
@@ -45,41 +46,9 @@ class SegregacjaActivity : ComponentActivity() {
             overridePendingTransition(0, 0)
         }
 
-        val BlackButton = findViewById<LinearLayout>(R.id.black)
-        BlackButton.setOnClickListener {
-            val intent = Intent(this, SegregacjaBlackActivity::class.java)
-            startActivity(intent)
-            finish()
-            overridePendingTransition(0, 0)
-        }
-
-        val BrownButton = findViewById<LinearLayout>(R.id.brown)
-        BrownButton.setOnClickListener {
-            val intent = Intent(this, SegregacjaBrownActivity::class.java)
-            startActivity(intent)
-            finish()
-            overridePendingTransition(0, 0)
-        }
-
-        val BlueButton = findViewById<LinearLayout>(R.id.blue)
-        BlueButton.setOnClickListener {
-            val intent = Intent(this, SegregacjaBlueActivity::class.java)
-            startActivity(intent)
-            finish()
-            overridePendingTransition(0, 0)
-        }
-
-        val YellowButton = findViewById<LinearLayout>(R.id.yellow)
-        YellowButton.setOnClickListener {
-            val intent = Intent(this, SegregacjaYellowActivity::class.java)
-            startActivity(intent)
-            finish()
-            overridePendingTransition(0, 0)
-        }
-
-        val GreenButton = findViewById<LinearLayout>(R.id.green)
-        GreenButton.setOnClickListener {
-            val intent = Intent(this, SegregacjaGreenActivity::class.java)
+        val BackButton = findViewById<TextView>(R.id.back)
+        BackButton.setOnClickListener {
+            val intent = Intent(this, SegregacjaActivity::class.java)
             startActivity(intent)
             finish()
             overridePendingTransition(0, 0)

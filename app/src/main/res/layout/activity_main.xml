@@ -287,7 +287,6 @@
                                 android:backgroundTint="#8E892C"
                                 android:padding="5sp"/>
                         </LinearLayout>
-
                     </LinearLayout>
 
                     <TextView
