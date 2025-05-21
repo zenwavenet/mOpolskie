@@ -21,8 +21,8 @@
             android:text="Lokalizacja"
             android:textSize="14sp"
             android:textFontWeight="500"
-            android:textColor="#666666"
-            android:layout_marginBottom="5dp" />
+            android:layout_marginBottom="5dp"
+            android:textColor="#666666"/>
 
         <LinearLayout
             xmlns:android="http://schemas.android.com/apk/res/android"
@@ -40,7 +40,7 @@
                 android:padding="10sp"/>
 
             <TextView
-                android:id="@+id/word_branch"
+                android:id="@+id/starostwo_branch"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="ODDZIAŁ"
@@ -64,11 +64,11 @@
                 android:padding="10sp"/>
 
             <TextView
-                android:id="@+id/word_city"
+                android:id="@+id/starostwo_city"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="KOD POCZTOWY"
+                android:text="ADRESS"
                 android:textSize="14sp"
                 android:textColor="#666666"/>
         </LinearLayout>
@@ -84,10 +84,10 @@
             android:layout_marginTop="8dp"/>
 
         <LinearLayout
-            android:id="@+id/word_open_container"
+            android:id="@+id/starostwo_open_container"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" />
+            android:orientation="vertical"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -100,9 +100,30 @@
             android:layout_marginTop="8dp"/>
 
         <LinearLayout
-            android:id="@+id/word_phone_container"
+            android:id="@+id/starostwo_phone_container"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"/>
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:id="@+id/starostwo_email_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wydziały"
+            android:textSize="14sp"
+            android:textFontWeight="500"
+            android:textColor="#666666"
+            android:layout_marginTop="8dp"/>
+
+        <LinearLayout
+            android:id="@+id/starostwo_departments_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
     </LinearLayout>
 </LinearLayout>

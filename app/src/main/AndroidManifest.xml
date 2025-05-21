@@ -89,6 +89,30 @@
         <activity
             android:name=".SegregacjaYellowActivity"
             android:theme="@style/Theme.MOpolskie"/>
+
+        <activity
+            android:name=".StarostwoActivity"
+            android:theme="@style/Theme.MOpolskie"/>
+
+        <activity
+            android:name=".StarostwoBrzegActivity"
+            android:theme="@style/Theme.MOpolskie"/>
+
+        <activity
+            android:name=".StarostwoGłubczyceActivity"
+            android:theme="@style/Theme.MOpolskie"/>
+
+        <activity
+            android:name=".StarostwoKedzierzynskoKozielskieActivity"
+            android:theme="@style/Theme.MOpolskie"/>
+
+        <activity
+            android:name=".StarostwoKluczborskiActivity"
+            android:theme="@style/Theme.MOpolskie"/>
+
+        <activity
+            android:name=".StarostwoKrapkowickiActivity"
+            android:theme="@style/Theme.MOpolskie"/>
     </application>
 
 </manifest>

@@ -52,5 +52,13 @@ class ServicesActivity : ComponentActivity() {
             finish()
             overridePendingTransition(0, 0)
         }
+
+        val StaButton = findViewById<LinearLayout>(R.id.starostwa)
+        StaButton.setOnClickListener {
+            val intent = Intent(this, StarostwoActivity::class.java)
+            startActivity(intent)
+            finish()
+            overridePendingTransition(0, 0)
+        }
     }
 }
