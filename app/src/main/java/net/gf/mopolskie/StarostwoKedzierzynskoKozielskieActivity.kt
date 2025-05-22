@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.widget.LinearLayout
 import android.widget.TextView
+import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
@@ -55,8 +56,12 @@ class StarostwoKedzierzynskoKozielskieActivity : ComponentActivity() {
         }
 
         lifecycleScope.launch {
-            viewModel.fetchWords()
-            displayWords(viewModel.words)
+            val success = viewModel.fetchWords()
+            if (success) {
+                displayWords(viewModel.words)
+            } else {
+                Toast.makeText(this@StarostwoKedzierzynskoKozielskieActivity, "Błąd podczas pobierania danych.", Toast.LENGTH_SHORT).show()
+            }
         }
     }
 
@@ -171,19 +176,27 @@ class StarostwoKedzierzynskoKozielskieActivity : ComponentActivity() {
 class Starostwo2ViewModel : ViewModel() {
     val words = mutableListOf<Starostwo2Location>()
 
-    suspend fun fetchWords() {
-        withContext(Dispatchers.IO) {
-            val response = ApiStarostwo2Service.create().getStarostwo1()
-            if (response.isSuccessful) {
-                val map = response.body()?.KedzierzynskoKozielski ?: return@withContext
-                for ((_, obj) in map) {
-                    val json = ApiStarostwo2Service.gson.toJsonTree(obj).asJsonObject
-                    val location = ApiStarostwo2Service.gson.fromJson(json, Starostwo2Location::class.java)
-                    words.add(location)
+    suspend fun fetchWords(): Boolean {
+        return withContext(Dispatchers.IO) {
+            try {
+                val response = ApiStarostwo2Service.create().getStarostwo1()
+                if (response.isSuccessful) {
+                    val map = response.body()?.KedzierzynskoKozielski ?: return@withContext false
+                    for ((_, obj) in map) {
+                        val json = ApiStarostwo2Service.gson.toJsonTree(obj).asJsonObject
+                        val location = ApiStarostwo2Service.gson.fromJson(json, Starostwo2Location::class.java)
+                        words.add(location)
+                    }
+                    true
+                } else {
+                    false
                 }
+            } catch (e: Exception) {
+                false
             }
         }
     }
+
 }
 
 interface ApiStarostwo2Service {

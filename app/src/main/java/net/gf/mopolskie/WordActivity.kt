@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.widget.LinearLayout
 import android.widget.TextView
+import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
@@ -62,8 +63,12 @@ class WordActivity : ComponentActivity() {
         }
 
         lifecycleScope.launch {
-            viewModel.fetchWords()
-            displayWords(viewModel.words)
+            val success = viewModel.fetchWords()
+            if (success) {
+                displayWords(viewModel.words)
+            } else {
+                Toast.makeText(this@WordActivity, "Błąd podczas pobierania danych.", Toast.LENGTH_SHORT).show()
+            }
         }
     }
 
@@ -166,16 +171,25 @@ class WordActivity : ComponentActivity() {
 class WordViewModel : ViewModel() {
     val words = mutableListOf<Word>()
 
-    suspend fun fetchWords() {
-        withContext(Dispatchers.IO) {
-            val response = ApiService.create().getWords()
-            if (response.isSuccessful) {
-                response.body()?.word?.let {
-                    words.addAll(it.values)
+    suspend fun fetchWords(): Boolean {
+        return withContext(Dispatchers.IO) {
+            try {
+                val response = ApiService.create().getWords()
+                if (response.isSuccessful) {
+                    response.body()?.word?.let {
+                        words.clear()
+                        words.addAll(it.values)
+                    }
+                    true
+                } else {
+                    false
                 }
+            } catch (e: Exception) {
+                false
             }
         }
     }
+
 }
 
 interface ApiService {

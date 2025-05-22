@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.widget.LinearLayout
 import android.widget.TextView
+import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
@@ -55,8 +56,12 @@ class StarostwoKluczborskiActivity : ComponentActivity() {
         }
 
         lifecycleScope.launch {
-            viewModel.fetchWords()
-            displayWords(viewModel.words)
+            val success = viewModel.fetchWords()
+            if (success) {
+                displayWords(viewModel.words)
+            } else {
+                Toast.makeText(this@StarostwoKluczborskiActivity, "Błąd podczas pobierania danych.", Toast.LENGTH_SHORT).show()
+            }
         }
     }
 
@@ -171,19 +176,27 @@ class StarostwoKluczborskiActivity : ComponentActivity() {
 class Starostwo3ViewModel : ViewModel() {
     val words = mutableListOf<Starostwo3Location>()
 
-    suspend fun fetchWords() {
-        withContext(Dispatchers.IO) {
-            val response = ApiStarostwo3Service.create().getStarostwo1()
-            if (response.isSuccessful) {
-                val map = response.body()?.Kluczborski ?: return@withContext
-                for ((_, obj) in map) {
-                    val json = ApiStarostwo3Service.gson.toJsonTree(obj).asJsonObject
-                    val location = ApiStarostwo3Service.gson.fromJson(json, Starostwo3Location::class.java)
-                    words.add(location)
+    suspend fun fetchWords(): Boolean {
+        return withContext(Dispatchers.IO) {
+            try {
+                val response = ApiStarostwo3Service.create().getStarostwo1()
+                if (response.isSuccessful) {
+                    val map = response.body()?.Kluczborski ?: return@withContext false
+                    for ((_, obj) in map) {
+                        val json = ApiStarostwo3Service.gson.toJsonTree(obj).asJsonObject
+                        val location = ApiStarostwo3Service.gson.fromJson(json, Starostwo3Location::class.java)
+                        words.add(location)
+                    }
+                    true
+                } else {
+                    false
                 }
+            } catch (e: Exception) {
+                false
             }
         }
     }
+
 }
 
 interface ApiStarostwo3Service {
