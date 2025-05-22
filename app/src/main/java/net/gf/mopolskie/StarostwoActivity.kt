@@ -84,5 +84,53 @@ class StarostwoActivity : ComponentActivity() {
             finish()
             overridePendingTransition(0, 0)
         }
+
+        val NamyslowskiButton = findViewById<LinearLayout>(R.id.namyslowski)
+        NamyslowskiButton.setOnClickListener {
+            val intent = Intent(this, StarostwoNamyslowskiActivity::class.java)
+            startActivity(intent)
+            finish()
+            overridePendingTransition(0, 0)
+        }
+
+        val NyskiButton = findViewById<LinearLayout>(R.id.nyski)
+        NyskiButton.setOnClickListener {
+            val intent = Intent(this, StarostwoNyskiActivity::class.java)
+            startActivity(intent)
+            finish()
+            overridePendingTransition(0, 0)
+        }
+
+        val OleskiButton = findViewById<LinearLayout>(R.id.oleski)
+        OleskiButton.setOnClickListener {
+            val intent = Intent(this, StarostwoOleskiActivity::class.java)
+            startActivity(intent)
+            finish()
+            overridePendingTransition(0, 0)
+        }
+
+        val OpolskiButton = findViewById<LinearLayout>(R.id.opolski)
+        OpolskiButton.setOnClickListener {
+            val intent = Intent(this, StarostwoOpolskiActivity::class.java)
+            startActivity(intent)
+            finish()
+            overridePendingTransition(0, 0)
+        }
+
+        val PrudnickiButton = findViewById<LinearLayout>(R.id.prudnicki)
+        PrudnickiButton.setOnClickListener {
+            val intent = Intent(this, StarostwoPrudnickiActivity::class.java)
+            startActivity(intent)
+            finish()
+            overridePendingTransition(0, 0)
+        }
+
+        val StrzeleckiButton = findViewById<LinearLayout>(R.id.strzelecki)
+        StrzeleckiButton.setOnClickListener {
+            val intent = Intent(this, StarostwoStrzeleckiActivity::class.java)
+            startActivity(intent)
+            finish()
+            overridePendingTransition(0, 0)
+        }
     }
 }

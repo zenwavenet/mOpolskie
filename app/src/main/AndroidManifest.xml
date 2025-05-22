@@ -113,6 +113,30 @@
         <activity
             android:name=".StarostwoKrapkowickiActivity"
             android:theme="@style/Theme.MOpolskie"/>
+
+        <activity
+            android:name=".StarostwoNamyslowskiActivity"
+            android:theme="@style/Theme.MOpolskie"/>
+
+        <activity
+            android:name=".StarostwoNyskiActivity"
+            android:theme="@style/Theme.MOpolskie"/>
+
+        <activity
+            android:name=".StarostwoOleskiActivity"
+            android:theme="@style/Theme.MOpolskie"/>
+
+        <activity
+            android:name=".StarostwoOpolskiActivity"
+            android:theme="@style/Theme.MOpolskie"/>
+
+        <activity
+            android:name=".StarostwoPrudnickiActivity"
+            android:theme="@style/Theme.MOpolskie"/>
+
+        <activity
+            android:name=".StarostwoStrzeleckiActivity"
+            android:theme="@style/Theme.MOpolskie"/>
     </application>
 
 </manifest>
