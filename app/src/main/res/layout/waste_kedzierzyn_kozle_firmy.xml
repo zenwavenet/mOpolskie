@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#256bc9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/mo_logo"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/border_img"
+            android:scaleType="centerCrop"
+            android:clipToOutline="true"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Opolska aplikacja"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp"
+                android:textFontWeight="800"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="mobilna mOpolskie"
+                android:textColor="#FFFFFF"
+                android:textFontWeight="500"
+                android:textSize="12dp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <View
+            android:id="@+id/anno"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bell_notification_social_media"
+            android:backgroundTint="#FFFFFF"
+            android:padding="10sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none"
+        android:background="@drawable/corner_bg_menu_help">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="5dp">
+
+                    <View
+                        android:layout_width="22sp"
+                        android:layout_height="22sp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/person_dragging_bag"
+                        android:backgroundTint="#151515"
+                        android:layout_marginEnd="8dp"
+                        android:padding="10sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Wywóz śmieci"
+                        android:layout_gravity="center"
+                        android:textSize="18sp"
+                        android:textFontWeight="500"
+                        android:textColor="#151515"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Miejscowości: "
+                        android:textSize="12sp"
+                        android:textFontWeight="500"
+                        android:textColor="#151515"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kędzierzyn-Koźle"
+                        android:textSize="12sp"
+                        android:textFontWeight="400"
+                        android:textColor="#151515"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rejon: "
+                        android:textSize="12sp"
+                        android:textFontWeight="500"
+                        android:textColor="#151515"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Wszędzie"
+                        android:textSize="12sp"
+                        android:textFontWeight="400"
+                        android:textColor="#151515"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rodzaj: "
+                        android:textSize="12sp"
+                        android:textFontWeight="500"
+                        android:textColor="#151515"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Instytucje, firmy"
+                        android:textSize="12sp"
+                        android:textFontWeight="400"
+                        android:textColor="#151515"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/today_block"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone"
+                android:background="@drawable/corner_word">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Obecnie:"
+                    android:textSize="16sp"
+                    android:textFontWeight="500"
+                    android:textColor="#666666"
+                    android:layout_marginBottom="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="15sp"
+                        android:layout_height="15sp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/map_location_track"
+                        android:backgroundTint="#151515"
+                        android:layout_marginEnd="5dp"
+                        android:padding="10sp"/>
+
+                    <TextView
+                        android:id="@+id/date_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Data i dzień tygodnia"
+                        android:textFontWeight="500"
+                        android:textSize="14sp"
+                        android:textColor="#151515"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="15sp"
+                        android:layout_height="15sp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/trash"
+                        android:backgroundTint="#151515"
+                        android:layout_marginEnd="5dp"
+                        android:padding="10sp"/>
+
+                    <TextView
+                        android:id="@+id/waste_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Co jest do wywiezienia"
+                        android:textSize="14sp"
+                        android:textColor="#666666"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Następny wywóz:"
+                    android:textSize="16sp"
+                    android:textFontWeight="500"
+                    android:textColor="#666666"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="15sp"
+                        android:layout_height="15sp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/map_location_track"
+                        android:backgroundTint="#151515"
+                        android:layout_marginEnd="5dp"
+                        android:padding="10sp"/>
+
+                    <TextView
+                        android:id="@+id/date_time_next"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Data i dzień tygodnia"
+                        android:textFontWeight="500"
+                        android:textSize="14sp"
+                        android:textColor="#151515"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="15sp"
+                        android:layout_height="15sp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/trash"
+                        android:backgroundTint="#151515"
+                        android:layout_marginEnd="5dp"
+                        android:padding="10sp"/>
+
+                    <TextView
+                        android:id="@+id/waste_type_next"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Co jest do wywiezienia"
+                        android:textSize="14sp"
+                        android:textColor="#666666"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_calendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kalendarz"
+                android:textSize="16sp"
+                android:textFontWeight="500"
+                android:textColor="#666666"
+                android:visibility="gone"
+                android:layout_marginBottom="5dp"/>
+
+            <LinearLayout
+                android:id="@+id/waste_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/corner_smieci"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@drawable/corner_border_nav_main">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_height="0dp"
+            android:layout_weight="0.2" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/pulpit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="22sp"
+                    android:layout_height="22sp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/home"
+                    android:backgroundTint="#151515"
+                    android:padding="10sp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Pulpit"
+                android:textSize="12sp"
+                android:textFontWeight="800"
+                android:textColor="#151515"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/services"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="22sp"
+                    android:layout_height="22sp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/folder"
+                    android:backgroundTint="#151515"
+                    android:padding="10sp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Usługi"
+                android:textSize="12sp"
+                android:textFontWeight="800"
+                android:textColor="#151515"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="22sp"
+                    android:layout_height="22sp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/emergency_call_2"
+                    android:backgroundTint="#151515"
+                    android:padding="10sp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Pomoc"
+                android:textSize="12sp"
+                android:textFontWeight="800"
+                android:textColor="#151515"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="22sp"
+                    android:layout_height="22sp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/circle_ellipsis"
+                    android:backgroundTint="#151515"
+                    android:padding="10sp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Więcej"
+                android:textSize="12sp"
+                android:textFontWeight="800"
+                android:textColor="#151515"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_height="0dp"
+            android:layout_weight="0.2" />
+    </LinearLayout>
+</LinearLayout>

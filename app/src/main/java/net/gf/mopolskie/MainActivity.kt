@@ -68,6 +68,14 @@ class MainActivity : ComponentActivity() {
             finish()
             overridePendingTransition(0, 0)
         }
+
+        val WywozButton = findViewById<LinearLayout>(R.id.wywoz)
+        WywozButton.setOnClickListener {
+            val intent = Intent(this, WywozSmieciActivity::class.java)
+            startActivity(intent)
+            finish()
+            overridePendingTransition(0, 0)
+        }
     }
 
     override fun onDestroy() {

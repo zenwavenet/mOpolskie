@@ -5,10 +5,10 @@ import android.os.Bundle
 import android.widget.LinearLayout
 import androidx.activity.ComponentActivity
 
-class ServicesActivity : ComponentActivity() {
+class WywozSmieciActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_uslugi)
+        setContentView(R.layout.activity_waste)
 
         window.statusBarColor = resources.getColor(R.color.status_bar_color, theme)
         window.decorView.systemUiVisibility = 0
@@ -29,6 +29,14 @@ class ServicesActivity : ComponentActivity() {
             overridePendingTransition(0, 0)
         }
 
+        val ServicesButton = findViewById<LinearLayout>(R.id.services)
+        ServicesButton.setOnClickListener {
+            val intent = Intent(this, ServicesActivity::class.java)
+            startActivity(intent)
+            finish()
+            overridePendingTransition(0, 0)
+        }
+
         val MoreButton = findViewById<LinearLayout>(R.id.more)
         MoreButton.setOnClickListener {
             val intent = Intent(this, MoreActivity::class.java)
@@ -37,33 +45,9 @@ class ServicesActivity : ComponentActivity() {
             overridePendingTransition(0, 0)
         }
 
-        val WordButton = findViewById<LinearLayout>(R.id.word)
-        WordButton.setOnClickListener {
-            val intent = Intent(this, WordActivity::class.java)
-            startActivity(intent)
-            finish()
-            overridePendingTransition(0, 0)
-        }
-
-        val SegButton = findViewById<LinearLayout>(R.id.segregacja)
-        SegButton.setOnClickListener {
-            val intent = Intent(this, SegregacjaActivity::class.java)
-            startActivity(intent)
-            finish()
-            overridePendingTransition(0, 0)
-        }
-
-        val StaButton = findViewById<LinearLayout>(R.id.starostwa)
-        StaButton.setOnClickListener {
-            val intent = Intent(this, StarostwoActivity::class.java)
-            startActivity(intent)
-            finish()
-            overridePendingTransition(0, 0)
-        }
-
-        val WywozButton = findViewById<LinearLayout>(R.id.wywoz)
-        WywozButton.setOnClickListener {
-            val intent = Intent(this, WywozSmieciActivity::class.java)
+        val KKButton = findViewById<LinearLayout>(R.id.kedzierzyn_kozle)
+        KKButton.setOnClickListener {
+            val intent = Intent(this, WywozSmieciKKActivity::class.java)
             startActivity(intent)
             finish()
             overridePendingTransition(0, 0)
