@@ -197,7 +197,7 @@ interface ApiService {
     suspend fun getWords(): Response<WordResponse>
 
     companion object {
-        private const val BASE_URL = "http://192.168.1.103:3000"
+        private const val BASE_URL = "https://api.goflux.pl"
 
         fun create(): ApiService {
             return Retrofit.Builder()

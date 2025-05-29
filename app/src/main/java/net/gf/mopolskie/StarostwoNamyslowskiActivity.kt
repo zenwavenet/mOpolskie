@@ -204,7 +204,7 @@ interface ApiStarostwo5Service {
     suspend fun getStarostwo1(): Response<Starostwo5Response>
 
     companion object {
-        private const val BASE_URL = "http://192.168.1.103:3000"
+        private const val BASE_URL = "https://api.goflux.pl"
         val gson = com.google.gson.GsonBuilder().create()
 
         fun create(): ApiStarostwo5Service {

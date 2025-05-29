@@ -9,4 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="status_bar_color">#256bc9</color>
     <color name="icon_color">#151515</color>
+    <color name="separator_color">#E0E0E0</color>
+    <color name="category_title_color">#333333</color>
+    <color name="category_background">#F5F5F5</color>
 </resources>

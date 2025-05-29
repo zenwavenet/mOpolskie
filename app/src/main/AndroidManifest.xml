@@ -38,6 +38,10 @@
             </intent-filter>
         </activity>
 
+        <!--    ======    -->
+        <!--    MODUŁY    -->
+        <!--    ======    -->
+
         <activity
             android:name=".HelpActivity"
             android:theme="@style/Theme.MOpolskie"/>
@@ -67,6 +71,14 @@
             android:theme="@style/Theme.MOpolskie"/>
 
         <activity
+            android:name=".AttractionActivity"
+            android:theme="@style/Theme.MOpolskie"/>
+
+        <!--    ==========    -->
+        <!--    SEGREGACJA    -->
+        <!--    ==========    -->
+
+        <activity
             android:name=".SegregacjaActivity"
             android:theme="@style/Theme.MOpolskie"/>
 
@@ -89,6 +101,18 @@
         <activity
             android:name=".SegregacjaYellowActivity"
             android:theme="@style/Theme.MOpolskie"/>
+
+        <activity
+            android:name=".SegregacjaPurpleActivity"
+            android:theme="@style/Theme.MOpolskie"/>
+
+        <activity
+            android:name=".SegregacjaPinkActivity"
+            android:theme="@style/Theme.MOpolskie"/>
+
+        <!--    =========    -->
+        <!--    STAROSTWA    -->
+        <!--    =========    -->
 
         <activity
             android:name=".StarostwoActivity"
@@ -137,6 +161,10 @@
         <activity
             android:name=".StarostwoStrzeleckiActivity"
             android:theme="@style/Theme.MOpolskie"/>
+
+        <!--    ============    -->
+        <!--    WYWÓZ ŚMIECI    -->
+        <!--    ============    -->
 
         <activity
             android:name=".WywozSmieciActivity"
@@ -209,5 +237,6 @@
         <activity
             android:name=".WywozSmieciKKFirmyActivity"
             android:theme="@style/Theme.MOpolskie"/>
+
     </application>
 </manifest>

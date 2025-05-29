@@ -18,6 +18,9 @@ import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
+import java.text.SimpleDateFormat
+import java.util.Date
+import java.util.Locale
 
 class WywozSmieciKKKozleActivity : ComponentActivity() {
     private lateinit var viewModel: Waste4ViewModel
@@ -82,36 +85,38 @@ class WywozSmieciKKKozleActivity : ComponentActivity() {
         val nextWasteText = findViewById<TextView>(R.id.waste_type_next)
         val calendarText = findViewById<TextView>(R.id.text_calendar)
 
-        val today = java.text.SimpleDateFormat("yyyy-MM-dd", java.util.Locale.getDefault()).format(java.util.Date())
-        var hasTodayWaste = false
+        val today = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()).format(Date())
+        val dateFormat = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
+        val displayDateFormat = SimpleDateFormat("dd.MM.yyyy", Locale.getDefault())
+        val dayOfWeekFormat = SimpleDateFormat("EEEE", Locale.getDefault())
+
+        val todayWasteTypes = mutableListOf<String>()
+        val addedDates = mutableSetOf<String>()
         val nextDates = mutableListOf<WasteItem>()
 
-        val addedDates = mutableSetOf<String>()
+        val todayDateParsed = dateFormat.parse(today)
+
+        container.removeAllViews()
 
         items.forEach { item ->
-            val dateFormat = java.text.SimpleDateFormat("yyyy-MM-dd", java.util.Locale.getDefault())
-            val itemDate = dateFormat.parse(item.date)
-            val todayDate = dateFormat.parse(today)
+            val itemDate = dateFormat.parse(item.date) ?: return@forEach
 
             if (item.date == today) {
-                hasTodayWaste = true
-                todayDateText.text = "Dzisiaj, ${java.text.SimpleDateFormat("dd.MM.yyyy", java.util.Locale.getDefault()).format(itemDate)}"
-                todayWasteText.text = item.wasteType
-            } else if (itemDate != null && itemDate.after(todayDate)) {
+                todayWasteTypes.add(item.wasteType)
+                todayDateText.text = "Dzisiaj, ${displayDateFormat.format(itemDate)}"
+            } else if (itemDate.after(todayDateParsed)) {
                 nextDates.add(item)
             }
 
             if (!addedDates.contains(item.date)) {
-                val dayOfWeekFormat = java.text.SimpleDateFormat("EEEE", java.util.Locale.getDefault())
-                var dayOfWeek = dayOfWeekFormat.format(itemDate ?: return@forEach)
+                var dayOfWeek = dayOfWeekFormat.format(itemDate)
                 dayOfWeek = dayOfWeek.replaceFirstChar { it.uppercase() }
-                val formattedDate = java.text.SimpleDateFormat("dd.MM.yyyy", java.util.Locale.getDefault()).format(itemDate)
+                val fullDateText = "$dayOfWeek, ${displayDateFormat.format(itemDate)}"
 
-                val fullDateText = "$dayOfWeek, $formattedDate"
                 val dateHeaderView = LayoutInflater.from(this).inflate(R.layout.date_header_item, container, false)
                 val dateTextView = dateHeaderView.findViewById<TextView>(R.id.date_text)
-
                 dateTextView.text = fullDateText
+
                 if (item.date == today) {
                     dateTextView.setBackgroundColor(Color.YELLOW)
                 }
@@ -137,26 +142,28 @@ class WywozSmieciKKKozleActivity : ComponentActivity() {
             container.addView(wasteView)
         }
 
-        if (!hasTodayWaste) {
-            val todayFormatted = java.text.SimpleDateFormat("dd.MM.yyyy", java.util.Locale.getDefault()).format(java.util.Date())
+        if (todayWasteTypes.isNotEmpty()) {
+            todayWasteText.text = todayWasteTypes.joinToString(", ")
+        } else {
+            val todayFormatted = displayDateFormat.format(Date())
             todayDateText.text = "Dzisiaj, $todayFormatted"
             todayWasteText.text = "Dzisiaj nic nie jest do wywiezienia"
         }
 
         if (nextDates.isNotEmpty()) {
             val sorted = nextDates.sortedBy {
-                java.text.SimpleDateFormat("yyyy-MM-dd", java.util.Locale.getDefault()).parse(it.date)
+                dateFormat.parse(it.date)
             }
 
-            val nearest = sorted.first()
-            val nextDate = java.text.SimpleDateFormat("dd.MM.yyyy", java.util.Locale.getDefault())
-                .format(java.text.SimpleDateFormat("yyyy-MM-dd", java.util.Locale.getDefault()).parse(nearest.date)!!)
-            val dayOfWeek = java.text.SimpleDateFormat("EEEE", java.util.Locale.getDefault())
-                .format(java.text.SimpleDateFormat("yyyy-MM-dd", java.util.Locale.getDefault()).parse(nearest.date)!!)
-                .replaceFirstChar { it.uppercase() }
+            val nearestDate = sorted.first().date
+            val nearestWasteTypes = sorted.filter { it.date == nearestDate }.map { it.wasteType }
 
-            nextDateText.text = "$dayOfWeek, $nextDate"
-            nextWasteText.text = nearest.wasteType
+            val nextDateParsed = dateFormat.parse(nearestDate)!!
+            val nextDateFormatted = displayDateFormat.format(nextDateParsed)
+            val dayOfWeek = dayOfWeekFormat.format(nextDateParsed).replaceFirstChar { it.uppercase() }
+
+            nextDateText.text = "$dayOfWeek, $nextDateFormatted"
+            nextWasteText.text = nearestWasteTypes.joinToString(", ")
         } else {
             nextDateText.text = "Brak danych"
             nextWasteText.text = "-"
@@ -165,7 +172,6 @@ class WywozSmieciKKKozleActivity : ComponentActivity() {
         todayBlock.visibility = LinearLayout.VISIBLE
         calendarText.visibility = LinearLayout.VISIBLE
     }
-
 }
 
 class Waste4ViewModel : ViewModel() {
@@ -190,7 +196,7 @@ interface WasteApi4Service {
     suspend fun getWasteSchedule(): Response<WasteResponse>
 
     companion object {
-        private const val BASE_URL = "http://192.168.1.103:3000"
+        private const val BASE_URL = "https://api.goflux.pl"
 
         fun create(): WasteApi4Service {
             return Retrofit.Builder()

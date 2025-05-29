@@ -540,6 +540,178 @@
                             </LinearLayout>
                         </LinearLayout>
                     </LinearLayout>
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/purple"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingEnd="10dp"
+                            android:paddingStart="10dp"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:background="@drawable/corner_box_uslugi"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:paddingEnd="15dp"
+                                android:paddingStart="15dp"
+                                android:paddingBottom="15dp"
+                                android:paddingTop="15dp"
+                                android:background="@drawable/corner_img_uslugi"
+                                android:orientation="vertical">
+
+                                <View
+                                    android:layout_width="25sp"
+                                    android:layout_height="25sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/trash_2"
+                                    android:backgroundTint="#8551A3"
+                                    android:padding="5sp"/>
+                            </LinearLayout>
+
+                            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal">
+
+                                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Czarny (fioletowa naklejka)"
+                                        android:textSize="16sp"
+                                        android:textFontWeight="500"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="#8551A3"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Zużyta odzież"
+                                        android:textSize="13sp"
+                                        android:textFontWeight="400"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="#151515"/>
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_gravity="center"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1" />
+
+                                <View
+                                    android:layout_width="20sp"
+                                    android:layout_height="20sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/angle_circle_right"
+                                    android:backgroundTint="#151515"
+                                    android:padding="5sp"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/pink"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingEnd="10dp"
+                            android:paddingStart="10dp"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:background="@drawable/corner_box_uslugi"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:paddingEnd="15dp"
+                                android:paddingStart="15dp"
+                                android:paddingBottom="15dp"
+                                android:paddingTop="15dp"
+                                android:background="@drawable/corner_img_uslugi"
+                                android:orientation="vertical">
+
+                                <View
+                                    android:layout_width="25sp"
+                                    android:layout_height="25sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/trash_2"
+                                    android:backgroundTint="#D5267D"
+                                    android:padding="5sp"/>
+                            </LinearLayout>
+
+                            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal">
+
+                                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Czarny (różowa naklejka)"
+                                        android:textSize="16sp"
+                                        android:textFontWeight="500"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="#D5267D"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Zużyte tekstylia"
+                                        android:textSize="13sp"
+                                        android:textFontWeight="400"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="#151515"/>
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_gravity="center"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1" />
+
+                                <View
+                                    android:layout_width="20sp"
+                                    android:layout_height="20sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/angle_circle_right"
+                                    android:backgroundTint="#151515"
+                                    android:padding="5sp"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>

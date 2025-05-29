@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/corner_word">
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="18sp"
+                android:layout_height="18sp"
+                android:layout_gravity="center"
+                android:background="@drawable/map_location_track"
+                android:backgroundTint="#151515"
+                android:layout_marginRight="5dp"
+                android:padding="10sp"/>
+
+            <TextView
+                android:id="@+id/attraction_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NAZWA ATRAKCJI"
+                android:textSize="16sp"
+                android:textFontWeight="600"
+                android:textColor="#333333" />
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="18sp"
+                android:layout_height="18sp"
+                android:layout_gravity="center"
+                android:background="@drawable/marker"
+                android:backgroundTint="#151515"
+                android:layout_marginRight="5dp"
+                android:padding="10sp"/>
+
+            <TextView
+                android:id="@+id/attraction_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="ADRES ATRAKCJI"
+                android:textSize="14sp"
+                android:textColor="#666666"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/attraction_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OPIS ATRAKCJI"
+            android:textSize="14sp"
+            android:textColor="#444444"
+            android:lineSpacingExtra="2dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+            android:id="@+id/attraction_url_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:id="@+id/attraction_map_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+    </LinearLayout>
+</LinearLayout>

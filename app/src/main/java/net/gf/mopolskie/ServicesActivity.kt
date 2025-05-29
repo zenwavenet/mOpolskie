@@ -68,5 +68,13 @@ class ServicesActivity : ComponentActivity() {
             finish()
             overridePendingTransition(0, 0)
         }
+
+        val AtrakcjeButton = findViewById<LinearLayout>(R.id.atrakcje)
+        AtrakcjeButton.setOnClickListener {
+            val intent = Intent(this, AttractionActivity::class.java)
+            startActivity(intent)
+            finish()
+            overridePendingTransition(0, 0)
+        }
     }
 }

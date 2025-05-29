@@ -84,5 +84,21 @@ class SegregacjaActivity : ComponentActivity() {
             finish()
             overridePendingTransition(0, 0)
         }
+
+        val PurpleButton = findViewById<LinearLayout>(R.id.purple)
+        PurpleButton.setOnClickListener {
+            val intent = Intent(this, SegregacjaPurpleActivity::class.java)
+            startActivity(intent)
+            finish()
+            overridePendingTransition(0, 0)
+        }
+
+        val PinkButton = findViewById<LinearLayout>(R.id.pink)
+        PinkButton.setOnClickListener {
+            val intent = Intent(this, SegregacjaPinkActivity::class.java)
+            startActivity(intent)
+            finish()
+            overridePendingTransition(0, 0)
+        }
     }
 }

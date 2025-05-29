@@ -180,20 +180,6 @@
                                     android:layout_marginLeft="10dp"
                                     android:textColor="#151515"/>
                             </LinearLayout>
-
-                            <View
-                                android:layout_width="0dp"
-                                android:layout_gravity="center"
-                                android:layout_height="0dp"
-                                android:layout_weight="1" />
-
-                            <View
-                                android:layout_width="20sp"
-                                android:layout_height="20sp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/angle_circle_right"
-                                android:backgroundTint="#151515"
-                                android:padding="5sp"/>
                         </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
@@ -266,20 +252,6 @@
                                     android:layout_marginLeft="10dp"
                                     android:textColor="#151515"/>
                             </LinearLayout>
-
-                            <View
-                                android:layout_width="0dp"
-                                android:layout_gravity="center"
-                                android:layout_height="0dp"
-                                android:layout_weight="1" />
-
-                            <View
-                                android:layout_width="20sp"
-                                android:layout_height="20sp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/angle_circle_right"
-                                android:backgroundTint="#151515"
-                                android:padding="5sp"/>
                         </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
@@ -352,20 +324,6 @@
                                     android:layout_marginLeft="10dp"
                                     android:textColor="#151515"/>
                             </LinearLayout>
-
-                            <View
-                                android:layout_width="0dp"
-                                android:layout_gravity="center"
-                                android:layout_height="0dp"
-                                android:layout_weight="1" />
-
-                            <View
-                                android:layout_width="20sp"
-                                android:layout_height="20sp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/angle_circle_right"
-                                android:backgroundTint="#151515"
-                                android:padding="5sp"/>
                         </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
@@ -423,25 +381,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Koźle Zachód, Południe, Stare Miasto,"
-                                    android:textSize="13sp"
-                                    android:textFontWeight="400"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#151515"/>
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Koźle Rogi, Wyspa, ul. Dunikowskiego,"
-                                    android:textSize="13sp"
-                                    android:textFontWeight="400"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#151515"/>
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="ul. Karpacka"
+                                    android:text="Koźle Zachód, Południe, Stare Miasto, Koźle Rogi, Wyspa, ul. Dunikowskiego, ul. Karpacka"
                                     android:textSize="13sp"
                                     android:textFontWeight="400"
                                     android:layout_marginLeft="10dp"
@@ -456,20 +396,6 @@
                                     android:layout_marginLeft="10dp"
                                     android:textColor="#151515"/>
                             </LinearLayout>
-
-                            <View
-                                android:layout_width="0dp"
-                                android:layout_gravity="center"
-                                android:layout_height="0dp"
-                                android:layout_weight="1" />
-
-                            <View
-                                android:layout_width="20sp"
-                                android:layout_height="20sp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/angle_circle_right"
-                                android:backgroundTint="#151515"
-                                android:padding="5sp"/>
                         </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
@@ -542,20 +468,6 @@
                                     android:layout_marginLeft="10dp"
                                     android:textColor="#151515"/>
                             </LinearLayout>
-
-                            <View
-                                android:layout_width="0dp"
-                                android:layout_gravity="center"
-                                android:layout_height="0dp"
-                                android:layout_weight="1" />
-
-                            <View
-                                android:layout_width="20sp"
-                                android:layout_height="20sp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/angle_circle_right"
-                                android:backgroundTint="#151515"
-                                android:padding="5sp"/>
                         </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
@@ -628,20 +540,6 @@
                                     android:layout_marginLeft="10dp"
                                     android:textColor="#151515"/>
                             </LinearLayout>
-
-                            <View
-                                android:layout_width="0dp"
-                                android:layout_gravity="center"
-                                android:layout_height="0dp"
-                                android:layout_weight="1" />
-
-                            <View
-                                android:layout_width="20sp"
-                                android:layout_height="20sp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/angle_circle_right"
-                                android:backgroundTint="#151515"
-                                android:padding="5sp"/>
                         </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
@@ -699,16 +597,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Pogorzelec, Kłodnica (oprócz ul. Karpackiej,"
-                                    android:textSize="13sp"
-                                    android:textFontWeight="400"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#151515"/>
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Dunikowskiego, Wyspa), Żabieniec, Koźle Port"
+                                    android:text="Pogorzelec, Kłodnica (oprócz ul. Karpackiej, Dunikowskiego, Wyspa), Żabieniec, Koźle Port"
                                     android:textSize="13sp"
                                     android:textFontWeight="400"
                                     android:layout_marginLeft="10dp"
@@ -723,20 +612,6 @@
                                     android:layout_marginLeft="10dp"
                                     android:textColor="#151515"/>
                             </LinearLayout>
-
-                            <View
-                                android:layout_width="0dp"
-                                android:layout_gravity="center"
-                                android:layout_height="0dp"
-                                android:layout_weight="1" />
-
-                            <View
-                                android:layout_width="20sp"
-                                android:layout_height="20sp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/angle_circle_right"
-                                android:backgroundTint="#151515"
-                                android:padding="5sp"/>
                         </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
@@ -809,20 +684,6 @@
                                     android:layout_marginLeft="10dp"
                                     android:textColor="#151515"/>
                             </LinearLayout>
-
-                            <View
-                                android:layout_width="0dp"
-                                android:layout_gravity="center"
-                                android:layout_height="0dp"
-                                android:layout_weight="1" />
-
-                            <View
-                                android:layout_width="20sp"
-                                android:layout_height="20sp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/angle_circle_right"
-                                android:backgroundTint="#151515"
-                                android:padding="5sp"/>
                         </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
@@ -895,20 +756,6 @@
                                     android:layout_marginLeft="10dp"
                                     android:textColor="#151515"/>
                             </LinearLayout>
-
-                            <View
-                                android:layout_width="0dp"
-                                android:layout_gravity="center"
-                                android:layout_height="0dp"
-                                android:layout_weight="1" />
-
-                            <View
-                                android:layout_width="20sp"
-                                android:layout_height="20sp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/angle_circle_right"
-                                android:backgroundTint="#151515"
-                                android:padding="5sp"/>
                         </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
@@ -966,16 +813,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Azoty, Blachownia, Lenartowice, Piastów"
-                                    android:textSize="13sp"
-                                    android:textFontWeight="400"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#151515"/>
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Powstańców Śląskich, Sławięcice"
+                                    android:text="Azoty, Blachownia, Lenartowice, Piastów, Powstańców Śląskich, Sławięcice"
                                     android:textSize="13sp"
                                     android:textFontWeight="400"
                                     android:layout_marginLeft="10dp"
@@ -990,20 +828,6 @@
                                     android:layout_marginLeft="10dp"
                                     android:textColor="#151515"/>
                             </LinearLayout>
-
-                            <View
-                                android:layout_width="0dp"
-                                android:layout_gravity="center"
-                                android:layout_height="0dp"
-                                android:layout_weight="1" />
-
-                            <View
-                                android:layout_width="20sp"
-                                android:layout_height="20sp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/angle_circle_right"
-                                android:backgroundTint="#151515"
-                                android:padding="5sp"/>
                         </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
@@ -1061,25 +885,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Koźle Zachód, Południe, Stare Miasto,"
-                                    android:textSize="13sp"
-                                    android:textFontWeight="400"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#151515"/>
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Koźle Rogi, Wyspa, ul. Dunikowskiego,"
-                                    android:textSize="13sp"
-                                    android:textFontWeight="400"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#151515"/>
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="ul. Karpacka"
+                                    android:text="Koźle Zachód, Południe, Stare Miasto, Koźle Rogi, Wyspa, ul. Dunikowskiego, ul. Karpacka"
                                     android:textSize="13sp"
                                     android:textFontWeight="400"
                                     android:layout_marginLeft="10dp"
@@ -1094,20 +900,6 @@
                                     android:layout_marginLeft="10dp"
                                     android:textColor="#151515"/>
                             </LinearLayout>
-
-                            <View
-                                android:layout_width="0dp"
-                                android:layout_gravity="center"
-                                android:layout_height="0dp"
-                                android:layout_weight="1" />
-
-                            <View
-                                android:layout_width="20sp"
-                                android:layout_height="20sp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/angle_circle_right"
-                                android:backgroundTint="#151515"
-                                android:padding="5sp"/>
                         </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
@@ -1165,16 +957,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Pogorzelec, Kłodnica (oprócz ul. Karpackiej,"
-                                    android:textSize="13sp"
-                                    android:textFontWeight="400"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#151515"/>
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Dunikowskiego, Wyspa), Żabieniec, Koźle Port"
+                                    android:text="Pogorzelec, Kłodnica (oprócz ul. Karpackiej, Dunikowskiego, Wyspa), Żabieniec, Koźle Port"
                                     android:textSize="13sp"
                                     android:textFontWeight="400"
                                     android:layout_marginLeft="10dp"
@@ -1260,25 +1043,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Śródmieście MZBK i Wspólnoty"
-                                    android:textSize="13sp"
-                                    android:textFontWeight="400"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#151515"/>
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Mieszkaniowe od Al. Jana Pawła II"
-                                    android:textSize="13sp"
-                                    android:textFontWeight="400"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#151515"/>
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="w stronę ul. Grunwaldzkiej"
+                                    android:text="Śródmieście MZBK i Wspólnoty Mieszkaniowe od Al. Jana Pawła II w stronę ul. Grunwaldzkiej"
                                     android:textSize="13sp"
                                     android:textFontWeight="400"
                                     android:layout_marginLeft="10dp"
@@ -1293,20 +1058,6 @@
                                     android:layout_marginLeft="10dp"
                                     android:textColor="#151515"/>
                             </LinearLayout>
-
-                            <View
-                                android:layout_width="0dp"
-                                android:layout_gravity="center"
-                                android:layout_height="0dp"
-                                android:layout_weight="1" />
-
-                            <View
-                                android:layout_width="20sp"
-                                android:layout_height="20sp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/angle_circle_right"
-                                android:backgroundTint="#151515"
-                                android:padding="5sp"/>
                         </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
@@ -1364,25 +1115,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Śródmieście MZBK i Wspólnoty"
-                                    android:textSize="13sp"
-                                    android:textFontWeight="400"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#151515"/>
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Mieszkaniowe od Al. Jana Pawła II"
-                                    android:textSize="13sp"
-                                    android:textFontWeight="400"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#151515"/>
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="w stronę ul. Wojska Polskiego"
+                                    android:text="Śródmieście MZBK i Wspólnoty Mieszkaniowe od Al. Jana Pawła II w stronę ul. Wojska Polskiego"
                                     android:textSize="13sp"
                                     android:textFontWeight="400"
                                     android:layout_marginLeft="10dp"
@@ -1397,20 +1130,6 @@
                                     android:layout_marginLeft="10dp"
                                     android:textColor="#151515"/>
                             </LinearLayout>
-
-                            <View
-                                android:layout_width="0dp"
-                                android:layout_gravity="center"
-                                android:layout_height="0dp"
-                                android:layout_weight="1" />
-
-                            <View
-                                android:layout_width="20sp"
-                                android:layout_height="20sp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/angle_circle_right"
-                                android:backgroundTint="#151515"
-                                android:padding="5sp"/>
                         </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
@@ -1483,20 +1202,6 @@
                                     android:layout_marginLeft="10dp"
                                     android:textColor="#151515"/>
                             </LinearLayout>
-
-                            <View
-                                android:layout_width="0dp"
-                                android:layout_gravity="center"
-                                android:layout_height="0dp"
-                                android:layout_weight="1" />
-
-                            <View
-                                android:layout_width="20sp"
-                                android:layout_height="20sp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/angle_circle_right"
-                                android:backgroundTint="#151515"
-                                android:padding="5sp"/>
                         </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
@@ -1560,24 +1265,9 @@
                                     android:layout_marginLeft="10dp"
                                     android:textColor="#151515"/>
                             </LinearLayout>
-
-                            <View
-                                android:layout_width="0dp"
-                                android:layout_gravity="center"
-                                android:layout_height="0dp"
-                                android:layout_weight="1" />
-
-                            <View
-                                android:layout_width="20sp"
-                                android:layout_height="20sp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/angle_circle_right"
-                                android:backgroundTint="#151515"
-                                android:padding="5sp"/>
                         </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
-
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
