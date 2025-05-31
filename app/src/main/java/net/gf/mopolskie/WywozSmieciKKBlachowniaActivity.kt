@@ -66,12 +66,11 @@ class WywozSmieciKKBlachowniaActivity : ComponentActivity() {
         }
 
         lifecycleScope.launch {
-            Toast.makeText(this@WywozSmieciKKBlachowniaActivity, "Trwa parsowanie danych...", Toast.LENGTH_SHORT).show()
             val success = viewModel.fetchWaste()
             if (success) {
                 showWaste(viewModel.items)
             } else {
-                Toast.makeText(this@WywozSmieciKKBlachowniaActivity, "Nie udało się pobrać danych", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@WywozSmieciKKBlachowniaActivity, "Nie udało się pobrać danych.", Toast.LENGTH_SHORT).show()
             }
         }
     }

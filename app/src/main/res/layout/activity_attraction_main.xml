@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -64,8 +63,8 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="@drawable/corner_bg_menu_help"
-        android:scrollbars="none">
+        android:scrollbars="none"
+        android:background="@drawable/corner_bg_menu_help">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -81,7 +80,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Wywóz śmieci"
+                    android:text="Atrakcje"
                     android:textSize="18sp"
                     android:textFontWeight="500"
                     android:layout_marginBottom="5dp"
@@ -90,153 +89,270 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Sprawdź terminy odbioru różnych rodzajów odpadów komunalnych — od plastiku, przez bioodpady, aż po szkło. Dzięki aplikacji zawsze wiesz, kiedy i jakie śmieci wystawić przed dom. Harmonogram jest aktualizowany na bieżąco, zgodnie z harmonogramem gminy."
+                    android:text="Odkryj najciekawsze miejsca w województwie opolskim – od zabytkowych zamków i muzeów po malownicze trasy spacerowe i parki krajobrazowe. Wszystkie informacje zebrane w jednym miejscu – wygodnie i szybko z poziomu aplikacji."
                     android:textSize="12sp"
                     android:textFontWeight="500"
-                    android:layout_marginBottom="10dp"
+                    android:layout_marginBottom="15dp"
                     android:textColor="#151515"/>
-
-                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:paddingEnd="10dp"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
-                        android:background="@drawable/corner_technical_help"
-                        android:layout_marginBottom="15dp"
-                        android:orientation="horizontal">
-
-                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Ważna informacja"
-                                android:textSize="16sp"
-                                android:textFontWeight="500"
-                                android:textColor="#151515" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Dane systemowe są aktualizowane codziennie w godzinach 00:00–00:45. W tym czasie mogą wystąpić chwilowe przerwy w dostępie do informacji."
-                                android:textSize="12sp"
-                                android:textFontWeight="400"
-                                android:textColor="#151515" />
-                        </LinearLayout>
-                    </LinearLayout>
-                </LinearLayout>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Wybierz gminę którą chcesz sprawdzić"
-                    android:textSize="12sp"
-                    android:textFontWeight="500"
-                    android:textColor="#043FB3" />
             </LinearLayout>
 
-            <LinearLayout
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/castle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginTop="10dp">
+                android:orientation="vertical">
 
                 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:id="@+id/kedzierzyn_kozle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:layout_gravity="center"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:background="@drawable/corner_box_uslugi"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
 
                     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:paddingEnd="10dp"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
-                        android:background="@drawable/corner_box_uslugi"
-                        android:layout_marginBottom="5dp"
-                        android:orientation="horizontal">
+                        android:paddingEnd="15dp"
+                        android:paddingStart="15dp"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp"
+                        android:background="@drawable/corner_img_uslugi"
+                        android:orientation="vertical">
 
-                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                        <View
+                            android:layout_width="25sp"
+                            android:layout_height="25sp"
                             android:layout_gravity="center"
-                            android:paddingEnd="15dp"
-                            android:paddingStart="15dp"
-                            android:paddingBottom="15dp"
-                            android:paddingTop="15dp"
-                            android:background="@drawable/corner_img_uslugi"
-                            android:orientation="vertical">
-
-                            <View
-                                android:layout_width="25sp"
-                                android:layout_height="25sp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/map_marker_home"
-                                android:backgroundTint="#000000"
-                                android:padding="5sp"/>
-                        </LinearLayout>
-
-                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:orientation="horizontal">
-
-                            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:orientation="vertical">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Gmina"
-                                    android:textSize="16sp"
-                                    android:textFontWeight="500"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#000000"/>
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Kędzierzyn-Koźle"
-                                    android:textSize="13sp"
-                                    android:textFontWeight="400"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#151515"/>
-                            </LinearLayout>
-
-                            <View
-                                android:layout_width="0dp"
-                                android:layout_gravity="center"
-                                android:layout_height="0dp"
-                                android:layout_weight="1" />
-
-                            <View
-                                android:layout_width="20sp"
-                                android:layout_height="20sp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/angle_circle_right"
-                                android:backgroundTint="#151515"
-                                android:padding="5sp"/>
-                        </LinearLayout>
+                            android:background="@drawable/castle"
+                            android:backgroundTint="#4F7790"
+                            android:padding="5sp"/>
                     </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Zamki i Pałace"
+                        android:textSize="15sp"
+                        android:textFontWeight="500"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="#151515"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <View
+                        android:layout_width="20sp"
+                        android:layout_height="20sp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/angle_circle_right"
+                        android:backgroundTint="#151515"
+                        android:padding="5sp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/museum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:background="@drawable/corner_box_uslugi"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingEnd="15dp"
+                        android:paddingStart="15dp"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp"
+                        android:background="@drawable/corner_img_uslugi"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="25sp"
+                            android:layout_height="25sp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/museum"
+                            android:backgroundTint="#534F90"
+                            android:padding="5sp"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Muzea i Kultura"
+                        android:textSize="15sp"
+                        android:textFontWeight="500"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="#151515"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <View
+                        android:layout_width="20sp"
+                        android:layout_height="20sp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/angle_circle_right"
+                        android:backgroundTint="#151515"
+                        android:padding="5sp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/nature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:background="@drawable/corner_box_uslugi"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingEnd="15dp"
+                        android:paddingStart="15dp"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp"
+                        android:background="@drawable/corner_img_uslugi"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="25sp"
+                            android:layout_height="25sp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/trees"
+                            android:backgroundTint="#51904F"
+                            android:padding="5sp"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Przyroda i Rekreacja"
+                        android:textSize="15sp"
+                        android:textFontWeight="500"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="#151515"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <View
+                        android:layout_width="20sp"
+                        android:layout_height="20sp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/angle_circle_right"
+                        android:backgroundTint="#151515"
+                        android:padding="5sp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:background="@drawable/corner_box_uslugi"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingEnd="15dp"
+                        android:paddingStart="15dp"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp"
+                        android:background="@drawable/corner_img_uslugi"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="25sp"
+                            android:layout_height="25sp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/roller_skate"
+                            android:backgroundTint="#904F87"
+                            android:padding="5sp"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Rozrywka i inne atrakcje"
+                        android:textSize="15sp"
+                        android:textFontWeight="500"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="#151515"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <View
+                        android:layout_width="20sp"
+                        android:layout_height="20sp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/angle_circle_right"
+                        android:backgroundTint="#151515"
+                        android:padding="5sp"/>
+
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
@@ -320,6 +436,7 @@
                     android:background="@drawable/folder"
                     android:backgroundTint="#151515"
                     android:padding="10sp"/>
+
             </LinearLayout>
 
             <TextView
@@ -361,6 +478,7 @@
                     android:background="@drawable/emergency_call_2"
                     android:backgroundTint="#151515"
                     android:padding="10sp"/>
+
             </LinearLayout>
 
             <TextView
@@ -402,6 +520,7 @@
                     android:background="@drawable/circle_ellipsis"
                     android:backgroundTint="#151515"
                     android:padding="10sp"/>
+
             </LinearLayout>
 
             <TextView

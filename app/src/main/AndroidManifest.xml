@@ -70,8 +70,28 @@
             android:name=".WordActivity"
             android:theme="@style/Theme.MOpolskie"/>
 
+        <!--    ========    -->
+        <!--    ATRAKCJE    -->
+        <!--    ========    -->
+
         <activity
             android:name=".AttractionActivity"
+            android:theme="@style/Theme.MOpolskie"/>
+
+        <activity
+            android:name=".AttractionMuseumActivity"
+            android:theme="@style/Theme.MOpolskie"/>
+
+        <activity
+            android:name=".AttractionOtherActivity"
+            android:theme="@style/Theme.MOpolskie"/>
+
+        <activity
+            android:name=".AttractionNatureActivity"
+            android:theme="@style/Theme.MOpolskie"/>
+
+        <activity
+            android:name=".AttractionCastleActivity"
             android:theme="@style/Theme.MOpolskie"/>
 
         <!--    ==========    -->
