@@ -195,7 +195,7 @@ interface WasteApi11Service {
     suspend fun getWasteSchedule(): Response<WasteResponse>
 
     companion object {
-        private const val BASE_URL = "https://api.goflux.pl"
+        private const val BASE_URL = "https://api.stackflow.pl"
 
         fun create(): WasteApi11Service {
             return Retrofit.Builder()

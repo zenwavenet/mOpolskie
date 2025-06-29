@@ -230,7 +230,7 @@ interface AttractionApi3Service {
     suspend fun getAttractions(): Response<Map<String, Map<String, Attraction>>>
 
     companion object {
-        private const val BASE_URL = "https://api.goflux.pl"
+        private const val BASE_URL = "https://api.stackflow.pl"
 
         fun create(): AttractionApi3Service {
             return Retrofit.Builder()

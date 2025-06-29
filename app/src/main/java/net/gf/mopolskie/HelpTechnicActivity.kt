@@ -48,7 +48,7 @@ class HelpTechnicActivity : ComponentActivity() {
         }
 
         findViewById<LinearLayout>(R.id.github)?.setOnClickListener {
-            openWebsite("https://github.com/gofluxpl/mOpolskie/issues")
+            openWebsite("https://github.com/stackflowpl/mOpolskie/issues")
         }
     }
 
