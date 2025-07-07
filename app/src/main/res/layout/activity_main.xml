@@ -231,7 +231,8 @@
                     android:paddingTop="5dp"
                     android:background="@drawable/corner_pulpit"
                     android:layout_marginBottom="2dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:id="@+id/other">
 
                     <TextView
                         android:layout_width="wrap_content"

@@ -37,6 +37,14 @@ class MainActivity : ComponentActivity() {
             overridePendingTransition(0, 0)
         }
 
+        val OtherButton = findViewById<LinearLayout>(R.id.other)
+        OtherButton.setOnClickListener {
+            val intent = Intent(this, ServicesActivity::class.java)
+            startActivity(intent)
+            finish()
+            overridePendingTransition(0, 0)
+        }
+
         val ServicesButton = findViewById<LinearLayout>(R.id.services)
         ServicesButton.setOnClickListener {
             val intent = Intent(this, ServicesActivity::class.java)

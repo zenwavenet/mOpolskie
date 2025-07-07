@@ -47,6 +47,10 @@ class DevActivity : ComponentActivity() {
             overridePendingTransition(0, 0)
         }
 
+        findViewById<TextView>(R.id.url)?.setOnClickListener {
+            openWebsite("https://stackflow.pl")
+        }
+
         findViewById<TextView>(R.id.github)?.setOnClickListener {
             openWebsite("https://github.com/IJakePL")
         }

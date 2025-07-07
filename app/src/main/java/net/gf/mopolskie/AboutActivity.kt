@@ -56,7 +56,7 @@ class AboutActivity : ComponentActivity() {
         }
 
         findViewById<TextView>(R.id.url)?.setOnClickListener {
-            openWebsite("https://mopolskie.goflux.pl")
+            openWebsite("https://stackflow.pl")
         }
     }
 

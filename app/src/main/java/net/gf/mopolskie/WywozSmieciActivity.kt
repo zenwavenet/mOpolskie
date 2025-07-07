@@ -45,6 +45,14 @@ class WywozSmieciActivity : ComponentActivity() {
             overridePendingTransition(0, 0)
         }
 
+        val CisekButton = findViewById<LinearLayout>(R.id.cisek)
+        CisekButton.setOnClickListener {
+            val intent = Intent(this, WywozSmieciCisekActivity::class.java)
+            startActivity(intent)
+            finish()
+            overridePendingTransition(0, 0)
+        }
+
         val KKButton = findViewById<LinearLayout>(R.id.kedzierzyn_kozle)
         KKButton.setOnClickListener {
             val intent = Intent(this, WywozSmieciKKActivity::class.java)

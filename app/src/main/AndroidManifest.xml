@@ -191,6 +191,34 @@
             android:theme="@style/Theme.MOpolskie"/>
 
         <activity
+            android:name=".WywozSmieciCisekActivity"
+            android:theme="@style/Theme.MOpolskie"/>
+
+        <activity
+            android:name=".WywozSmieciCisekBycznicaActivity"
+            android:theme="@style/Theme.MOpolskie"/>
+
+        <activity
+            android:name=".WywozSmieciCisekBycznicaFActivity"
+            android:theme="@style/Theme.MOpolskie"/>
+
+        <activity
+            android:name=".WywozSmieciCisekBycznicaWActivity"
+            android:theme="@style/Theme.MOpolskie"/>
+
+        <activity
+            android:name=".WywozSmieciCisekKobyliceActivity"
+            android:theme="@style/Theme.MOpolskie"/>
+
+        <activity
+            android:name=".WywozSmieciCisekKobyliceFActivity"
+            android:theme="@style/Theme.MOpolskie"/>
+
+        <activity
+            android:name=".WywozSmieciCisekKobyliceWActivity"
+            android:theme="@style/Theme.MOpolskie"/>
+
+        <activity
             android:name=".WywozSmieciKKActivity"
             android:theme="@style/Theme.MOpolskie"/>
 

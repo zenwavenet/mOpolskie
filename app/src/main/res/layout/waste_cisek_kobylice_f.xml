@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -64,133 +63,258 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="@drawable/corner_bg_menu_help"
-        android:scrollbars="none">
+        android:scrollbars="none"
+        android:background="@drawable/corner_bg_menu_help">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="15dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="15dp">
+                android:orientation="vertical">
 
-                <TextView
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Twórcy aplikacji"
-                    android:textSize="18sp"
-                    android:textFontWeight="500"
-                    android:layout_marginBottom="5dp"
-                    android:textColor="#151515"/>
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="5dp">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Poznaj zespół, który stworzył aplikację mOpolskie. Dzięki ich pracy masz dostęp do innowacyjnych funkcji i regularnych aktualizacji. Chcesz dowiedzieć się więcej o twórcach aplikacji?"
-                    android:textSize="12sp"
-                    android:textFontWeight="500"
-                    android:layout_marginBottom="5dp"
-                    android:textColor="#151515"/>
-
-                <TextView
-                    android:id="@+id/url"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Odwiedź naszą stronę stackflow.pl"
-                    android:textSize="12sp"
-                    android:textFontWeight="500"
-                    android:textColor="#043FB3" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="15dp">
-
-                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                    <View
+                        android:layout_width="22sp"
+                        android:layout_height="22sp"
                         android:layout_gravity="center"
-                        android:paddingEnd="10dp"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
-                        android:background="@drawable/corner_box_uslugi"
-                        android:layout_marginBottom="5dp"
-                        android:orientation="horizontal">
+                        android:background="@drawable/person_dragging_bag"
+                        android:backgroundTint="#151515"
+                        android:layout_marginEnd="8dp"
+                        android:padding="10sp"/>
 
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="55dp"
-                            android:layout_height="55dp"
-                            app:cardCornerRadius="8dp"
-                            app:cardElevation="0dp"
-                            app:cardBackgroundColor="@android:color/transparent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Wywóz śmieci"
+                        android:layout_gravity="center"
+                        android:textSize="18sp"
+                        android:textFontWeight="500"
+                        android:textColor="#151515"/>
 
-                            <ImageView
-                                android:layout_width="55dp"
-                                android:layout_height="55dp"
-                                android:background="@drawable/ijakepl"
-                                android:scaleType="centerCrop" />
-                        </androidx.cardview.widget.CardView>
+                </LinearLayout>
 
-                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Jakub Jan Burzyński"
-                                android:textSize="15sp"
-                                android:textFontWeight="500"
-                                android:layout_marginLeft="10dp"
-                                android:textColor="#151515"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Miejscowości: "
+                        android:textSize="12sp"
+                        android:textFontWeight="500"
+                        android:textColor="#151515"/>
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Twórca aplikacji mOpolskie, pasjonat technologii i programowania. Zajmuje się tworzeniem nowoczesnych rozwiązań, które poprawiają komfort użytkowników. Jego celem jest rozwijanie aplikacji, by dostarczać innowacyjne funkcje i usprawnienia, które odpowiadają na potrzeby współczesnych użytkowników."
-                                android:textSize="10sp"
-                                android:textFontWeight="400"
-                                android:layout_marginLeft="10dp"
-                                android:textColor="#151515"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cisek, Bełk, Kobylice, Landzmierz"
+                        android:textSize="12sp"
+                        android:textFontWeight="400"
+                        android:textColor="#151515"/>
+                </LinearLayout>
 
-                            <TextView
-                                android:id="@+id/github"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Odwiedź profil GitHub"
-                                android:textSize="10sp"
-                                android:textFontWeight="500"
-                                android:layout_marginTop="5dp"
-                                android:layout_marginLeft="10dp"
-                                android:textColor="#043FB3"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
-                            <TextView
-                                android:id="@+id/linkedIn"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Odwiedź profil LinkedIn"
-                                android:textSize="10sp"
-                                android:textFontWeight="500"
-                                android:layout_marginLeft="10dp"
-                                android:textColor="#043FB3"/>
-                        </LinearLayout>
-                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rejon: "
+                        android:textSize="12sp"
+                        android:textFontWeight="500"
+                        android:textColor="#151515"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cisek"
+                        android:textSize="12sp"
+                        android:textFontWeight="400"
+                        android:textColor="#151515"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rodzaj: "
+                        android:textSize="12sp"
+                        android:textFontWeight="500"
+                        android:textColor="#151515"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Instytucje, firmy"
+                        android:textSize="12sp"
+                        android:textFontWeight="400"
+                        android:textColor="#151515"/>
                 </LinearLayout>
             </LinearLayout>
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/today_block"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone"
+                android:background="@drawable/corner_word">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Obecnie:"
+                    android:textSize="16sp"
+                    android:textFontWeight="500"
+                    android:textColor="#666666"
+                    android:layout_marginBottom="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="15sp"
+                        android:layout_height="15sp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/map_location_track"
+                        android:backgroundTint="#151515"
+                        android:layout_marginEnd="5dp"
+                        android:padding="10sp"/>
+
+                    <TextView
+                        android:id="@+id/date_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Data i dzień tygodnia"
+                        android:textFontWeight="500"
+                        android:textSize="14sp"
+                        android:textColor="#151515"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="15sp"
+                        android:layout_height="15sp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/trash"
+                        android:backgroundTint="#151515"
+                        android:layout_marginEnd="5dp"
+                        android:padding="10sp"/>
+
+                    <TextView
+                        android:id="@+id/waste_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Co jest do wywiezienia"
+                        android:textSize="14sp"
+                        android:textColor="#666666"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Następny wywóz:"
+                    android:textSize="16sp"
+                    android:textFontWeight="500"
+                    android:textColor="#666666"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="15sp"
+                        android:layout_height="15sp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/map_location_track"
+                        android:backgroundTint="#151515"
+                        android:layout_marginEnd="5dp"
+                        android:padding="10sp"/>
+
+                    <TextView
+                        android:id="@+id/date_time_next"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Data i dzień tygodnia"
+                        android:textFontWeight="500"
+                        android:textSize="14sp"
+                        android:textColor="#151515"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="15sp"
+                        android:layout_height="15sp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/trash"
+                        android:backgroundTint="#151515"
+                        android:layout_marginEnd="5dp"
+                        android:padding="10sp"/>
+
+                    <TextView
+                        android:id="@+id/waste_type_next"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Co jest do wywiezienia"
+                        android:textSize="14sp"
+                        android:textColor="#666666"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_calendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kalendarz"
+                android:textSize="16sp"
+                android:textFontWeight="500"
+                android:textColor="#666666"
+                android:visibility="gone"
+                android:layout_marginBottom="5dp"/>
+
+            <LinearLayout
+                android:id="@+id/waste_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/corner_smieci"/>
         </LinearLayout>
     </ScrollView>
 
@@ -272,6 +396,7 @@
                     android:background="@drawable/folder"
                     android:backgroundTint="#151515"
                     android:padding="10sp"/>
+
             </LinearLayout>
 
             <TextView
@@ -313,6 +438,7 @@
                     android:background="@drawable/emergency_call_2"
                     android:backgroundTint="#151515"
                     android:padding="10sp"/>
+
             </LinearLayout>
 
             <TextView
@@ -354,6 +480,7 @@
                     android:background="@drawable/circle_ellipsis"
                     android:backgroundTint="#151515"
                     android:padding="10sp"/>
+
             </LinearLayout>
 
             <TextView
