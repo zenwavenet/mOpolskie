@@ -1,67 +1,42 @@
-name: Build and Release App
+name: Build Android APK and Create GitHub Release
+
 on:
   push:
     tags:
-      - "*"
+      - "v*"
+
 jobs:
-  android-build:
-    name: Build Android APK and AAB
+  build:
+    name: Build and Release
     runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-      - name: Setup Java
-        uses: actions/setup-java@v4
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Java
+        uses: actions/setup-java@v3
         with:
           distribution: "temurin"
           java-version: "17"
-      - name: Set up Flutter
-        uses: subosito/flutter-action@v2
-        with:
-          flutter-version: 3.24.1
-      - name: Get Dependencies
-        run: flutter pub get
-      - name: Decode Keystore
-        run: |
-          echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 --decode > android/app/keystore.jks
-      - name: Create key.properties
-        run: |
-          echo "storePassword=${{ secrets.KEYSTORE_PASSWORD }}" > android/key.properties
-          echo "keyPassword=${{ secrets.KEY_PASSWORD }}" >> android/key.properties
-          echo "keyAlias=${{ secrets.KEY_ALIAS }}" >> android/key.properties
-          echo "storeFile=keystore.jks" >> android/key.properties
-      - name: Build APK
-        run: flutter build apk --release
+
+      - name: Make Gradle executable
+        run: chmod +x ./gradlew
+
+      - name: Build Android APK
+        run: ./gradlew assembleDebug
+
       - name: Rename APK
-        run: mv build/app/outputs/flutter-apk/app-release.apk build/app/outputs/flutter-apk/mopolskie-android.apk
-      - name: Upload APK Artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: mopolskie-android.apk
-          path: build/app/outputs/flutter-apk/mopolskie-android.apk
-  create-release:
-    name: Create GitHub Release
-    runs-on: ubuntu-latest
-    needs: [android-build]
-    permissions:
-      contents: write
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-      - name: Download APK Artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: mopolskie-android.apk
-          path: .
-      - name: Get Tag Version
-        id: get_tag
-        run: |
-          echo "release_tag=${GITHUB_REF#refs/tags/}" >> $GITHUB_OUTPUT
-      - name: Upload Assets to GitHub Release
+        run: mv app/build/outputs/apk/debug/app-debug.apk app/build/outputs/apk/debug/mopolskie.apk
+
+      - name: Upload APK as GitHub Release
         uses: softprops/action-gh-release@v1
         with:
-          tag_name: ${{ steps.get_tag.outputs.release_tag }}
-          files: |
-            mopolskie-android.apk
+          name: Release ${{ github.ref_name }}
+          tag_name: ${{ github.ref_name }}
+          files: app/build/outputs/apk/debug/mopolskie.apk
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
