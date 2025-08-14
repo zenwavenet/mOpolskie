@@ -18,7 +18,7 @@ object StarostwoEndpoints {
     val STAROSTWO_LAYOUTS = mapOf(
         "brzeg" to R.layout.activity_brzeg_starostwo,
         "glubczyce" to R.layout.activity_glubczyce_starostwo,
-        "kedzierzynsko_kozielski" to R.layout.activity_kedzierzynsko_kozielskie_starostwo,
+        "kedzierzynsko_kozielski" to R.layout.activity_kedzierzynsko_kozielski_starostwo,
         "kluczborski" to R.layout.activity_kluczborski_starostwo,
         "krapkowicki" to R.layout.activity_krapkowicki_starostwo,
         "namyslowski" to R.layout.activity_namyslowski_starostwo,
