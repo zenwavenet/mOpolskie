@@ -60,6 +60,28 @@ class AboutActivity : ComponentActivity() {
         findViewById<TextView>(R.id.url)?.setOnClickListener {
             openWebsite("https://stackflow.pl")
         }
+
+        setupVersionInfo()
+    }
+    
+    private fun setupVersionInfo() {
+        try {
+            val packageInfo = packageManager.getPackageInfo(packageName, 0)
+            val versionName = packageInfo.versionName ?: "Unknown"
+            val versionCode = if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.P) {
+                packageInfo.longVersionCode.toString()
+            } else {
+                @Suppress("DEPRECATION")
+                packageInfo.versionCode.toString()
+            }
+
+            val versionTextView = findViewById<TextView>(R.id.version_text)
+            versionTextView?.text = "$versionName ($versionCode)"
+            
+        } catch (e: Exception) {
+            val versionTextView = findViewById<TextView>(R.id.version_text)
+            versionTextView?.text = "v1.0.0 (1)"
+        }
     }
 
     private fun openWebsite(url: String) {

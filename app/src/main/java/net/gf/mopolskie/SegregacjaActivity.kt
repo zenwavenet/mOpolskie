@@ -13,7 +13,6 @@ class SegregacjaActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         
-        // Sprawdź czy przekazano parametr koloru
         val color = intent.getStringExtra("color")
         
         if (color != null && SegregacjaEndpoints.isValidColor(color)) {
