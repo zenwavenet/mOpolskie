@@ -5,7 +5,7 @@ object WasteEndpoints {
     const val AZOTY = 449
     const val AZOTY_W = 453
     const val BLACHOWNIA = 448
-    const val CISOWA =4 50
+    const val CISOWA = 450
     const val KOZLE = 444
     const val KOZLE_W = 453
     const val LENARTOWICE = 447
@@ -13,7 +13,7 @@ object WasteEndpoints {
     const val POGORZELEC_W = 455
     const val SLAWIECICE = 445
     const val SRODMIESCIE = 446
-    const val SRODMIESCIE_W_GR 452
+    const val SRODMIESCIE_W_GR = 452
     const val SRODMIESCIE_W_WP = 451
     const val SRODMIESCIE_W_CHEMIK = 454
     const val FIRMY = 499

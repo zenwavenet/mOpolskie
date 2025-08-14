@@ -12,7 +12,6 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.VIBRATE" />
-    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
 
     <application
         android:allowBackup="true"
@@ -195,95 +194,7 @@
             android:theme="@style/Theme.MOpolskie"/>
 
         <activity
-            android:name=".WywozSmieciCisekBycznicaActivity"
-            android:theme="@style/Theme.MOpolskie"/>
-
-        <activity
-            android:name=".WywozSmieciCisekBycznicaFActivity"
-            android:theme="@style/Theme.MOpolskie"/>
-
-        <activity
-            android:name=".WywozSmieciCisekBycznicaWActivity"
-            android:theme="@style/Theme.MOpolskie"/>
-
-        <activity
-            android:name=".WywozSmieciCisekKobyliceActivity"
-            android:theme="@style/Theme.MOpolskie"/>
-
-        <activity
-            android:name=".WywozSmieciCisekKobyliceFActivity"
-            android:theme="@style/Theme.MOpolskie"/>
-
-        <activity
-            android:name=".WywozSmieciCisekKobyliceWActivity"
-            android:theme="@style/Theme.MOpolskie"/>
-
-        <activity
             android:name=".WywozSmieciKKActivity"
-            android:theme="@style/Theme.MOpolskie"/>
-
-        <activity
-            android:name=".WywozSmieciKKKuzniczkaActivity"
-            android:theme="@style/Theme.MOpolskie"/>
-
-        <activity
-            android:name=".WywozSmieciKKAzotyActivity"
-            android:theme="@style/Theme.MOpolskie"/>
-
-        <activity
-            android:name=".WywozSmieciKKBlachowniaActivity"
-            android:theme="@style/Theme.MOpolskie"/>
-
-        <activity
-            android:name=".WywozSmieciKKCisowaActivity"
-            android:theme="@style/Theme.MOpolskie"/>
-
-        <activity
-            android:name=".WywozSmieciKKKozleActivity"
-            android:theme="@style/Theme.MOpolskie"/>
-
-        <activity
-            android:name=".WywozSmieciKKLenartowiceActivity"
-            android:theme="@style/Theme.MOpolskie"/>
-
-        <activity
-            android:name=".WywozSmieciKKPogorzelecActivity"
-            android:theme="@style/Theme.MOpolskie"/>
-
-        <activity
-            android:name=".WywozSmieciKKSlawieciceActivity"
-            android:theme="@style/Theme.MOpolskie"/>
-
-        <activity
-            android:name=".WywozSmieciKKSrodmiescieActivity"
-            android:theme="@style/Theme.MOpolskie"/>
-
-        <activity
-            android:name=".WywozSmieciKKAzotyWActivity"
-            android:theme="@style/Theme.MOpolskie"/>
-
-        <activity
-            android:name=".WywozSmieciKKKozleWActivity"
-            android:theme="@style/Theme.MOpolskie"/>
-
-        <activity
-            android:name=".WywozSmieciKKPogorzelecWActivity"
-            android:theme="@style/Theme.MOpolskie"/>
-
-        <activity
-            android:name=".WywozSmieciKKSrodmiescieWGrActivity"
-            android:theme="@style/Theme.MOpolskie"/>
-
-        <activity
-            android:name=".WywozSmieciKKSrodmiescieWWPActivity"
-            android:theme="@style/Theme.MOpolskie"/>
-
-        <activity
-            android:name=".WywozSmieciKKSrodmiescieWChemikActivity"
-            android:theme="@style/Theme.MOpolskie"/>
-
-        <activity
-            android:name=".WywozSmieciKKFirmyActivity"
             android:theme="@style/Theme.MOpolskie"/>
 
     </application>
