@@ -77,22 +77,6 @@
             android:name=".AttractionActivity"
             android:theme="@style/Theme.MOpolskie"/>
 
-        <activity
-            android:name=".AttractionMuseumActivity"
-            android:theme="@style/Theme.MOpolskie"/>
-
-        <activity
-            android:name=".AttractionOtherActivity"
-            android:theme="@style/Theme.MOpolskie"/>
-
-        <activity
-            android:name=".AttractionNatureActivity"
-            android:theme="@style/Theme.MOpolskie"/>
-
-        <activity
-            android:name=".AttractionCastleActivity"
-            android:theme="@style/Theme.MOpolskie"/>
-
         <!--    ==========    -->
         <!--    SEGREGACJA    -->
         <!--    ==========    -->
@@ -101,84 +85,12 @@
             android:name=".SegregacjaActivity"
             android:theme="@style/Theme.MOpolskie"/>
 
-        <activity
-            android:name=".SegregacjaBlackActivity"
-            android:theme="@style/Theme.MOpolskie"/>
-
-        <activity
-            android:name=".SegregacjaBlueActivity"
-            android:theme="@style/Theme.MOpolskie"/>
-
-        <activity
-            android:name=".SegregacjaBrownActivity"
-            android:theme="@style/Theme.MOpolskie"/>
-
-        <activity
-            android:name=".SegregacjaGreenActivity"
-            android:theme="@style/Theme.MOpolskie"/>
-
-        <activity
-            android:name=".SegregacjaYellowActivity"
-            android:theme="@style/Theme.MOpolskie"/>
-
-        <activity
-            android:name=".SegregacjaPurpleActivity"
-            android:theme="@style/Theme.MOpolskie"/>
-
-        <activity
-            android:name=".SegregacjaPinkActivity"
-            android:theme="@style/Theme.MOpolskie"/>
-
         <!--    =========    -->
         <!--    STAROSTWA    -->
         <!--    =========    -->
 
         <activity
             android:name=".StarostwoActivity"
-            android:theme="@style/Theme.MOpolskie"/>
-
-        <activity
-            android:name=".StarostwoBrzegActivity"
-            android:theme="@style/Theme.MOpolskie"/>
-
-        <activity
-            android:name=".StarostwoGłubczyceActivity"
-            android:theme="@style/Theme.MOpolskie"/>
-
-        <activity
-            android:name=".StarostwoKedzierzynskoKozielskieActivity"
-            android:theme="@style/Theme.MOpolskie"/>
-
-        <activity
-            android:name=".StarostwoKluczborskiActivity"
-            android:theme="@style/Theme.MOpolskie"/>
-
-        <activity
-            android:name=".StarostwoKrapkowickiActivity"
-            android:theme="@style/Theme.MOpolskie"/>
-
-        <activity
-            android:name=".StarostwoNamyslowskiActivity"
-            android:theme="@style/Theme.MOpolskie"/>
-
-        <activity
-            android:name=".StarostwoNyskiActivity"
-            android:theme="@style/Theme.MOpolskie"/>
-
-        <activity
-            android:name=".StarostwoOleskiActivity"
-            android:theme="@style/Theme.MOpolskie"/>
-
-        <activity
-            android:name=".StarostwoOpolskiActivity"
-            android:theme="@style/Theme.MOpolskie"/>
-
-        <activity
-            android:name=".StarostwoPrudnickiActivity"
-            android:theme="@style/Theme.MOpolskie"/>
-
-        <activity
-            android:name=".StarostwoStrzeleckiActivity"
             android:theme="@style/Theme.MOpolskie"/>
 
         <!--    ============    -->
