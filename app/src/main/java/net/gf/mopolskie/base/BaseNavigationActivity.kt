@@ -5,6 +5,8 @@ import android.os.Bundle
 import android.widget.LinearLayout
 import androidx.activity.ComponentActivity
 import net.gf.mopolskie.*
+import net.gf.mopolskie.utils.overrideTransitionCompat
+import net.gf.mopolskie.utils.setupModernStatusBar
 
 abstract class BaseNavigationActivity : ComponentActivity() {
     
@@ -21,8 +23,7 @@ abstract class BaseNavigationActivity : ComponentActivity() {
     }
 
     private fun setupStatusBar() {
-        window.statusBarColor = resources.getColor(R.color.status_bar_color, theme)
-        window.decorView.systemUiVisibility = 0
+        setupModernStatusBar()
     }
 
     private fun setupCommonNavigationButtons() {
@@ -47,7 +48,7 @@ abstract class BaseNavigationActivity : ComponentActivity() {
         val intent = Intent(this, activityClass)
         startActivity(intent)
         finish()
-        overridePendingTransition(0, 0)
+        overrideTransitionCompat()
     }
 
     protected fun setupRegionButton(buttonId: Int, activityClass: Class<*>) {

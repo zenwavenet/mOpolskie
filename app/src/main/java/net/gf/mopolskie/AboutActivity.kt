@@ -1,5 +1,8 @@
 package net.gf.mopolskie
 
+import net.gf.mopolskie.utils.overrideTransitionCompat
+import net.gf.mopolskie.utils.setupModernStatusBar
+
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
@@ -12,15 +15,14 @@ class AboutActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_about)
 
-        window.statusBarColor = resources.getColor(R.color.status_bar_color, theme)
-        window.decorView.systemUiVisibility = 0
+        setupModernStatusBar()
 
         val HelpButton = findViewById<LinearLayout>(R.id.help)
         HelpButton.setOnClickListener {
             val intent = Intent(this, HelpActivity::class.java)
             startActivity(intent)
             finish()
-            overridePendingTransition(0, 0)
+            overrideTransitionCompat()
         }
 
         val MainButton = findViewById<LinearLayout>(R.id.pulpit)
@@ -28,7 +30,7 @@ class AboutActivity : ComponentActivity() {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
             finish()
-            overridePendingTransition(0, 0)
+            overrideTransitionCompat()
         }
 
         val ServicesButton = findViewById<LinearLayout>(R.id.services)
@@ -36,7 +38,7 @@ class AboutActivity : ComponentActivity() {
             val intent = Intent(this, ServicesActivity::class.java)
             startActivity(intent)
             finish()
-            overridePendingTransition(0, 0)
+            overrideTransitionCompat()
         }
 
         val MoreButton = findViewById<LinearLayout>(R.id.more)
@@ -44,7 +46,7 @@ class AboutActivity : ComponentActivity() {
             val intent = Intent(this, MoreActivity::class.java)
             startActivity(intent)
             finish()
-            overridePendingTransition(0, 0)
+            overrideTransitionCompat()
         }
 
         val DevButton = findViewById<LinearLayout>(R.id.developer)
@@ -52,7 +54,7 @@ class AboutActivity : ComponentActivity() {
             val intent = Intent(this, DevActivity::class.java)
             startActivity(intent)
             finish()
-            overridePendingTransition(0, 0)
+            overrideTransitionCompat()
         }
 
         findViewById<TextView>(R.id.url)?.setOnClickListener {

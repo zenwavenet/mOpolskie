@@ -6,6 +6,8 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.activity.ComponentActivity
 import kotlinx.coroutines.*
+import net.gf.mopolskie.utils.overrideTransitionCompat
+import net.gf.mopolskie.utils.setupModernStatusBar
 import java.time.ZonedDateTime
 import java.time.format.DateTimeFormatter
 import java.util.*
@@ -20,8 +22,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        window.statusBarColor = resources.getColor(R.color.status_bar_color, theme)
-        window.decorView.systemUiVisibility = 0
+        setupModernStatusBar()
 
         dateText = findViewById(R.id.dateText)
         dayText = findViewById(R.id.dayText)
@@ -34,7 +35,7 @@ class MainActivity : ComponentActivity() {
             val intent = Intent(this, HelpActivity::class.java)
             startActivity(intent)
             finish()
-            overridePendingTransition(0, 0)
+            overrideTransitionCompat()
         }
 
         val OtherButton = findViewById<LinearLayout>(R.id.other)
@@ -42,7 +43,7 @@ class MainActivity : ComponentActivity() {
             val intent = Intent(this, ServicesActivity::class.java)
             startActivity(intent)
             finish()
-            overridePendingTransition(0, 0)
+            overrideTransitionCompat()
         }
 
         val ServicesButton = findViewById<LinearLayout>(R.id.services)
@@ -50,7 +51,7 @@ class MainActivity : ComponentActivity() {
             val intent = Intent(this, ServicesActivity::class.java)
             startActivity(intent)
             finish()
-            overridePendingTransition(0, 0)
+            overrideTransitionCompat()
         }
 
         val MoreButton = findViewById<LinearLayout>(R.id.more)
@@ -58,7 +59,7 @@ class MainActivity : ComponentActivity() {
             val intent = Intent(this, MoreActivity::class.java)
             startActivity(intent)
             finish()
-            overridePendingTransition(0, 0)
+            overrideTransitionCompat()
         }
 
         val SegButton = findViewById<LinearLayout>(R.id.segregacja)
@@ -66,7 +67,7 @@ class MainActivity : ComponentActivity() {
             val intent = Intent(this, SegregacjaActivity::class.java)
             startActivity(intent)
             finish()
-            overridePendingTransition(0, 0)
+            overrideTransitionCompat()
         }
 
         val StaButton = findViewById<LinearLayout>(R.id.starostwa)
@@ -74,7 +75,7 @@ class MainActivity : ComponentActivity() {
             val intent = Intent(this, StarostwoActivity::class.java)
             startActivity(intent)
             finish()
-            overridePendingTransition(0, 0)
+            overrideTransitionCompat()
         }
 
         val WywozButton = findViewById<LinearLayout>(R.id.wywoz)
@@ -82,7 +83,7 @@ class MainActivity : ComponentActivity() {
             val intent = Intent(this, WywozSmieciActivity::class.java)
             startActivity(intent)
             finish()
-            overridePendingTransition(0, 0)
+            overrideTransitionCompat()
         }
 
         val AtrakcjeButton = findViewById<LinearLayout>(R.id.atrakcje)
@@ -90,7 +91,7 @@ class MainActivity : ComponentActivity() {
             val intent = Intent(this, AttractionActivity::class.java)
             startActivity(intent)
             finish()
-            overridePendingTransition(0, 0)
+            overrideTransitionCompat()
         }
     }
 
