@@ -173,6 +173,18 @@ class StarostwoActivity : ComponentActivity() {
                 val row = createEmailRow(email)
                 emailContainer?.addView(row)
             }
+
+            val departmentsContainer = locationView.findViewById<LinearLayout>(R.id.starostwo_departments_container)
+            location.departments?.forEach { (departmentName, services) ->
+                // Header wydziału
+                val departmentHeader = createDepartmentHeader(departmentName)
+                departmentsContainer?.addView(departmentHeader)
+
+                services.forEach { service ->
+                    val serviceRow = createServiceRow(service)
+                    departmentsContainer?.addView(serviceRow)
+                }
+            }
             
             container.addView(locationView)
         }
@@ -230,6 +242,51 @@ class StarostwoActivity : ComponentActivity() {
                 textSize = 14f
                 layoutParams = LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f)
                 gravity = Gravity.CENTER_VERTICAL
+            })
+        }
+    }
+    
+    private fun createDepartmentHeader(departmentName: String): TextView {
+        return TextView(this).apply {
+            text = departmentName
+            setTextColor(resources.getColor(android.R.color.black, theme))
+            textSize = 16f
+            setTypeface(null, android.graphics.Typeface.BOLD)
+            layoutParams = LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.MATCH_PARENT,
+                LinearLayout.LayoutParams.WRAP_CONTENT
+            ).apply {
+                topMargin = 16
+                bottomMargin = 8
+            }
+        }
+    }
+    
+    private fun createServiceRow(service: String): LinearLayout {
+        return LinearLayout(this).apply {
+            orientation = LinearLayout.HORIZONTAL
+            layoutParams = LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.MATCH_PARENT,
+                LinearLayout.LayoutParams.WRAP_CONTENT
+            ).apply {
+                bottomMargin = 4
+            }
+
+            addView(TextView(this@StarostwoActivity).apply {
+                text = "• "
+                setTextColor(resources.getColor(android.R.color.black, theme))
+                textSize = 14f
+                layoutParams = LinearLayout.LayoutParams(
+                    LinearLayout.LayoutParams.WRAP_CONTENT,
+                    LinearLayout.LayoutParams.WRAP_CONTENT
+                )
+            })
+
+            addView(TextView(this@StarostwoActivity).apply {
+                text = service
+                setTextColor(resources.getColor(android.R.color.black, theme))
+                textSize = 14f
+                layoutParams = LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f)
             })
         }
     }
