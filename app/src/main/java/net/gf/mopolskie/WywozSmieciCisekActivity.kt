@@ -11,6 +11,10 @@ import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.launch
+import net.gf.mopolskie.endpoints.WasteEndpoints
+import net.gf.mopolskie.manager.WasteItem
+import net.gf.mopolskie.manager.WasteManager
+import net.gf.mopolskie.manager.WasteUtils
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale

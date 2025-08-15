@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.activity.ComponentActivity
+import net.gf.mopolskie.endpoints.SegregacjaEndpoints
 
 class SegregacjaActivity : ComponentActivity() {
     

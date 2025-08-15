@@ -14,6 +14,9 @@ import androidx.activity.ComponentActivity
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.launch
+import net.gf.mopolskie.endpoints.StarostwoEndpoints
+import net.gf.mopolskie.manager.StarostwoLocation
+import net.gf.mopolskie.manager.StarostwoManager
 
 class StarostwoActivity : ComponentActivity() {
     private lateinit var starostwoManager: StarostwoManager

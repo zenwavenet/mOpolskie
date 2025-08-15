@@ -1,4 +1,4 @@
-package net.gf.mopolskie
+package net.gf.mopolskie.endpoints
 
 object WasteEndpoints {
     const val KUZNICZKA = 443

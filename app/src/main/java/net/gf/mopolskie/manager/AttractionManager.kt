@@ -1,8 +1,9 @@
-package net.gf.mopolskie
+package net.gf.mopolskie.manager
 
 import androidx.lifecycle.ViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
+import net.gf.mopolskie.endpoints.AttractionEndpoints
 import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

@@ -15,8 +15,8 @@ android {
         applicationId = "net.gf.mopolskie"
         minSdk = 26
         targetSdk = 35
-        versionCode = 5
-        versionName = "v1.0.4-beta"
+        versionCode = 6
+        versionName = "v1.0.5-beta"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }

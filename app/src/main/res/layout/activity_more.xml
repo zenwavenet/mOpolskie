@@ -89,7 +89,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Zakładka „Więcej” zawiera dodatkowe informacje i opcje związane z aplikacją. Znajdziesz tu sekcję O aplikacji, która przedstawia cel i funkcjonalności narzędzia, Pomoc techniczną w razie problemów oraz dostęp do kodu źródłowego dla osób zainteresowanych działaniem aplikacji od środka. Wszystko w jednym miejscu – przejrzyście i wygodnie."
+                    android:text="Zakładka „Więcej” zawiera dodatkowe informacje i opcje związane z aplikacją. Wszystko w jednym miejscu – przejrzyście i wygodnie."
                     android:textSize="12sp"
                     android:textFontWeight="500"
                     android:layout_marginBottom="15dp"
@@ -112,262 +112,242 @@
                     android:textColor="#151515"/>
 
                 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:id="@+id/about"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:paddingEnd="15dp"
+                    android:paddingStart="15dp"
+                    android:background="@drawable/corner_box_uslugi"
+                    android:layout_marginBottom="5dp"
                     android:orientation="vertical">
 
                     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/about"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:paddingEnd="10dp"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
-                        android:background="@drawable/corner_box_uslugi"
-                        android:layout_marginBottom="5dp"
-                        android:orientation="horizontal">
+                        android:paddingBottom="20dp"
+                        android:paddingTop="20dp"
+                        android:background="@drawable/corner_box_more_item"
+                        android:orientation="vertical">
 
                         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:paddingEnd="15dp"
-                            android:paddingStart="15dp"
-                            android:paddingBottom="15dp"
-                            android:paddingTop="15dp"
-                            android:background="@drawable/corner_img_uslugi"
-                            android:orientation="vertical">
+                            android:orientation="horizontal">
+
+                            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                                <View
+                                    android:layout_width="25sp"
+                                    android:layout_height="25sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/info"
+                                    android:backgroundTint="#151515"
+                                    android:padding="5sp"/>
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="O aplikacji"
+                                android:textSize="15sp"
+                                android:textFontWeight="500"
+                                android:layout_marginLeft="15dp"
+                                android:textColor="#151515"/>
 
                             <View
-                                android:layout_width="25sp"
-                                android:layout_height="25sp"
+                                android:layout_width="0dp"
                                 android:layout_gravity="center"
-                                android:background="@drawable/info"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <View
+                                android:layout_width="20sp"
+                                android:layout_height="20sp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/angle_small_right"
                                 android:backgroundTint="#151515"
                                 android:padding="5sp"/>
+
                         </LinearLayout>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:text="O aplikacji"
-                            android:textSize="15sp"
-                            android:textFontWeight="500"
-                            android:layout_marginLeft="15dp"
-                            android:textColor="#151515"/>
-
-                        <View
-                            android:layout_width="0dp"
-                            android:layout_gravity="center"
-                            android:layout_height="0dp"
-                            android:layout_weight="1" />
-
-                        <View
-                            android:layout_width="20sp"
-                            android:layout_height="20sp"
-                            android:layout_gravity="center"
-                            android:background="@drawable/angle_circle_right"
-                            android:backgroundTint="#151515"
-                            android:padding="5sp"/>
-
                     </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:id="@+id/technical_help"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
 
                     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                        android:layout_width="match_parent"
+                        android:id="@+id/technical_help"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:paddingEnd="10dp"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
-                        android:background="@drawable/corner_box_uslugi"
-                        android:layout_marginBottom="5dp"
-                        android:orientation="horizontal">
+                        android:paddingBottom="20dp"
+                        android:paddingTop="20dp"
+                        android:background="@drawable/corner_box_more_item"
+                        android:orientation="vertical">
 
                         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:paddingEnd="15dp"
-                            android:paddingStart="15dp"
-                            android:paddingBottom="15dp"
-                            android:paddingTop="15dp"
-                            android:background="@drawable/corner_img_uslugi"
-                            android:orientation="vertical">
+                            android:orientation="horizontal">
+
+                            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                                <View
+                                    android:layout_width="25sp"
+                                    android:layout_height="25sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/customer_service"
+                                    android:backgroundTint="#151515"
+                                    android:padding="5sp"/>
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Pomoc techniczna"
+                                android:textSize="15sp"
+                                android:textFontWeight="500"
+                                android:layout_marginLeft="15dp"
+                                android:textColor="#151515"/>
 
                             <View
-                                android:layout_width="25sp"
-                                android:layout_height="25sp"
+                                android:layout_width="0dp"
                                 android:layout_gravity="center"
-                                android:background="@drawable/customer_service"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <View
+                                android:layout_width="20sp"
+                                android:layout_height="20sp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/angle_small_right"
                                 android:backgroundTint="#151515"
                                 android:padding="5sp"/>
+
                         </LinearLayout>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:text="Pomoc techniczna"
-                            android:textSize="15sp"
-                            android:textFontWeight="500"
-                            android:layout_marginLeft="15dp"
-                            android:textColor="#151515"/>
-
-                        <View
-                            android:layout_width="0dp"
-                            android:layout_gravity="center"
-                            android:layout_height="0dp"
-                            android:layout_weight="1" />
-
-                        <View
-                            android:layout_width="20sp"
-                            android:layout_height="20sp"
-                            android:layout_gravity="center"
-                            android:background="@drawable/angle_circle_right"
-                            android:backgroundTint="#151515"
-                            android:padding="5sp"/>
-
                     </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:id="@+id/github"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
 
                     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                        android:layout_width="match_parent"
+                        android:id="@+id/github"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:paddingEnd="10dp"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
-                        android:background="@drawable/corner_box_uslugi"
-                        android:layout_marginBottom="5dp"
-                        android:orientation="horizontal">
+                        android:paddingBottom="20dp"
+                        android:paddingTop="20dp"
+                        android:background="@drawable/corner_box_more_item"
+                        android:orientation="vertical">
 
                         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:paddingEnd="15dp"
-                            android:paddingStart="15dp"
-                            android:paddingBottom="15dp"
-                            android:paddingTop="15dp"
-                            android:background="@drawable/corner_img_uslugi"
-                            android:orientation="vertical">
+                            android:orientation="horizontal">
+
+                            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                                <View
+                                    android:layout_width="25sp"
+                                    android:layout_height="25sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/github"
+                                    android:backgroundTint="#151515"
+                                    android:padding="5sp"/>
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Kod źródłowy"
+                                android:textSize="15sp"
+                                android:textFontWeight="500"
+                                android:layout_marginLeft="15dp"
+                                android:textColor="#151515"/>
 
                             <View
-                                android:layout_width="25sp"
-                                android:layout_height="25sp"
+                                android:layout_width="0dp"
                                 android:layout_gravity="center"
-                                android:background="@drawable/github"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <View
+                                android:layout_width="20sp"
+                                android:layout_height="20sp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/angle_small_right"
                                 android:backgroundTint="#151515"
                                 android:padding="5sp"/>
+
                         </LinearLayout>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:text="Kod źródłowy"
-                            android:textSize="15sp"
-                            android:textFontWeight="500"
-                            android:layout_marginLeft="15dp"
-                            android:textColor="#151515"/>
-
-                        <View
-                            android:layout_width="0dp"
-                            android:layout_gravity="center"
-                            android:layout_height="0dp"
-                            android:layout_weight="1" />
-
-                        <View
-                            android:layout_width="20sp"
-                            android:layout_height="20sp"
-                            android:layout_gravity="center"
-                            android:background="@drawable/angle_circle_right"
-                            android:backgroundTint="#151515"
-                            android:padding="5sp"/>
-
                     </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:id="@+id/discord"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
 
                     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                        android:layout_width="match_parent"
+                        android:id="@+id/discord"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:paddingEnd="10dp"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
-                        android:background="@drawable/corner_box_uslugi"
-                        android:layout_marginBottom="5dp"
-                        android:orientation="horizontal">
+                        android:paddingBottom="20dp"
+                        android:paddingTop="20dp"
+                        android:orientation="vertical">
 
                         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:paddingEnd="15dp"
-                            android:paddingStart="15dp"
-                            android:paddingBottom="15dp"
-                            android:paddingTop="15dp"
-                            android:background="@drawable/corner_img_uslugi"
-                            android:orientation="vertical">
+                            android:orientation="horizontal">
+
+                            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                                <View
+                                    android:layout_width="25sp"
+                                    android:layout_height="25sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/discord"
+                                    android:backgroundTint="#151515"
+                                    android:padding="5sp"/>
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Serwer Discord"
+                                android:textSize="15sp"
+                                android:textFontWeight="500"
+                                android:layout_marginLeft="15dp"
+                                android:textColor="#151515"/>
 
                             <View
-                                android:layout_width="25sp"
-                                android:layout_height="25sp"
+                                android:layout_width="0dp"
                                 android:layout_gravity="center"
-                                android:background="@drawable/discord"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <View
+                                android:layout_width="20sp"
+                                android:layout_height="20sp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/angle_small_right"
                                 android:backgroundTint="#151515"
                                 android:padding="5sp"/>
+
                         </LinearLayout>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:text="Serwer Discord"
-                            android:textSize="15sp"
-                            android:textFontWeight="500"
-                            android:layout_marginLeft="15dp"
-                            android:textColor="#151515"/>
-
-                        <View
-                            android:layout_width="0dp"
-                            android:layout_gravity="center"
-                            android:layout_height="0dp"
-                            android:layout_weight="1" />
-
-                        <View
-                            android:layout_width="20sp"
-                            android:layout_height="20sp"
-                            android:layout_gravity="center"
-                            android:background="@drawable/angle_circle_right"
-                            android:backgroundTint="#151515"
-                            android:padding="5sp"/>
-
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>

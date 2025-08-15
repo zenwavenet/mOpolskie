@@ -1,4 +1,6 @@
-package net.gf.mopolskie
+package net.gf.mopolskie.endpoints
+
+import net.gf.mopolskie.R
 
 object AttractionEndpoints {
     val ATTRACTION_ENDPOINTS = mapOf(

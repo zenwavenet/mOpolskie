@@ -1,4 +1,4 @@
-package net.gf.mopolskie
+package net.gf.mopolskie.manager
 
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext

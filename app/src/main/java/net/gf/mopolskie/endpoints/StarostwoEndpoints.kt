@@ -1,4 +1,6 @@
-package net.gf.mopolskie
+package net.gf.mopolskie.endpoints
+
+import net.gf.mopolskie.R
 
 object StarostwoEndpoints {
     val STAROSTWO_ENDPOINTS = mapOf(

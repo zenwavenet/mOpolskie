@@ -1,9 +1,10 @@
-package net.gf.mopolskie
+package net.gf.mopolskie.manager
 
 import androidx.lifecycle.ViewModel
 import com.google.gson.GsonBuilder
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
+import net.gf.mopolskie.endpoints.StarostwoEndpoints
 import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

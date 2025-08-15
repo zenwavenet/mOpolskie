@@ -14,6 +14,9 @@ import androidx.activity.ComponentActivity
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.launch
+import net.gf.mopolskie.endpoints.AttractionEndpoints
+import net.gf.mopolskie.manager.Attraction
+import net.gf.mopolskie.manager.AttractionManager
 
 class AttractionActivity : ComponentActivity() {
     private lateinit var attractionManager: AttractionManager
