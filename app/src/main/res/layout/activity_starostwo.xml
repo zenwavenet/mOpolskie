@@ -110,50 +110,34 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="15dp">
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
 
                 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:id="@+id/brzeg"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingEnd="15dp"
+                    android:paddingStart="15dp"
+                    android:background="@drawable/corner_box_more"
+                    android:layout_marginBottom="5dp"
                     android:orientation="vertical">
 
                     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/brzeg"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:paddingEnd="10dp"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
-                        android:background="@drawable/corner_box_uslugi"
-                        android:layout_marginBottom="5dp"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
                         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:paddingEnd="15dp"
-                            android:paddingStart="15dp"
-                            android:paddingBottom="15dp"
-                            android:paddingTop="15dp"
-                            android:background="@drawable/corner_img_uslugi"
-                            android:orientation="vertical">
-
-                            <View
-                                android:layout_width="25sp"
-                                android:layout_height="25sp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/apartment"
-                                android:backgroundTint="#000000"
-                                android:padding="5sp"/>
-                        </LinearLayout>
-
-                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
+                            android:paddingBottom="20dp"
+                            android:paddingTop="20dp"
+                            android:background="@drawable/corner_box_more_item"
                             android:orientation="horizontal">
 
                             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -162,84 +146,76 @@
                                 android:layout_gravity="center"
                                 android:orientation="vertical">
 
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Powiat"
-                                    android:textSize="16sp"
-                                    android:textFontWeight="500"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#000000"/>
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Brzeski"
-                                    android:textSize="13sp"
-                                    android:textFontWeight="400"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#151515"/>
+                                <View
+                                    android:layout_width="30sp"
+                                    android:layout_height="30sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/apartment"
+                                    android:backgroundTint="#000000"
+                                    android:padding="5sp"/>
                             </LinearLayout>
 
-                            <View
-                                android:layout_width="0dp"
+                            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
                                 android:layout_gravity="center"
-                                android:layout_height="0dp"
-                                android:layout_weight="1" />
+                                android:orientation="horizontal">
 
-                            <View
-                                android:layout_width="20sp"
-                                android:layout_height="20sp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/angle_circle_right"
-                                android:backgroundTint="#151515"
-                                android:padding="5sp"/>
+                                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Powiat"
+                                        android:textSize="16sp"
+                                        android:textFontWeight="500"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="#000000"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Brzeski"
+                                        android:textSize="13sp"
+                                        android:textFontWeight="400"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="#151515"/>
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_gravity="center"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1" />
+
+                                <View
+                                    android:layout_width="20sp"
+                                    android:layout_height="20sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/angle_small_right"
+                                    android:backgroundTint="#151515"
+                                    android:padding="5sp"/>
+                            </LinearLayout>
                         </LinearLayout>
                     </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:id="@+id/glubczyce"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
 
                     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/glubczyce"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:paddingEnd="10dp"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
-                        android:background="@drawable/corner_box_uslugi"
-                        android:layout_marginBottom="5dp"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
                         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:paddingEnd="15dp"
-                            android:paddingStart="15dp"
-                            android:paddingBottom="15dp"
-                            android:paddingTop="15dp"
-                            android:background="@drawable/corner_img_uslugi"
-                            android:orientation="vertical">
-
-                            <View
-                                android:layout_width="25sp"
-                                android:layout_height="25sp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/apartment"
-                                android:backgroundTint="#000000"
-                                android:padding="5sp"/>
-                        </LinearLayout>
-
-                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
+                            android:paddingBottom="20dp"
+                            android:paddingTop="20dp"
+                            android:background="@drawable/corner_box_more_item"
                             android:orientation="horizontal">
 
                             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -248,84 +224,76 @@
                                 android:layout_gravity="center"
                                 android:orientation="vertical">
 
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Powiat"
-                                    android:textSize="16sp"
-                                    android:textFontWeight="500"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#000000"/>
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Głubczycki"
-                                    android:textSize="13sp"
-                                    android:textFontWeight="400"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#151515"/>
+                                <View
+                                    android:layout_width="30sp"
+                                    android:layout_height="30sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/apartment"
+                                    android:backgroundTint="#000000"
+                                    android:padding="5sp"/>
                             </LinearLayout>
 
-                            <View
-                                android:layout_width="0dp"
+                            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
                                 android:layout_gravity="center"
-                                android:layout_height="0dp"
-                                android:layout_weight="1" />
+                                android:orientation="horizontal">
 
-                            <View
-                                android:layout_width="20sp"
-                                android:layout_height="20sp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/angle_circle_right"
-                                android:backgroundTint="#151515"
-                                android:padding="5sp"/>
+                                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Powiat"
+                                        android:textSize="16sp"
+                                        android:textFontWeight="500"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="#000000"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Głubczycki"
+                                        android:textSize="13sp"
+                                        android:textFontWeight="400"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="#151515"/>
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_gravity="center"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1" />
+
+                                <View
+                                    android:layout_width="20sp"
+                                    android:layout_height="20sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/angle_small_right"
+                                    android:backgroundTint="#151515"
+                                    android:padding="5sp"/>
+                            </LinearLayout>
                         </LinearLayout>
                     </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:id="@+id/kedzierzynsko_kozielski"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
 
                     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/kedzierzynsko_kozielski"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:paddingEnd="10dp"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
-                        android:background="@drawable/corner_box_uslugi"
-                        android:layout_marginBottom="5dp"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
                         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:paddingEnd="15dp"
-                            android:paddingStart="15dp"
-                            android:paddingBottom="15dp"
-                            android:paddingTop="15dp"
-                            android:background="@drawable/corner_img_uslugi"
-                            android:orientation="vertical">
-
-                            <View
-                                android:layout_width="25sp"
-                                android:layout_height="25sp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/apartment"
-                                android:backgroundTint="#000000"
-                                android:padding="5sp"/>
-                        </LinearLayout>
-
-                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
+                            android:paddingBottom="20dp"
+                            android:paddingTop="20dp"
+                            android:background="@drawable/corner_box_more_item"
                             android:orientation="horizontal">
 
                             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -334,84 +302,76 @@
                                 android:layout_gravity="center"
                                 android:orientation="vertical">
 
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Powiat"
-                                    android:textSize="16sp"
-                                    android:textFontWeight="500"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#000000"/>
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Kędzierzyńsko-Kozielski"
-                                    android:textSize="13sp"
-                                    android:textFontWeight="400"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#151515"/>
+                                <View
+                                    android:layout_width="30sp"
+                                    android:layout_height="30sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/apartment"
+                                    android:backgroundTint="#000000"
+                                    android:padding="5sp"/>
                             </LinearLayout>
 
-                            <View
-                                android:layout_width="0dp"
+                            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
                                 android:layout_gravity="center"
-                                android:layout_height="0dp"
-                                android:layout_weight="1" />
+                                android:orientation="horizontal">
 
-                            <View
-                                android:layout_width="20sp"
-                                android:layout_height="20sp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/angle_circle_right"
-                                android:backgroundTint="#151515"
-                                android:padding="5sp"/>
+                                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Powiat"
+                                        android:textSize="16sp"
+                                        android:textFontWeight="500"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="#000000"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Kędzierzyńsko-Kozielski"
+                                        android:textSize="13sp"
+                                        android:textFontWeight="400"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="#151515"/>
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_gravity="center"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1" />
+
+                                <View
+                                    android:layout_width="20sp"
+                                    android:layout_height="20sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/angle_small_right"
+                                    android:backgroundTint="#151515"
+                                    android:padding="5sp"/>
+                            </LinearLayout>
                         </LinearLayout>
                     </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:id="@+id/kluczborski"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
 
                     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/kluczborski"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:paddingEnd="10dp"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
-                        android:background="@drawable/corner_box_uslugi"
-                        android:layout_marginBottom="5dp"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
                         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:paddingEnd="15dp"
-                            android:paddingStart="15dp"
-                            android:paddingBottom="15dp"
-                            android:paddingTop="15dp"
-                            android:background="@drawable/corner_img_uslugi"
-                            android:orientation="vertical">
-
-                            <View
-                                android:layout_width="25sp"
-                                android:layout_height="25sp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/apartment"
-                                android:backgroundTint="#000000"
-                                android:padding="5sp"/>
-                        </LinearLayout>
-
-                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
+                            android:paddingBottom="20dp"
+                            android:paddingTop="20dp"
+                            android:background="@drawable/corner_box_more_item"
                             android:orientation="horizontal">
 
                             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -420,84 +380,76 @@
                                 android:layout_gravity="center"
                                 android:orientation="vertical">
 
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Powiat"
-                                    android:textSize="16sp"
-                                    android:textFontWeight="500"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#000000"/>
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Kluczborski"
-                                    android:textSize="13sp"
-                                    android:textFontWeight="400"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#151515"/>
+                                <View
+                                    android:layout_width="30sp"
+                                    android:layout_height="30sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/apartment"
+                                    android:backgroundTint="#000000"
+                                    android:padding="5sp"/>
                             </LinearLayout>
 
-                            <View
-                                android:layout_width="0dp"
+                            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
                                 android:layout_gravity="center"
-                                android:layout_height="0dp"
-                                android:layout_weight="1" />
+                                android:orientation="horizontal">
 
-                            <View
-                                android:layout_width="20sp"
-                                android:layout_height="20sp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/angle_circle_right"
-                                android:backgroundTint="#151515"
-                                android:padding="5sp"/>
+                                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Powiat"
+                                        android:textSize="16sp"
+                                        android:textFontWeight="500"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="#000000"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Kluczborski"
+                                        android:textSize="13sp"
+                                        android:textFontWeight="400"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="#151515"/>
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_gravity="center"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1" />
+
+                                <View
+                                    android:layout_width="20sp"
+                                    android:layout_height="20sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/angle_small_right"
+                                    android:backgroundTint="#151515"
+                                    android:padding="5sp"/>
+                            </LinearLayout>
                         </LinearLayout>
                     </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:id="@+id/krapkowicki"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
 
                     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/krapkowicki"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:paddingEnd="10dp"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
-                        android:background="@drawable/corner_box_uslugi"
-                        android:layout_marginBottom="5dp"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
                         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:paddingEnd="15dp"
-                            android:paddingStart="15dp"
-                            android:paddingBottom="15dp"
-                            android:paddingTop="15dp"
-                            android:background="@drawable/corner_img_uslugi"
-                            android:orientation="vertical">
-
-                            <View
-                                android:layout_width="25sp"
-                                android:layout_height="25sp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/apartment"
-                                android:backgroundTint="#000000"
-                                android:padding="5sp"/>
-                        </LinearLayout>
-
-                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
+                            android:paddingBottom="20dp"
+                            android:paddingTop="20dp"
+                            android:background="@drawable/corner_box_more_item"
                             android:orientation="horizontal">
 
                             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -506,84 +458,76 @@
                                 android:layout_gravity="center"
                                 android:orientation="vertical">
 
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Powiat"
-                                    android:textSize="16sp"
-                                    android:textFontWeight="500"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#000000"/>
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Krapkowicki"
-                                    android:textSize="13sp"
-                                    android:textFontWeight="400"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#151515"/>
+                                <View
+                                    android:layout_width="30sp"
+                                    android:layout_height="30sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/apartment"
+                                    android:backgroundTint="#000000"
+                                    android:padding="5sp"/>
                             </LinearLayout>
 
-                            <View
-                                android:layout_width="0dp"
+                            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
                                 android:layout_gravity="center"
-                                android:layout_height="0dp"
-                                android:layout_weight="1" />
+                                android:orientation="horizontal">
 
-                            <View
-                                android:layout_width="20sp"
-                                android:layout_height="20sp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/angle_circle_right"
-                                android:backgroundTint="#151515"
-                                android:padding="5sp"/>
+                                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Powiat"
+                                        android:textSize="16sp"
+                                        android:textFontWeight="500"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="#000000"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Krapkowicki"
+                                        android:textSize="13sp"
+                                        android:textFontWeight="400"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="#151515"/>
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_gravity="center"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1" />
+
+                                <View
+                                    android:layout_width="20sp"
+                                    android:layout_height="20sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/angle_small_right"
+                                    android:backgroundTint="#151515"
+                                    android:padding="5sp"/>
+                            </LinearLayout>
                         </LinearLayout>
                     </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:id="@+id/namyslowski"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
 
                     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/namyslowski"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:paddingEnd="10dp"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
-                        android:background="@drawable/corner_box_uslugi"
-                        android:layout_marginBottom="5dp"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
                         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:paddingEnd="15dp"
-                            android:paddingStart="15dp"
-                            android:paddingBottom="15dp"
-                            android:paddingTop="15dp"
-                            android:background="@drawable/corner_img_uslugi"
-                            android:orientation="vertical">
-
-                            <View
-                                android:layout_width="25sp"
-                                android:layout_height="25sp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/apartment"
-                                android:backgroundTint="#000000"
-                                android:padding="5sp"/>
-                        </LinearLayout>
-
-                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
+                            android:paddingBottom="20dp"
+                            android:paddingTop="20dp"
+                            android:background="@drawable/corner_box_more_item"
                             android:orientation="horizontal">
 
                             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -592,84 +536,76 @@
                                 android:layout_gravity="center"
                                 android:orientation="vertical">
 
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Powiat"
-                                    android:textSize="16sp"
-                                    android:textFontWeight="500"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#000000"/>
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Namysłowski"
-                                    android:textSize="13sp"
-                                    android:textFontWeight="400"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#151515"/>
+                                <View
+                                    android:layout_width="30sp"
+                                    android:layout_height="30sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/apartment"
+                                    android:backgroundTint="#000000"
+                                    android:padding="5sp"/>
                             </LinearLayout>
 
-                            <View
-                                android:layout_width="0dp"
+                            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
                                 android:layout_gravity="center"
-                                android:layout_height="0dp"
-                                android:layout_weight="1" />
+                                android:orientation="horizontal">
 
-                            <View
-                                android:layout_width="20sp"
-                                android:layout_height="20sp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/angle_circle_right"
-                                android:backgroundTint="#151515"
-                                android:padding="5sp"/>
+                                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Powiat"
+                                        android:textSize="16sp"
+                                        android:textFontWeight="500"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="#000000"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Namysłowski"
+                                        android:textSize="13sp"
+                                        android:textFontWeight="400"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="#151515"/>
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_gravity="center"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1" />
+
+                                <View
+                                    android:layout_width="20sp"
+                                    android:layout_height="20sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/angle_small_right"
+                                    android:backgroundTint="#151515"
+                                    android:padding="5sp"/>
+                            </LinearLayout>
                         </LinearLayout>
                     </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:id="@+id/nyski"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
 
                     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/nyski"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:paddingEnd="10dp"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
-                        android:background="@drawable/corner_box_uslugi"
-                        android:layout_marginBottom="5dp"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
                         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:paddingEnd="15dp"
-                            android:paddingStart="15dp"
-                            android:paddingBottom="15dp"
-                            android:paddingTop="15dp"
-                            android:background="@drawable/corner_img_uslugi"
-                            android:orientation="vertical">
-
-                            <View
-                                android:layout_width="25sp"
-                                android:layout_height="25sp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/apartment"
-                                android:backgroundTint="#000000"
-                                android:padding="5sp"/>
-                        </LinearLayout>
-
-                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
+                            android:paddingBottom="20dp"
+                            android:paddingTop="20dp"
+                            android:background="@drawable/corner_box_more_item"
                             android:orientation="horizontal">
 
                             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -678,84 +614,76 @@
                                 android:layout_gravity="center"
                                 android:orientation="vertical">
 
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Powiat"
-                                    android:textSize="16sp"
-                                    android:textFontWeight="500"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#000000"/>
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Nyski"
-                                    android:textSize="13sp"
-                                    android:textFontWeight="400"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#151515"/>
+                                <View
+                                    android:layout_width="30sp"
+                                    android:layout_height="30sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/apartment"
+                                    android:backgroundTint="#000000"
+                                    android:padding="5sp"/>
                             </LinearLayout>
 
-                            <View
-                                android:layout_width="0dp"
+                            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
                                 android:layout_gravity="center"
-                                android:layout_height="0dp"
-                                android:layout_weight="1" />
+                                android:orientation="horizontal">
 
-                            <View
-                                android:layout_width="20sp"
-                                android:layout_height="20sp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/angle_circle_right"
-                                android:backgroundTint="#151515"
-                                android:padding="5sp"/>
+                                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Powiat"
+                                        android:textSize="16sp"
+                                        android:textFontWeight="500"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="#000000"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Nyski"
+                                        android:textSize="13sp"
+                                        android:textFontWeight="400"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="#151515"/>
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_gravity="center"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1" />
+
+                                <View
+                                    android:layout_width="20sp"
+                                    android:layout_height="20sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/angle_small_right"
+                                    android:backgroundTint="#151515"
+                                    android:padding="5sp"/>
+                            </LinearLayout>
                         </LinearLayout>
                     </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:id="@+id/oleski"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
 
                     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/oleski"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:paddingEnd="10dp"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
-                        android:background="@drawable/corner_box_uslugi"
-                        android:layout_marginBottom="5dp"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
                         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:paddingEnd="15dp"
-                            android:paddingStart="15dp"
-                            android:paddingBottom="15dp"
-                            android:paddingTop="15dp"
-                            android:background="@drawable/corner_img_uslugi"
-                            android:orientation="vertical">
-
-                            <View
-                                android:layout_width="25sp"
-                                android:layout_height="25sp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/apartment"
-                                android:backgroundTint="#000000"
-                                android:padding="5sp"/>
-                        </LinearLayout>
-
-                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
+                            android:paddingBottom="20dp"
+                            android:paddingTop="20dp"
+                            android:background="@drawable/corner_box_more_item"
                             android:orientation="horizontal">
 
                             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -764,84 +692,76 @@
                                 android:layout_gravity="center"
                                 android:orientation="vertical">
 
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Powiat"
-                                    android:textSize="16sp"
-                                    android:textFontWeight="500"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#000000"/>
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Oleski"
-                                    android:textSize="13sp"
-                                    android:textFontWeight="400"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#151515"/>
+                                <View
+                                    android:layout_width="30sp"
+                                    android:layout_height="30sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/apartment"
+                                    android:backgroundTint="#000000"
+                                    android:padding="5sp"/>
                             </LinearLayout>
 
-                            <View
-                                android:layout_width="0dp"
+                            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
                                 android:layout_gravity="center"
-                                android:layout_height="0dp"
-                                android:layout_weight="1" />
+                                android:orientation="horizontal">
 
-                            <View
-                                android:layout_width="20sp"
-                                android:layout_height="20sp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/angle_circle_right"
-                                android:backgroundTint="#151515"
-                                android:padding="5sp"/>
+                                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Powiat"
+                                        android:textSize="16sp"
+                                        android:textFontWeight="500"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="#000000"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Oleski"
+                                        android:textSize="13sp"
+                                        android:textFontWeight="400"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="#151515"/>
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_gravity="center"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1" />
+
+                                <View
+                                    android:layout_width="20sp"
+                                    android:layout_height="20sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/angle_small_right"
+                                    android:backgroundTint="#151515"
+                                    android:padding="5sp"/>
+                            </LinearLayout>
                         </LinearLayout>
                     </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:id="@+id/opolski"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
 
                     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/opolski"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:paddingEnd="10dp"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
-                        android:background="@drawable/corner_box_uslugi"
-                        android:layout_marginBottom="5dp"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
                         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:paddingEnd="15dp"
-                            android:paddingStart="15dp"
-                            android:paddingBottom="15dp"
-                            android:paddingTop="15dp"
-                            android:background="@drawable/corner_img_uslugi"
-                            android:orientation="vertical">
-
-                            <View
-                                android:layout_width="25sp"
-                                android:layout_height="25sp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/apartment"
-                                android:backgroundTint="#000000"
-                                android:padding="5sp"/>
-                        </LinearLayout>
-
-                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
+                            android:paddingBottom="20dp"
+                            android:paddingTop="20dp"
+                            android:background="@drawable/corner_box_more_item"
                             android:orientation="horizontal">
 
                             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -850,84 +770,76 @@
                                 android:layout_gravity="center"
                                 android:orientation="vertical">
 
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Powiat"
-                                    android:textSize="16sp"
-                                    android:textFontWeight="500"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#000000"/>
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Opolski"
-                                    android:textSize="13sp"
-                                    android:textFontWeight="400"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#151515"/>
+                                <View
+                                    android:layout_width="30sp"
+                                    android:layout_height="30sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/apartment"
+                                    android:backgroundTint="#000000"
+                                    android:padding="5sp"/>
                             </LinearLayout>
 
-                            <View
-                                android:layout_width="0dp"
+                            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
                                 android:layout_gravity="center"
-                                android:layout_height="0dp"
-                                android:layout_weight="1" />
+                                android:orientation="horizontal">
 
-                            <View
-                                android:layout_width="20sp"
-                                android:layout_height="20sp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/angle_circle_right"
-                                android:backgroundTint="#151515"
-                                android:padding="5sp"/>
+                                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Powiat"
+                                        android:textSize="16sp"
+                                        android:textFontWeight="500"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="#000000"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Opolski"
+                                        android:textSize="13sp"
+                                        android:textFontWeight="400"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="#151515"/>
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_gravity="center"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1" />
+
+                                <View
+                                    android:layout_width="20sp"
+                                    android:layout_height="20sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/angle_small_right"
+                                    android:backgroundTint="#151515"
+                                    android:padding="5sp"/>
+                            </LinearLayout>
                         </LinearLayout>
                     </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:id="@+id/prudnicki"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
 
                     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/prudnicki"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:paddingEnd="10dp"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
-                        android:background="@drawable/corner_box_uslugi"
-                        android:layout_marginBottom="5dp"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
                         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:paddingEnd="15dp"
-                            android:paddingStart="15dp"
-                            android:paddingBottom="15dp"
-                            android:paddingTop="15dp"
-                            android:background="@drawable/corner_img_uslugi"
-                            android:orientation="vertical">
-
-                            <View
-                                android:layout_width="25sp"
-                                android:layout_height="25sp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/apartment"
-                                android:backgroundTint="#000000"
-                                android:padding="5sp"/>
-                        </LinearLayout>
-
-                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
+                            android:paddingBottom="20dp"
+                            android:paddingTop="20dp"
+                            android:background="@drawable/corner_box_more_item"
                             android:orientation="horizontal">
 
                             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -936,84 +848,76 @@
                                 android:layout_gravity="center"
                                 android:orientation="vertical">
 
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Powiat"
-                                    android:textSize="16sp"
-                                    android:textFontWeight="500"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#000000"/>
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Prudnicki"
-                                    android:textSize="13sp"
-                                    android:textFontWeight="400"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#151515"/>
+                                <View
+                                    android:layout_width="30sp"
+                                    android:layout_height="30sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/apartment"
+                                    android:backgroundTint="#000000"
+                                    android:padding="5sp"/>
                             </LinearLayout>
 
-                            <View
-                                android:layout_width="0dp"
+                            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
                                 android:layout_gravity="center"
-                                android:layout_height="0dp"
-                                android:layout_weight="1" />
+                                android:orientation="horizontal">
 
-                            <View
-                                android:layout_width="20sp"
-                                android:layout_height="20sp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/angle_circle_right"
-                                android:backgroundTint="#151515"
-                                android:padding="5sp"/>
+                                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Powiat"
+                                        android:textSize="16sp"
+                                        android:textFontWeight="500"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="#000000"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Prudnicki"
+                                        android:textSize="13sp"
+                                        android:textFontWeight="400"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="#151515"/>
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_gravity="center"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1" />
+
+                                <View
+                                    android:layout_width="20sp"
+                                    android:layout_height="20sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/angle_small_right"
+                                    android:backgroundTint="#151515"
+                                    android:padding="5sp"/>
+                            </LinearLayout>
                         </LinearLayout>
                     </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:id="@+id/strzelecki"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
 
                     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/strzelecki"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:paddingEnd="10dp"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
-                        android:background="@drawable/corner_box_uslugi"
-                        android:layout_marginBottom="5dp"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
                         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:paddingEnd="15dp"
-                            android:paddingStart="15dp"
-                            android:paddingBottom="15dp"
-                            android:paddingTop="15dp"
-                            android:background="@drawable/corner_img_uslugi"
-                            android:orientation="vertical">
-
-                            <View
-                                android:layout_width="25sp"
-                                android:layout_height="25sp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/apartment"
-                                android:backgroundTint="#000000"
-                                android:padding="5sp"/>
-                        </LinearLayout>
-
-                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
+                            android:paddingBottom="20dp"
+                            android:paddingTop="20dp"
+                            android:background="@drawable/corner_box_more_item"
                             android:orientation="horizontal">
 
                             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -1022,38 +926,60 @@
                                 android:layout_gravity="center"
                                 android:orientation="vertical">
 
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Powiat"
-                                    android:textSize="16sp"
-                                    android:textFontWeight="500"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#000000"/>
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Strzelecki"
-                                    android:textSize="13sp"
-                                    android:textFontWeight="400"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#151515"/>
+                                <View
+                                    android:layout_width="30sp"
+                                    android:layout_height="30sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/apartment"
+                                    android:backgroundTint="#000000"
+                                    android:padding="5sp"/>
                             </LinearLayout>
 
-                            <View
-                                android:layout_width="0dp"
+                            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
                                 android:layout_gravity="center"
-                                android:layout_height="0dp"
-                                android:layout_weight="1" />
+                                android:orientation="horizontal">
 
-                            <View
-                                android:layout_width="20sp"
-                                android:layout_height="20sp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/angle_circle_right"
-                                android:backgroundTint="#151515"
-                                android:padding="5sp"/>
+                                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Powiat"
+                                        android:textSize="16sp"
+                                        android:textFontWeight="500"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="#000000"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Strzelecki"
+                                        android:textSize="13sp"
+                                        android:textFontWeight="400"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="#151515"/>
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_gravity="center"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1" />
+
+                                <View
+                                    android:layout_width="20sp"
+                                    android:layout_height="20sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/angle_small_right"
+                                    android:backgroundTint="#151515"
+                                    android:padding="5sp"/>
+                            </LinearLayout>
                         </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>

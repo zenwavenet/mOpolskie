@@ -53,7 +53,7 @@ class NetworkManager private constructor(private val context: Context) {
             networkCallback = object : ConnectivityManager.NetworkCallback() {
                 override fun onAvailable(network: Network) {
                     super.onAvailable(network)
-                    // Sprawdź rzeczywiste połączenie z internetem
+
                     CoroutineScope(Dispatchers.IO).launch {
                         val hasInternet = hasInternetConnection()
                         withContext(Dispatchers.Main) {
@@ -75,7 +75,7 @@ class NetworkManager private constructor(private val context: Context) {
                 
                 override fun onCapabilitiesChanged(network: Network, networkCapabilities: NetworkCapabilities) {
                     super.onCapabilitiesChanged(network, networkCapabilities)
-                    // Sprawdź rzeczywiste połączenie z internetem przy zmianie możliwości
+
                     CoroutineScope(Dispatchers.IO).launch {
                         val hasInternet = hasInternetConnection()
                         withContext(Dispatchers.Main) {
@@ -101,7 +101,6 @@ class NetworkManager private constructor(private val context: Context) {
             connectivityManager.registerNetworkCallback(networkRequest, networkCallback!!)
         }
         
-        // Sprawdź początkowy stan
         CoroutineScope(Dispatchers.IO).launch {
             val hasInternet = hasInternetConnection()
             withContext(Dispatchers.Main) {
@@ -118,9 +117,7 @@ class NetworkManager private constructor(private val context: Context) {
         networkCallback?.let { callback ->
             try {
                 connectivityManager.unregisterNetworkCallback(callback)
-            } catch (e: Exception) {
-                // Callback może już być wyrejestrowany
-            }
+            } catch (e: Exception) {}
         }
         networkCallback = null
     }
@@ -138,7 +135,6 @@ class NetworkManager private constructor(private val context: Context) {
     
     suspend fun hasInternetConnection(): Boolean = withContext(Dispatchers.IO) {
         try {
-            // Sprawdź połączenie z Google DNS
             val url = URL("https://dns.google")
             val connection = url.openConnection() as HttpURLConnection
             connection.connectTimeout = 5000
@@ -158,8 +154,7 @@ class NetworkManager private constructor(private val context: Context) {
     fun getCurrentNetworkStatus(): Boolean {
         return currentNetworkStatus
     }
-    
-    // Metoda do okresowego sprawdzania połączenia
+
     fun startPeriodicCheck(intervalMs: Long = 5000) {
         CoroutineScope(Dispatchers.IO).launch {
             while (isMonitoring) {

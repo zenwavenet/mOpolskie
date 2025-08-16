@@ -85,7 +85,7 @@ class MainActivity : BaseActivity() {
 
         val WywozButton = findViewById<LinearLayout>(R.id.wywoz)
         WywozButton.setOnClickListener {
-            val intent = Intent(this, WywozSmieciActivity::class.java)
+            val intent = Intent(this, WywozSmieciMethodActivity::class.java)
             startActivity(intent)
             finish()
             overrideTransitionCompat()

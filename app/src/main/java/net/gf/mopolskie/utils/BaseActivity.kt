@@ -12,7 +12,7 @@ abstract class BaseActivity : ComponentActivity(), NetworkManager.NetworkConnect
     private lateinit var networkManager: NetworkManager
     private var wasConnected = true
     private var connectionLostTime = 0L
-    private val CONNECTION_TIMEOUT = 10000L // 10 sekund
+    private val CONNECTION_TIMEOUT = 10000L
     
     override fun onResume() {
         super.onResume()
@@ -29,8 +29,7 @@ abstract class BaseActivity : ComponentActivity(), NetworkManager.NetworkConnect
         networkManager.addNetworkListener(this)
         networkManager.startMonitoring()
         networkManager.startPeriodicCheck()
-        
-        // Sprawdź początkowy stan
+
         lifecycleScope.launch {
             val isConnected = networkManager.hasInternetConnection()
             if (!isConnected) {
@@ -58,12 +57,10 @@ abstract class BaseActivity : ComponentActivity(), NetworkManager.NetworkConnect
             if (wasConnected) {
                 connectionLostTime = System.currentTimeMillis()
                 wasConnected = false
-                
-                // Czekaj CONNECTION_TIMEOUT przed pokazaniem ekranu braku internetu
+
                 lifecycleScope.launch {
                     delay(CONNECTION_TIMEOUT)
-                    
-                    // Sprawdź czy nadal brak połączenia
+
                     if (!wasConnected && System.currentTimeMillis() - connectionLostTime >= CONNECTION_TIMEOUT) {
                         handleConnectionLost()
                     }
@@ -81,12 +78,10 @@ abstract class BaseActivity : ComponentActivity(), NetworkManager.NetworkConnect
             } else if (!isConnected && wasConnected) {
                 connectionLostTime = System.currentTimeMillis()
                 wasConnected = false
-                
-                // Czekaj CONNECTION_TIMEOUT przed pokazaniem ekranu braku internetu
+
                 lifecycleScope.launch {
                     delay(CONNECTION_TIMEOUT)
-                    
-                    // Sprawdź czy nadal brak połączenia
+
                     if (!wasConnected && System.currentTimeMillis() - connectionLostTime >= CONNECTION_TIMEOUT) {
                         handleConnectionLost()
                     }
@@ -96,7 +91,6 @@ abstract class BaseActivity : ComponentActivity(), NetworkManager.NetworkConnect
     }
     
     private fun handleConnectionLost() {
-        // Nie przechodź do NoInternetActivity jeśli już jesteś w SplashActivity lub NoInternetActivity
         if (this::class.simpleName in listOf("SplashActivity", "NoInternetActivity")) {
             return
         }
@@ -105,20 +99,9 @@ abstract class BaseActivity : ComponentActivity(), NetworkManager.NetworkConnect
         intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TOP
         startActivity(intent)
         
-        // Animacja przejścia
         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
     }
-    
-    // Metody które mogą być nadpisane przez aktywności potomne
-    protected open fun onConnectionRestored() {
-        // Domyślnie nic nie rób - aktywności potomne mogą to nadpisać
-    }
-    
-    protected open fun onConnectionLost() {
-        // Domyślnie nic nie rób - aktywności potomne mogą to nadpisać
-    }
-    
-    // Metoda pomocnicza do sprawdzenia czy jest połączenie
+
     protected fun isConnectedToInternet(): Boolean {
         return if (::networkManager.isInitialized) {
             networkManager.getCurrentNetworkStatus()
