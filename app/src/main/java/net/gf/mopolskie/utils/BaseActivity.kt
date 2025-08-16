@@ -102,6 +102,10 @@ abstract class BaseActivity : ComponentActivity(), NetworkManager.NetworkConnect
         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
     }
 
+    protected open fun onConnectionRestored() {}
+    
+    protected open fun onConnectionLost() {}
+
     protected fun isConnectedToInternet(): Boolean {
         return if (::networkManager.isInitialized) {
             networkManager.getCurrentNetworkStatus()

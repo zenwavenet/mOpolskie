@@ -37,8 +37,7 @@ class NoInternetActivity : ComponentActivity(), NetworkManager.NetworkConnection
         networkManager.addNetworkListener(this)
         networkManager.startMonitoring()
         networkManager.startPeriodicCheck()
-        
-        // Sprawdź początkowy stan połączenia
+
         checkInitialConnectionState()
     }
     
@@ -68,7 +67,6 @@ class NoInternetActivity : ComponentActivity(), NetworkManager.NetworkConnection
             updateConnectionStatus(isConnected)
             
             if (isConnected) {
-                // Jeśli jest połączenie, wróć do głównej aktywności
                 returnToMainActivity()
             }
         }
@@ -80,8 +78,7 @@ class NoInternetActivity : ComponentActivity(), NetworkManager.NetworkConnection
         
         lifecycleScope.launch {
             updateConnectionStatus(false, "Sprawdzanie połączenia...")
-            
-            // Sprawdź połączenie kilka razy z krótkimi przerwami
+
             repeat(3) { attempt ->
                 delay(1000)
                 val isConnected = networkManager.hasInternetConnection()
@@ -95,8 +92,7 @@ class NoInternetActivity : ComponentActivity(), NetworkManager.NetworkConnection
                     updateConnectionStatus(false, "Próba ${attempt + 1}/3...")
                 }
             }
-            
-            // Jeśli nadal brak połączenia
+
             updateConnectionStatus(false, "Brak połączenia")
             isRetrying = false
             retryProgressBar.visibility = View.GONE
@@ -114,16 +110,13 @@ class NoInternetActivity : ComponentActivity(), NetworkManager.NetworkConnection
     
     private fun openNetworkSettings() {
         try {
-            // Spróbuj otworzyć ustawienia Wi-Fi
             val intent = Intent(Settings.ACTION_WIFI_SETTINGS)
             startActivity(intent)
         } catch (e: Exception) {
             try {
-                // Jeśli nie ma ustawień Wi-Fi, otwórz ogólne ustawienia sieci
                 val intent = Intent(Settings.ACTION_WIRELESS_SETTINGS)
                 startActivity(intent)
             } catch (e2: Exception) {
-                // Ostatnia próba - ogólne ustawienia
                 val intent = Intent(Settings.ACTION_SETTINGS)
                 startActivity(intent)
             }
@@ -136,19 +129,16 @@ class NoInternetActivity : ComponentActivity(), NetworkManager.NetworkConnection
             intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK
             startActivity(intent)
             finish()
-            
-            // Animacja przejścia
+
             overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
         }
     }
-    
-    // NetworkManager.NetworkConnectionListener implementation
+
     override fun onNetworkAvailable() {
         runOnUiThread {
             if (!isRetrying) {
                 updateConnectionStatus(true)
-                
-                // Automatyczne przejście po 2 sekundach
+
                 lifecycleScope.launch {
                     delay(2000)
                     returnToMainActivity()
@@ -168,7 +158,6 @@ class NoInternetActivity : ComponentActivity(), NetworkManager.NetworkConnection
             updateConnectionStatus(isConnected)
             
             if (isConnected && !isRetrying) {
-                // Automatyczne przejście po 2 sekundach jeśli jest połączenie
                 lifecycleScope.launch {
                     delay(2000)
                     returnToMainActivity()
@@ -179,7 +168,7 @@ class NoInternetActivity : ComponentActivity(), NetworkManager.NetworkConnection
     
     override fun onResume() {
         super.onResume()
-        // Sprawdź połączenie po powrocie z ustawień
+
         lifecycleScope.launch {
             delay(1000) // Krótkie opóźnienie na wypadek zmiany ustawień
             val isConnected = networkManager.hasInternetConnection()
@@ -198,8 +187,7 @@ class NoInternetActivity : ComponentActivity(), NetworkManager.NetworkConnection
     }
     
     override fun onBackPressed() {
-        // Pozwól na wyjście z aplikacji
         super.onBackPressed()
-        finishAffinity() // Zamknij całą aplikację
+        finishAffinity()
     }
 }
