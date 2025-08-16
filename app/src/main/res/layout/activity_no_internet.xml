@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#FFFFFF"
+    android:padding="40dp">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/globe"
+        android:layout_marginBottom="40dp"
+        android:alpha="0.5"
+        android:backgroundTint="@color/error_color" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Brak połączenia z internetem"
+        android:textColor="@color/text_primary"
+        android:textSize="24sp"
+        android:textFontWeight="800"
+        android:textAlignment="center"
+        android:layout_marginBottom="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aplikacja wymaga połączenia z internetem do prawidłowego działania"
+        android:textColor="@color/text_secondary"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:layout_marginBottom="30dp"
+        android:lineSpacingMultiplier="1.2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"
+        android:padding="15dp"
+        android:background="@drawable/corner_bg_card">
+
+        <View
+            android:id="@+id/connectionStatusIndicator"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:background="@drawable/circle_wh_main"
+            android:backgroundTint="@color/error_color"
+            android:layout_marginEnd="12dp"/>
+
+        <TextView
+            android:id="@+id/connectionStatusText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Brak połączenia"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp"/>
+
+        <ProgressBar
+            android:id="@+id/retryProgressBar"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:indeterminateTint="@color/primary_color"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Co możesz zrobić:"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:textFontWeight="600"
+            android:layout_marginBottom="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• Sprawdź czy Wi-Fi jest włączone"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• Sprawdź połączenie z danymi mobilnymi"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• Spróbuj ponownie za chwilę"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp">
+
+        <LinearLayout
+            android:id="@+id/retryButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="15dp"
+            android:background="@drawable/corner_box_uslugi"
+            android:backgroundTint="@color/primary_color"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Spróbuj ponownie"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textFontWeight="600"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/settingsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="15dp"
+            android:background="@drawable/corner_bg_card">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Otwórz ustawienia sieci"
+                android:textColor="@color/primary_color"
+                android:textSize="16sp"
+                android:textFontWeight="600"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

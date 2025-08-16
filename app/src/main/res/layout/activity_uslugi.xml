@@ -111,391 +111,347 @@
                     android:layout_marginBottom="10dp"
                     android:textColor="#151515"/>
 
-                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:id="@+id/atrakcje"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:background="@drawable/corner_box_more">
 
                     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/atrakcje"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:paddingEnd="10dp"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
-                        android:background="@drawable/corner_box_uslugi"
-                        android:layout_marginBottom="5dp"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
                         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:paddingEnd="15dp"
-                            android:paddingStart="15dp"
-                            android:paddingBottom="15dp"
-                            android:paddingTop="15dp"
-                            android:background="@drawable/corner_img_uslugi"
-                            android:orientation="vertical">
+                            android:paddingTop="20dp"
+                            android:paddingBottom="20dp"
+                            android:background="@drawable/corner_box_more_item"
+                            android:orientation="horizontal">
+
+                            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                                <View
+                                    android:layout_width="25sp"
+                                    android:layout_height="25sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/bench_tree"
+                                    android:backgroundTint="#8E892C"
+                                    android:padding="5sp"/>
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Atrakcje"
+                                android:textSize="15sp"
+                                android:textFontWeight="500"
+                                android:textColor="#151515"
+                                android:layout_marginLeft="15dp"/>
 
                             <View
-                                android:layout_width="25sp"
-                                android:layout_height="25sp"
+                                android:layout_width="0dp"
                                 android:layout_gravity="center"
-                                android:background="@drawable/bench_tree"
-                                android:backgroundTint="#8E892C"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <View
+                                android:layout_width="20sp"
+                                android:layout_height="20sp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/angle_small_right"
+                                android:backgroundTint="#151515"
                                 android:padding="5sp"/>
+
                         </LinearLayout>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:text="Atrakcje"
-                            android:textSize="15sp"
-                            android:textFontWeight="500"
-                            android:layout_marginLeft="15dp"
-                            android:textColor="#151515"/>
-
-                        <View
-                            android:layout_width="0dp"
-                            android:layout_gravity="center"
-                            android:layout_height="0dp"
-                            android:layout_weight="1" />
-
-                        <View
-                            android:layout_width="20sp"
-                            android:layout_height="20sp"
-                            android:layout_gravity="center"
-                            android:background="@drawable/angle_circle_right"
-                            android:backgroundTint="#151515"
-                            android:padding="5sp"/>
-
                     </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
 
                     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:paddingEnd="10dp"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
-                        android:background="@drawable/corner_box_uslugi"
-                        android:layout_marginBottom="5dp"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
                         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:paddingEnd="15dp"
-                            android:paddingStart="15dp"
-                            android:paddingBottom="15dp"
-                            android:paddingTop="15dp"
-                            android:background="@drawable/corner_img_uslugi"
-                            android:orientation="vertical">
+                            android:paddingTop="20dp"
+                            android:paddingBottom="20dp"
+                            android:background="@drawable/corner_box_more_item"
+                            android:orientation="horizontal">
+
+                            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                                <View
+                                    android:layout_width="25sp"
+                                    android:layout_height="25sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/heart"
+                                    android:backgroundTint="#622C8E"
+                                    android:padding="5sp"/>
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Apteki"
+                                android:textSize="15sp"
+                                android:textFontWeight="500"
+                                android:layout_marginLeft="15dp"
+                                android:textColor="#151515"/>
 
                             <View
-                                android:layout_width="25sp"
-                                android:layout_height="25sp"
+                                android:layout_width="0dp"
                                 android:layout_gravity="center"
-                                android:background="@drawable/heart"
-                                android:backgroundTint="#622C8E"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <View
+                                android:layout_width="20sp"
+                                android:layout_height="20sp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/angle_small_right"
+                                android:backgroundTint="#151515"
                                 android:padding="5sp"/>
+
                         </LinearLayout>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:text="Apteki"
-                            android:textSize="15sp"
-                            android:textFontWeight="500"
-                            android:layout_marginLeft="15dp"
-                            android:textColor="#151515"/>
-
-                        <View
-                            android:layout_width="0dp"
-                            android:layout_gravity="center"
-                            android:layout_height="0dp"
-                            android:layout_weight="1" />
-
-                        <View
-                            android:layout_width="20sp"
-                            android:layout_height="20sp"
-                            android:layout_gravity="center"
-                            android:background="@drawable/angle_circle_right"
-                            android:backgroundTint="#151515"
-                            android:padding="5sp"/>
-
                     </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:id="@+id/starostwa"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
 
                     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                        android:layout_width="match_parent"
+                        android:id="@+id/starostwa"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:paddingEnd="10dp"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
-                        android:background="@drawable/corner_box_uslugi"
-                        android:layout_marginBottom="5dp"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
                         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:paddingEnd="15dp"
-                            android:paddingStart="15dp"
-                            android:paddingBottom="15dp"
-                            android:paddingTop="15dp"
-                            android:background="@drawable/corner_img_uslugi"
-                            android:orientation="vertical">
+                            android:paddingTop="20dp"
+                            android:paddingBottom="20dp"
+                            android:background="@drawable/corner_box_more_item"
+                            android:orientation="horizontal">
+
+                            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                                <View
+                                    android:layout_width="25sp"
+                                    android:layout_height="25sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/bank"
+                                    android:backgroundTint="#8E2C2C"
+                                    android:padding="5sp"/>
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Starostwa"
+                                android:textSize="15sp"
+                                android:textFontWeight="500"
+                                android:layout_marginLeft="15dp"
+                                android:textColor="#151515"/>
 
                             <View
-                                android:layout_width="25sp"
-                                android:layout_height="25sp"
+                                android:layout_width="0dp"
                                 android:layout_gravity="center"
-                                android:background="@drawable/bank"
-                                android:backgroundTint="#8E2C2C"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <View
+                                android:layout_width="20sp"
+                                android:layout_height="20sp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/angle_small_right"
+                                android:backgroundTint="#151515"
                                 android:padding="5sp"/>
+
                         </LinearLayout>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:text="Starostwa"
-                            android:textSize="15sp"
-                            android:textFontWeight="500"
-                            android:layout_marginLeft="15dp"
-                            android:textColor="#151515"/>
-
-                        <View
-                            android:layout_width="0dp"
-                            android:layout_gravity="center"
-                            android:layout_height="0dp"
-                            android:layout_weight="1" />
-
-                        <View
-                            android:layout_width="20sp"
-                            android:layout_height="20sp"
-                            android:layout_gravity="center"
-                            android:background="@drawable/angle_circle_right"
-                            android:backgroundTint="#151515"
-                            android:padding="5sp"/>
-
                     </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
 
                     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:paddingEnd="10dp"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
-                        android:background="@drawable/corner_box_uslugi"
-                        android:layout_marginBottom="5dp"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
                         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:paddingEnd="15dp"
-                            android:paddingStart="15dp"
-                            android:paddingBottom="15dp"
-                            android:paddingTop="15dp"
-                            android:background="@drawable/corner_img_uslugi"
-                            android:orientation="vertical">
+                            android:paddingTop="20dp"
+                            android:paddingBottom="20dp"
+                            android:background="@drawable/corner_box_more_item"
+                            android:orientation="horizontal">
+
+                            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                                <View
+                                    android:layout_width="25sp"
+                                    android:layout_height="25sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/building"
+                                    android:backgroundTint="#2C8E8C"
+                                    android:padding="5sp"/>
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Urzędy"
+                                android:textSize="15sp"
+                                android:textFontWeight="500"
+                                android:layout_marginLeft="15dp"
+                                android:textColor="#151515"/>
 
                             <View
-                                android:layout_width="25sp"
-                                android:layout_height="25sp"
+                                android:layout_width="0dp"
                                 android:layout_gravity="center"
-                                android:background="@drawable/building"
-                                android:backgroundTint="#2C8E8C"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <View
+                                android:layout_width="20sp"
+                                android:layout_height="20sp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/angle_small_right"
+                                android:backgroundTint="#151515"
                                 android:padding="5sp"/>
+
                         </LinearLayout>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:text="Urzędy"
-                            android:textSize="15sp"
-                            android:textFontWeight="500"
-                            android:layout_marginLeft="15dp"
-                            android:textColor="#151515"/>
-
-                        <View
-                            android:layout_width="0dp"
-                            android:layout_gravity="center"
-                            android:layout_height="0dp"
-                            android:layout_weight="1" />
-
-                        <View
-                            android:layout_width="20sp"
-                            android:layout_height="20sp"
-                            android:layout_gravity="center"
-                            android:background="@drawable/angle_circle_right"
-                            android:backgroundTint="#151515"
-                            android:padding="5sp"/>
-
                     </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:id="@+id/wywoz"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
 
                     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                        android:layout_width="match_parent"
+                        android:id="@+id/wywoz"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:paddingEnd="10dp"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
-                        android:background="@drawable/corner_box_uslugi"
-                        android:layout_marginBottom="5dp"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
                         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:paddingEnd="15dp"
-                            android:paddingStart="15dp"
-                            android:paddingBottom="15dp"
-                            android:paddingTop="15dp"
-                            android:background="@drawable/corner_img_uslugi"
-                            android:orientation="vertical">
+                            android:paddingTop="20dp"
+                            android:paddingBottom="20dp"
+                            android:background="@drawable/corner_box_more_item"
+                            android:orientation="horizontal">
+
+                            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                                <View
+                                    android:layout_width="25sp"
+                                    android:layout_height="25sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/trash"
+                                    android:backgroundTint="#3E8E2C"
+                                    android:padding="5sp"/>
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Wywóz śmieci"
+                                android:textSize="15sp"
+                                android:textFontWeight="500"
+                                android:layout_marginLeft="15dp"
+                                android:textColor="#151515"/>
 
                             <View
-                                android:layout_width="25sp"
-                                android:layout_height="25sp"
+                                android:layout_width="0dp"
                                 android:layout_gravity="center"
-                                android:background="@drawable/trash"
-                                android:backgroundTint="#3E8E2C"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <View
+                                android:layout_width="20sp"
+                                android:layout_height="20sp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/angle_small_right"
+                                android:backgroundTint="#151515"
                                 android:padding="5sp"/>
+
                         </LinearLayout>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:text="Wywóz śmieci"
-                            android:textSize="15sp"
-                            android:textFontWeight="500"
-                            android:layout_marginLeft="15dp"
-                            android:textColor="#151515"/>
-
-                        <View
-                            android:layout_width="0dp"
-                            android:layout_gravity="center"
-                            android:layout_height="0dp"
-                            android:layout_weight="1" />
-
-                        <View
-                            android:layout_width="20sp"
-                            android:layout_height="20sp"
-                            android:layout_gravity="center"
-                            android:background="@drawable/angle_circle_right"
-                            android:backgroundTint="#151515"
-                            android:padding="5sp"/>
-
                     </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:id="@+id/segregacja"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
 
                     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                        android:layout_width="match_parent"
+                        android:id="@+id/segregacja"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:paddingEnd="10dp"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
-                        android:background="@drawable/corner_box_uslugi"
-                        android:layout_marginBottom="5dp"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
                         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:paddingEnd="15dp"
-                            android:paddingStart="15dp"
-                            android:paddingBottom="15dp"
-                            android:paddingTop="15dp"
-                            android:background="@drawable/corner_img_uslugi"
-                            android:orientation="vertical">
+                            android:paddingTop="20dp"
+                            android:paddingBottom="20dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                                <View
+                                    android:layout_width="25sp"
+                                    android:layout_height="25sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/recycle_bin"
+                                    android:backgroundTint="#2C3E8E"
+                                    android:padding="5sp"/>
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Jak sortować"
+                                android:textSize="15sp"
+                                android:textFontWeight="500"
+                                android:layout_marginLeft="15dp"
+                                android:textColor="#151515"/>
 
                             <View
-                                android:layout_width="25sp"
-                                android:layout_height="25sp"
+                                android:layout_width="0dp"
                                 android:layout_gravity="center"
-                                android:background="@drawable/recycle_bin"
-                                android:backgroundTint="#2C3E8E"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <View
+                                android:layout_width="20sp"
+                                android:layout_height="20sp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/angle_small_right"
+                                android:backgroundTint="#151515"
                                 android:padding="5sp"/>
+
                         </LinearLayout>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:text="Jak sortować"
-                            android:textSize="15sp"
-                            android:textFontWeight="500"
-                            android:layout_marginLeft="15dp"
-                            android:textColor="#151515"/>
-
-                        <View
-                            android:layout_width="0dp"
-                            android:layout_gravity="center"
-                            android:layout_height="0dp"
-                            android:layout_weight="1" />
-
-                        <View
-                            android:layout_width="20sp"
-                            android:layout_height="20sp"
-                            android:layout_gravity="center"
-                            android:background="@drawable/angle_circle_right"
-                            android:backgroundTint="#151515"
-                            android:padding="5sp"/>
-
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
@@ -511,647 +467,568 @@
                     android:text="Pozostałe"
                     android:textSize="12sp"
                     android:textFontWeight="500"
+                    android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"
                     android:textColor="#151515"/>
 
-                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:background="@drawable/corner_box_more">
 
                     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:paddingEnd="10dp"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
-                        android:background="@drawable/corner_box_uslugi"
-                        android:layout_marginBottom="5dp"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
                         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:paddingEnd="15dp"
-                            android:paddingStart="15dp"
-                            android:paddingBottom="15dp"
-                            android:paddingTop="15dp"
-                            android:background="@drawable/corner_img_uslugi"
-                            android:orientation="vertical">
+                            android:paddingTop="20dp"
+                            android:paddingBottom="20dp"
+                            android:background="@drawable/corner_box_more_item"
+                            android:orientation="horizontal">
+
+                            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                                <View
+                                    android:layout_width="25sp"
+                                    android:layout_height="25sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/court_order"
+                                    android:backgroundTint="#2C848E"
+                                    android:padding="5sp"/>
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Sądy"
+                                android:textSize="15sp"
+                                android:textFontWeight="500"
+                                android:layout_marginLeft="15dp"
+                                android:textColor="#151515"/>
 
                             <View
-                                android:layout_width="25sp"
-                                android:layout_height="25sp"
+                                android:layout_width="0dp"
                                 android:layout_gravity="center"
-                                android:background="@drawable/court_order"
-                                android:backgroundTint="#2C848E"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <View
+                                android:layout_width="20sp"
+                                android:layout_height="20sp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/angle_small_right"
+                                android:backgroundTint="#151515"
                                 android:padding="5sp"/>
+
                         </LinearLayout>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:text="Sądy"
-                            android:textSize="15sp"
-                            android:textFontWeight="500"
-                            android:layout_marginLeft="15dp"
-                            android:textColor="#151515"/>
-
-                        <View
-                            android:layout_width="0dp"
-                            android:layout_gravity="center"
-                            android:layout_height="0dp"
-                            android:layout_weight="1" />
-
-                        <View
-                            android:layout_width="20sp"
-                            android:layout_height="20sp"
-                            android:layout_gravity="center"
-                            android:background="@drawable/angle_circle_right"
-                            android:backgroundTint="#151515"
-                            android:padding="5sp"/>
-
                     </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:id="@+id/word"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
 
                     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/word"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:paddingEnd="10dp"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
-                        android:background="@drawable/corner_box_uslugi"
-                        android:layout_marginBottom="5dp"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
                         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:paddingEnd="15dp"
-                            android:paddingStart="15dp"
-                            android:paddingBottom="15dp"
-                            android:paddingTop="15dp"
-                            android:background="@drawable/corner_img_uslugi"
-                            android:orientation="vertical">
+                            android:paddingTop="20dp"
+                            android:paddingBottom="20dp"
+                            android:background="@drawable/corner_box_more_item"
+                            android:orientation="horizontal">
+
+                            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                                <View
+                                    android:layout_width="25sp"
+                                    android:layout_height="25sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/car_garage"
+                                    android:backgroundTint="#8E4D2C"
+                                    android:padding="5sp"/>
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="WORD"
+                                android:textSize="15sp"
+                                android:textFontWeight="500"
+                                android:layout_marginLeft="15dp"
+                                android:textColor="#151515"/>
 
                             <View
-                                android:layout_width="25sp"
-                                android:layout_height="25sp"
+                                android:layout_width="0dp"
                                 android:layout_gravity="center"
-                                android:background="@drawable/car_garage"
-                                android:backgroundTint="#8E4D2C"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <View
+                                android:layout_width="20sp"
+                                android:layout_height="20sp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/angle_small_right"
+                                android:backgroundTint="#151515"
                                 android:padding="5sp"/>
+
                         </LinearLayout>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:text="WORD"
-                            android:textSize="15sp"
-                            android:textFontWeight="500"
-                            android:layout_marginLeft="15dp"
-                            android:textColor="#151515"/>
-
-                        <View
-                            android:layout_width="0dp"
-                            android:layout_gravity="center"
-                            android:layout_height="0dp"
-                            android:layout_weight="1" />
-
-                        <View
-                            android:layout_width="20sp"
-                            android:layout_height="20sp"
-                            android:layout_gravity="center"
-                            android:background="@drawable/angle_circle_right"
-                            android:backgroundTint="#151515"
-                            android:padding="5sp"/>
-
                     </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
 
                     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:paddingEnd="10dp"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
-                        android:background="@drawable/corner_box_uslugi"
-                        android:layout_marginBottom="5dp"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
                         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:paddingEnd="15dp"
-                            android:paddingStart="15dp"
-                            android:paddingBottom="15dp"
-                            android:paddingTop="15dp"
-                            android:background="@drawable/corner_img_uslugi"
-                            android:orientation="vertical">
+                            android:paddingTop="20dp"
+                            android:paddingBottom="20dp"
+                            android:background="@drawable/corner_box_more_item"
+                            android:orientation="horizontal">
+
+                            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                                <View
+                                    android:layout_width="25sp"
+                                    android:layout_height="25sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/hospital"
+                                    android:backgroundTint="#772C8E"
+                                    android:padding="5sp"/>
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Szpitale"
+                                android:textSize="15sp"
+                                android:textFontWeight="500"
+                                android:layout_marginLeft="15dp"
+                                android:textColor="#151515"/>
 
                             <View
-                                android:layout_width="25sp"
-                                android:layout_height="25sp"
+                                android:layout_width="0dp"
                                 android:layout_gravity="center"
-                                android:background="@drawable/hospital"
-                                android:backgroundTint="#772C8E"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <View
+                                android:layout_width="20sp"
+                                android:layout_height="20sp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/angle_small_right"
+                                android:backgroundTint="#151515"
                                 android:padding="5sp"/>
+
                         </LinearLayout>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:text="Szpitale"
-                            android:textSize="15sp"
-                            android:textFontWeight="500"
-                            android:layout_marginLeft="15dp"
-                            android:textColor="#151515"/>
-
-                        <View
-                            android:layout_width="0dp"
-                            android:layout_gravity="center"
-                            android:layout_height="0dp"
-                            android:layout_weight="1" />
-
-                        <View
-                            android:layout_width="20sp"
-                            android:layout_height="20sp"
-                            android:layout_gravity="center"
-                            android:background="@drawable/angle_circle_right"
-                            android:backgroundTint="#151515"
-                            android:padding="5sp"/>
-
                     </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
 
                     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:paddingEnd="10dp"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
-                        android:background="@drawable/corner_box_uslugi"
-                        android:layout_marginBottom="5dp"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
                         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:paddingEnd="15dp"
-                            android:paddingStart="15dp"
-                            android:paddingBottom="15dp"
-                            android:paddingTop="15dp"
-                            android:background="@drawable/corner_img_uslugi"
-                            android:orientation="vertical">
+                            android:paddingTop="20dp"
+                            android:paddingBottom="20dp"
+                            android:background="@drawable/corner_box_more_item"
+                            android:orientation="horizontal">
+
+                            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                                <View
+                                    android:layout_width="25sp"
+                                    android:layout_height="25sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/user_md"
+                                    android:backgroundTint="#378E2C"
+                                    android:padding="5sp"/>
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Przychodnie"
+                                android:textSize="15sp"
+                                android:textFontWeight="500"
+                                android:layout_marginLeft="15dp"
+                                android:textColor="#151515"/>
 
                             <View
-                                android:layout_width="25sp"
-                                android:layout_height="25sp"
+                                android:layout_width="0dp"
                                 android:layout_gravity="center"
-                                android:background="@drawable/user_md"
-                                android:backgroundTint="#378E2C"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <View
+                                android:layout_width="20sp"
+                                android:layout_height="20sp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/angle_small_right"
+                                android:backgroundTint="#151515"
                                 android:padding="5sp"/>
+
                         </LinearLayout>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:text="Przychodnie"
-                            android:textSize="15sp"
-                            android:textFontWeight="500"
-                            android:layout_marginLeft="15dp"
-                            android:textColor="#151515"/>
-
-                        <View
-                            android:layout_width="0dp"
-                            android:layout_gravity="center"
-                            android:layout_height="0dp"
-                            android:layout_weight="1" />
-
-                        <View
-                            android:layout_width="20sp"
-                            android:layout_height="20sp"
-                            android:layout_gravity="center"
-                            android:background="@drawable/angle_circle_right"
-                            android:backgroundTint="#151515"
-                            android:padding="5sp"/>
-
                     </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
 
                     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:paddingEnd="10dp"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
-                        android:background="@drawable/corner_box_uslugi"
-                        android:layout_marginBottom="5dp"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
                         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:paddingEnd="15dp"
-                            android:paddingStart="15dp"
-                            android:paddingBottom="15dp"
-                            android:paddingTop="15dp"
-                            android:background="@drawable/corner_img_uslugi"
-                            android:orientation="vertical">
+                            android:paddingTop="20dp"
+                            android:paddingBottom="20dp"
+                            android:background="@drawable/corner_box_more_item"
+                            android:orientation="horizontal">
+
+                            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                                <View
+                                    android:layout_width="25sp"
+                                    android:layout_height="25sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/dumbbell_fitness"
+                                    android:backgroundTint="#8E812C"
+                                    android:padding="5sp"/>
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Sport i rekreacja"
+                                android:textSize="15sp"
+                                android:textFontWeight="500"
+                                android:layout_marginLeft="15dp"
+                                android:textColor="#151515"/>
 
                             <View
-                                android:layout_width="25sp"
-                                android:layout_height="25sp"
+                                android:layout_width="0dp"
                                 android:layout_gravity="center"
-                                android:background="@drawable/dumbbell_fitness"
-                                android:backgroundTint="#8E812C"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <View
+                                android:layout_width="20sp"
+                                android:layout_height="20sp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/angle_small_right"
+                                android:backgroundTint="#151515"
                                 android:padding="5sp"/>
+
                         </LinearLayout>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:text="Sport i rekreacja"
-                            android:textSize="15sp"
-                            android:textFontWeight="500"
-                            android:layout_marginLeft="15dp"
-                            android:textColor="#151515"/>
-
-                        <View
-                            android:layout_width="0dp"
-                            android:layout_gravity="center"
-                            android:layout_height="0dp"
-                            android:layout_weight="1" />
-
-                        <View
-                            android:layout_width="20sp"
-                            android:layout_height="20sp"
-                            android:layout_gravity="center"
-                            android:background="@drawable/angle_circle_right"
-                            android:backgroundTint="#151515"
-                            android:padding="5sp"/>
-
                     </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
 
                     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:paddingEnd="10dp"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
-                        android:background="@drawable/corner_box_uslugi"
-                        android:layout_marginBottom="5dp"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
                         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:paddingEnd="15dp"
-                            android:paddingStart="15dp"
-                            android:paddingBottom="15dp"
-                            android:paddingTop="15dp"
-                            android:background="@drawable/corner_img_uslugi"
-                            android:orientation="vertical">
+                            android:paddingTop="20dp"
+                            android:paddingBottom="20dp"
+                            android:background="@drawable/corner_box_more_item"
+                            android:orientation="horizontal">
+
+                            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                                <View
+                                    android:layout_width="25sp"
+                                    android:layout_height="25sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/graduation_cap"
+                                    android:backgroundTint="#8E2C77"
+                                    android:padding="5sp"/>
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Szkoły i uczelnie"
+                                android:textSize="15sp"
+                                android:textFontWeight="500"
+                                android:layout_marginLeft="15dp"
+                                android:textColor="#151515"/>
 
                             <View
-                                android:layout_width="25sp"
-                                android:layout_height="25sp"
+                                android:layout_width="0dp"
                                 android:layout_gravity="center"
-                                android:background="@drawable/graduation_cap"
-                                android:backgroundTint="#8E2C77"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <View
+                                android:layout_width="20sp"
+                                android:layout_height="20sp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/angle_small_right"
+                                android:backgroundTint="#151515"
                                 android:padding="5sp"/>
+
                         </LinearLayout>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:text="Szkoły i uczelnie"
-                            android:textSize="15sp"
-                            android:textFontWeight="500"
-                            android:layout_marginLeft="15dp"
-                            android:textColor="#151515"/>
-
-                        <View
-                            android:layout_width="0dp"
-                            android:layout_gravity="center"
-                            android:layout_height="0dp"
-                            android:layout_weight="1" />
-
-                        <View
-                            android:layout_width="20sp"
-                            android:layout_height="20sp"
-                            android:layout_gravity="center"
-                            android:background="@drawable/angle_circle_right"
-                            android:backgroundTint="#151515"
-                            android:padding="5sp"/>
-
                     </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
 
                     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:paddingEnd="10dp"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
-                        android:background="@drawable/corner_box_uslugi"
-                        android:layout_marginBottom="5dp"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
                         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:paddingEnd="15dp"
-                            android:paddingStart="15dp"
-                            android:paddingBottom="15dp"
-                            android:paddingTop="15dp"
-                            android:background="@drawable/corner_img_uslugi"
-                            android:orientation="vertical">
+                            android:paddingTop="20dp"
+                            android:paddingBottom="20dp"
+                            android:background="@drawable/corner_box_more_item"
+                            android:orientation="horizontal">
+
+                            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                                <View
+                                    android:layout_width="25sp"
+                                    android:layout_height="25sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/hand_heart"
+                                    android:backgroundTint="#8E2C2C"
+                                    android:padding="5sp"/>
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Pomoc społeczna"
+                                android:textSize="15sp"
+                                android:textFontWeight="500"
+                                android:layout_marginLeft="15dp"
+                                android:textColor="#151515"/>
 
                             <View
-                                android:layout_width="25sp"
-                                android:layout_height="25sp"
+                                android:layout_width="0dp"
                                 android:layout_gravity="center"
-                                android:background="@drawable/hand_heart"
-                                android:backgroundTint="#8E2C2C"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <View
+                                android:layout_width="20sp"
+                                android:layout_height="20sp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/angle_small_right"
+                                android:backgroundTint="#151515"
                                 android:padding="5sp"/>
+
                         </LinearLayout>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:text="Pomoc społeczna"
-                            android:textSize="15sp"
-                            android:textFontWeight="500"
-                            android:layout_marginLeft="15dp"
-                            android:textColor="#151515"/>
-
-                        <View
-                            android:layout_width="0dp"
-                            android:layout_gravity="center"
-                            android:layout_height="0dp"
-                            android:layout_weight="1" />
-
-                        <View
-                            android:layout_width="20sp"
-                            android:layout_height="20sp"
-                            android:layout_gravity="center"
-                            android:background="@drawable/angle_circle_right"
-                            android:backgroundTint="#151515"
-                            android:padding="5sp"/>
-
                     </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
 
                     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:paddingEnd="10dp"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
-                        android:background="@drawable/corner_box_uslugi"
-                        android:layout_marginBottom="5dp"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
                         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:paddingEnd="15dp"
-                            android:paddingStart="15dp"
-                            android:paddingBottom="15dp"
-                            android:paddingTop="15dp"
-                            android:background="@drawable/corner_img_uslugi"
-                            android:orientation="vertical">
+                            android:paddingTop="20dp"
+                            android:paddingBottom="20dp"
+                            android:background="@drawable/corner_box_more_item"
+                            android:orientation="horizontal">
+
+                            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                                <View
+                                    android:layout_width="25sp"
+                                    android:layout_height="25sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/books"
+                                    android:backgroundTint="#2C848E"
+                                    android:padding="5sp"/>
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Biblioteki"
+                                android:textSize="15sp"
+                                android:textFontWeight="500"
+                                android:layout_marginLeft="15dp"
+                                android:textColor="#151515"/>
 
                             <View
-                                android:layout_width="25sp"
-                                android:layout_height="25sp"
+                                android:layout_width="0dp"
                                 android:layout_gravity="center"
-                                android:background="@drawable/books"
-                                android:backgroundTint="#2C848E"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <View
+                                android:layout_width="20sp"
+                                android:layout_height="20sp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/angle_small_right"
+                                android:backgroundTint="#151515"
                                 android:padding="5sp"/>
+
                         </LinearLayout>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:text="Biblioteki"
-                            android:textSize="15sp"
-                            android:textFontWeight="500"
-                            android:layout_marginLeft="15dp"
-                            android:textColor="#151515"/>
-
-                        <View
-                            android:layout_width="0dp"
-                            android:layout_gravity="center"
-                            android:layout_height="0dp"
-                            android:layout_weight="1" />
-
-                        <View
-                            android:layout_width="20sp"
-                            android:layout_height="20sp"
-                            android:layout_gravity="center"
-                            android:background="@drawable/angle_circle_right"
-                            android:backgroundTint="#151515"
-                            android:padding="5sp"/>
-
                     </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
 
                     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:paddingEnd="10dp"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
-                        android:background="@drawable/corner_box_uslugi"
-                        android:layout_marginBottom="5dp"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
                         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:paddingEnd="15dp"
-                            android:paddingStart="15dp"
-                            android:paddingBottom="15dp"
-                            android:paddingTop="15dp"
-                            android:background="@drawable/corner_img_uslugi"
-                            android:orientation="vertical">
+                            android:paddingTop="20dp"
+                            android:paddingBottom="20dp"
+                            android:background="@drawable/corner_box_more_item"
+                            android:orientation="horizontal">
+
+                            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                                <View
+                                    android:layout_width="25sp"
+                                    android:layout_height="25sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/bed"
+                                    android:backgroundTint="#2C8E50"
+                                    android:padding="5sp"/>
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Hotele"
+                                android:textSize="15sp"
+                                android:textFontWeight="500"
+                                android:layout_marginLeft="15dp"
+                                android:textColor="#151515"/>
 
                             <View
-                                android:layout_width="25sp"
-                                android:layout_height="25sp"
+                                android:layout_width="0dp"
                                 android:layout_gravity="center"
-                                android:background="@drawable/bed"
-                                android:backgroundTint="#2C8E50"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <View
+                                android:layout_width="20sp"
+                                android:layout_height="20sp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/angle_small_right"
+                                android:backgroundTint="#151515"
                                 android:padding="5sp"/>
+
                         </LinearLayout>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:text="Hotele"
-                            android:textSize="15sp"
-                            android:textFontWeight="500"
-                            android:layout_marginLeft="15dp"
-                            android:textColor="#151515"/>
-
-                        <View
-                            android:layout_width="0dp"
-                            android:layout_gravity="center"
-                            android:layout_height="0dp"
-                            android:layout_weight="1" />
-
-                        <View
-                            android:layout_width="20sp"
-                            android:layout_height="20sp"
-                            android:layout_gravity="center"
-                            android:background="@drawable/angle_circle_right"
-                            android:backgroundTint="#151515"
-                            android:padding="5sp"/>
-
                     </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
 
                     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:paddingEnd="10dp"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
-                        android:background="@drawable/corner_box_uslugi"
-                        android:layout_marginBottom="5dp"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
                         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:paddingEnd="15dp"
-                            android:paddingStart="15dp"
-                            android:paddingBottom="15dp"
-                            android:paddingTop="15dp"
-                            android:background="@drawable/corner_img_uslugi"
-                            android:orientation="vertical">
+                            android:paddingTop="20dp"
+                            android:paddingBottom="20dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                                <View
+                                    android:layout_width="25sp"
+                                    android:layout_height="25sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/popcorn"
+                                    android:backgroundTint="#8C2C8E"
+                                    android:padding="5sp"/>
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Kultura i rozrywka"
+                                android:textSize="15sp"
+                                android:textFontWeight="500"
+                                android:layout_marginLeft="15dp"
+                                android:textColor="#151515"/>
 
                             <View
-                                android:layout_width="25sp"
-                                android:layout_height="25sp"
+                                android:layout_width="0dp"
                                 android:layout_gravity="center"
-                                android:background="@drawable/popcorn"
-                                android:backgroundTint="#8C2C8E"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <View
+                                android:layout_width="20sp"
+                                android:layout_height="20sp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/angle_small_right"
+                                android:backgroundTint="#151515"
                                 android:padding="5sp"/>
+
                         </LinearLayout>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:text="Kultura i rozrywka"
-                            android:textSize="15sp"
-                            android:textFontWeight="500"
-                            android:layout_marginLeft="15dp"
-                            android:textColor="#151515"/>
-
-                        <View
-                            android:layout_width="0dp"
-                            android:layout_gravity="center"
-                            android:layout_height="0dp"
-                            android:layout_weight="1" />
-
-                        <View
-                            android:layout_width="20sp"
-                            android:layout_height="20sp"
-                            android:layout_gravity="center"
-                            android:background="@drawable/angle_circle_right"
-                            android:backgroundTint="#151515"
-                            android:padding="5sp"/>
-
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>

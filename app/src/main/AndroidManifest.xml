@@ -26,10 +26,11 @@
         tools:targetApi="35">
 
         <activity
-            android:name=".MainActivity"
+            android:name=".SplashActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.MOpolskie">
+            android:theme="@style/Theme.MOpolskie.Splash"
+            android:screenOrientation="portrait">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -37,12 +38,29 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.MOpolskie"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".NoInternetActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MOpolskie.NoInternet"
+            android:screenOrientation="portrait"/>
+
         <!--    ======    -->
         <!--    MODUŁY    -->
         <!--    ======    -->
 
         <activity
             android:name=".HelpActivity"
+            android:theme="@style/Theme.MOpolskie"/>
+
+        <activity
+            android:name=".SearchResultsActivity"
             android:theme="@style/Theme.MOpolskie"/>
 
         <activity

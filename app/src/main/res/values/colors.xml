@@ -12,4 +12,13 @@
     <color name="separator_color">#E0E0E0</color>
     <color name="category_title_color">#333333</color>
     <color name="category_background">#F5F5F5</color>
+    <color name="primary_color">#256bc9</color>
+    <color name="text_primary">#151515</color>
+    <color name="text_secondary">#666666</color>
+    <color name="emergency_color">#E53E3E</color>
+    <color name="secondary_color">#38A169</color>
+    <color name="success_color">#48BB78</color>
+    <color name="warning_color">#ED8936</color>
+    <color name="error_color">#F56565</color>
+    <color name="splash_background">#256bc9</color>
 </resources>

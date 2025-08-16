@@ -3,4 +3,18 @@
     <style name="Theme.MOpolskie" parent="android:Theme.Material.Light.NoActionBar">
         <item name="android:windowAnimationStyle">@null</item>
     </style>
+    
+    <style name="Theme.MOpolskie.Splash" parent="Theme.MOpolskie">
+        <item name="android:windowBackground">@color/splash_background</item>
+        <item name="android:statusBarColor">@color/splash_background</item>
+        <item name="android:navigationBarColor">@color/splash_background</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    
+    <style name="Theme.MOpolskie.NoInternet" parent="Theme.MOpolskie">
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:statusBarColor">@color/status_bar_color</item>
+        <item name="android:navigationBarColor">@color/white</item>
+    </style>
 </resources>

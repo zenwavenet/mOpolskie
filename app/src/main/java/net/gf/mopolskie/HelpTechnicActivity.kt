@@ -41,7 +41,7 @@ class HelpTechnicActivity : ComponentActivity() {
             overrideTransitionCompat()
         }
         findViewById<LinearLayout>(R.id.github)?.setOnClickListener {
-            openWebsite("https://github.com/stackflowpl/mOpolskie/issues")
+            openWebsite("https://github.com/zenwavenet/mOpolskie/issues")
         }
     }
     private fun openWebsite(url: String) {

@@ -41,7 +41,7 @@ class DevActivity : ComponentActivity() {
             overrideTransitionCompat()
         }
         findViewById<TextView>(R.id.url)?.setOnClickListener {
-            openWebsite("https://stackflow.pl")
+            openWebsite("https://zenwave.net")
         }
         findViewById<TextView>(R.id.github)?.setOnClickListener {
             openWebsite("https://github.com/IJakePL")

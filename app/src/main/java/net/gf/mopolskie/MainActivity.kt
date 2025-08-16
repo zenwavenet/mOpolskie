@@ -2,20 +2,23 @@ package net.gf.mopolskie
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.EditText
 import android.widget.LinearLayout
 import android.widget.TextView
-import androidx.activity.ComponentActivity
+import androidx.core.widget.doOnTextChanged
 import kotlinx.coroutines.*
+import net.gf.mopolskie.utils.BaseActivity
 import net.gf.mopolskie.utils.overrideTransitionCompat
 import net.gf.mopolskie.utils.setupModernStatusBar
 import java.time.ZonedDateTime
 import java.time.format.DateTimeFormatter
 import java.util.*
 
-class MainActivity : ComponentActivity() {
+class MainActivity : BaseActivity() {
     private lateinit var dateText: TextView
     private lateinit var dayText: TextView
     private lateinit var timeText: TextView
+    private lateinit var searchEditText: EditText
     private var job: Job? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,8 +30,10 @@ class MainActivity : ComponentActivity() {
         dateText = findViewById(R.id.dateText)
         dayText = findViewById(R.id.dayText)
         timeText = findViewById(R.id.timeText)
+        searchEditText = findViewById(R.id.searchEditText)
 
         startClock()
+        setupSearchFunctionality()
 
         val HelpButton = findViewById<LinearLayout>(R.id.help)
         HelpButton.setOnClickListener {
@@ -92,6 +97,28 @@ class MainActivity : ComponentActivity() {
             startActivity(intent)
             finish()
             overrideTransitionCompat()
+        }
+    }
+
+    private fun setupSearchFunctionality() {
+        searchEditText.setOnClickListener {
+            // Otwórz ekran wyszukiwania po kliknięciu
+            val intent = Intent(this, SearchResultsActivity::class.java)
+            intent.putExtra("query", searchEditText.text.toString())
+            startActivity(intent)
+            overrideTransitionCompat()
+        }
+        
+        searchEditText.setOnFocusChangeListener { _, hasFocus ->
+            if (hasFocus) {
+                // Otwórz ekran wyszukiwania po otrzymaniu focusu
+                val intent = Intent(this, SearchResultsActivity::class.java)
+                intent.putExtra("query", searchEditText.text.toString())
+                startActivity(intent)
+                overrideTransitionCompat()
+                // Usuń focus aby nie tworzyć pętli
+                searchEditText.clearFocus()
+            }
         }
     }
 

@@ -47,7 +47,7 @@ class MoreActivity : ComponentActivity() {
             overrideTransitionCompat()
         }
         findViewById<LinearLayout>(R.id.github)?.setOnClickListener {
-            openWebsite("https://github.com/gofluxpl/mOpolskie")
+            openWebsite("https://github.com/zenwavenet/mOpolskie")
         }
         findViewById<LinearLayout>(R.id.discord)?.setOnClickListener {
             openWebsite("https://discord.gg/VY8d7auENv")

@@ -63,6 +63,6 @@ Aplikacja stworzona z myślą o:
 ## 🛠️ Instalacja (Dla Developerów)
 
 ```bash
-git clone https://github.com/gofluxpl/mOpolskie.git
+git clone https://github.com/zenwavenet/mOpolskie.git
 cd mOpolskie
 ```

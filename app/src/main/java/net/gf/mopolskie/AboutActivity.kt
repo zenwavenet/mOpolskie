@@ -58,7 +58,7 @@ class AboutActivity : ComponentActivity() {
         }
 
         findViewById<TextView>(R.id.url)?.setOnClickListener {
-            openWebsite("https://stackflow.pl")
+            openWebsite("https://zenwave.net")
         }
 
         setupVersionInfo()
