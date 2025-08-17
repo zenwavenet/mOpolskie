@@ -917,7 +917,6 @@
                             android:layout_gravity="center"
                             android:paddingBottom="20dp"
                             android:paddingTop="20dp"
-                            android:background="@drawable/corner_box_more_item"
                             android:orientation="horizontal">
 
                             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"

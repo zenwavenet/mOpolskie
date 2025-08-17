@@ -1,26 +1,32 @@
 # 📜 Polityka prywatności
 
-Twoja prywatność jest dla nas ważna. Ta aplikacja **nie zbiera, nie przechowuje i nie udostępnia żadnych danych osobowych użytkowników**.
+Twoja prywatność jest dla nas ważna. Dokładamy wszelkich starań, aby Twoje dane były chronione i wykorzystywane wyłącznie do prawidłowego działania aplikacji.
 
-## 🔒 Co zbieramy?
+## 🔒 Jakie dane zbieramy?
 
-**Nic.**  
-Aplikacja nie rejestruje żadnych informacji o użytkowniku, urządzeniu ani lokalizacji.
+Aplikacja może przetwarzać pewne dane techniczne i diagnostyczne za pośrednictwem usług **Google Firebase**, w tym:
+
+- **Firebase Analytics** – anonimowe dane o sposobie korzystania z aplikacji (np. liczba uruchomień, czas korzystania, funkcje najczęściej wybierane).
+- **Firebase Crashlytics (w tym NDK)** – dane o błędach i awariach aplikacji (logi techniczne, model urządzenia, wersja systemu Android, wersja aplikacji).
+- **Firebase Messaging** – identyfikatory urządzeń potrzebne do wysyłania powiadomień push.
+- **Firebase Performance Monitoring** – dane dotyczące wydajności aplikacji (np. czas ładowania ekranu, stabilność połączenia).
+
+⚠️ **Nie zbieramy danych osobowych ponad to, co jest konieczne do działania funkcji aplikacji.**
 
 ## 🌐 Dostęp do internetu
 
-Aby poprawnie wyświetlić dane (takie jak atrakcje, apteki, urzędy, szkoły, szpitale i inne), aplikacja **wymaga połączenia z internetem**. Wszystkie informacje są pobierane **z naszych serwerów API** i służą wyłącznie do prezentacji treści w aplikacji.
+Aplikacja **wymaga połączenia z internetem**, aby pobierać i synchronizować dane:
 
-- Żadne dane nie są personalizowane.
-- Nie są prowadzone żadne statystyki ani analizy.
-- Aplikacja nie działa offline (wymaga Wi-Fi lub danych mobilnych do pobierania treści).
+- Treści (np. atrakcje, urzędy, szkoły, szpitale) są pobierane z naszych serwerów API.
+- Dane diagnostyczne i statystyczne są wysyłane do usług Firebase (Google).
+- Aplikacja nie działa w trybie offline.
 
 ## 🤝 Udostępnianie danych
 
-Nie udostępniamy żadnych danych stronom trzecim.  
-Nie korzystamy z reklam, analityki, trackerów ani zewnętrznych usług zbierających dane.
+- Dane mogą być przekazywane firmie **Google** (jako dostawcy usług Firebase) zgodnie z [Polityką prywatności Google](https://policies.google.com/privacy).
+- Nie udostępniamy Twoich danych innym podmiotom trzecim.
+- Nie korzystamy z reklam ani zewnętrznych trackerów.
 
 ---
 
-**W skrócie:** Aplikacja działa lokalnie, jedynie pobierając ogólnodostępne dane z naszych serwerów. Twoje dane zostają u Ciebie.
-
+**W skrócie:** Aplikacja korzysta z Firebase w celu analizy działania, poprawy jakości, wysyłania powiadomień oraz obsługi danych w chmurze. Twoje dane nie są sprzedawane ani udostępniane podmiotom trzecim poza Google jako dostawcą infrastruktury.

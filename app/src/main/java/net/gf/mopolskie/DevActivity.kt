@@ -44,7 +44,7 @@ class DevActivity : ComponentActivity() {
             openWebsite("https://zenwave.net")
         }
         findViewById<TextView>(R.id.github)?.setOnClickListener {
-            openWebsite("https://github.com/IJakePL")
+            openWebsite("https://github.com/monderey")
         }
         findViewById<TextView>(R.id.linkedIn)?.setOnClickListener {
             openWebsite("https://www.linkedin.com/in/jakub-burzyński-0394b62ba?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app")

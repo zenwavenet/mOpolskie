@@ -107,53 +107,36 @@
                     android:textColor="#043FB3" />
             </LinearLayout>
 
-            <LinearLayout
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp"
+                android:background="@drawable/corner_box_more"
+                android:layout_marginBottom="5dp"
                 android:orientation="vertical">
 
-                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:id="@+id/azoty"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
                     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/azoty"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:paddingEnd="10dp"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
-                        android:background="@drawable/corner_box_uslugi"
-                        android:layout_marginBottom="5dp"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
                         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:paddingEnd="15dp"
-                            android:paddingStart="15dp"
-                            android:paddingBottom="15dp"
-                            android:paddingTop="15dp"
-                            android:background="@drawable/corner_img_uslugi"
-                            android:orientation="vertical">
-
-                            <View
-                                android:layout_width="25sp"
-                                android:layout_height="25sp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/region_pin_alt"
-                                android:backgroundTint="#000000"
-                                android:padding="5sp"/>
-                        </LinearLayout>
-
-                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
+                            android:paddingBottom="20dp"
+                            android:paddingTop="20dp"
+                            android:background="@drawable/corner_box_more_item"
                             android:orientation="horizontal">
 
                             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -162,70 +145,62 @@
                                 android:layout_gravity="center"
                                 android:orientation="vertical">
 
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Azoty"
-                                    android:textSize="13sp"
-                                    android:textFontWeight="400"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#151515"/>
+                                <View
+                                    android:layout_width="30sp"
+                                    android:layout_height="30sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/region_pin_alt"
+                                    android:backgroundTint="#000000"
+                                    android:padding="5sp"/>
+                            </LinearLayout>
 
-                                <TextView
+                            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal">
+
+                                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Zabudowa jednorodzinna"
-                                    android:textSize="11sp"
-                                    android:textFontWeight="400"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#151515"/>
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Azoty"
+                                        android:textSize="13sp"
+                                        android:textFontWeight="400"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="#151515"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Zabudowa jednorodzinna"
+                                        android:textSize="11sp"
+                                        android:textFontWeight="400"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="#151515"/>
+                                </LinearLayout>
                             </LinearLayout>
                         </LinearLayout>
                     </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:id="@+id/blachownia"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
 
                     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/blachownia"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:paddingEnd="10dp"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
-                        android:background="@drawable/corner_box_uslugi"
-                        android:layout_marginBottom="5dp"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
                         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:paddingEnd="15dp"
-                            android:paddingStart="15dp"
-                            android:paddingBottom="15dp"
-                            android:paddingTop="15dp"
-                            android:background="@drawable/corner_img_uslugi"
-                            android:orientation="vertical">
-
-                            <View
-                                android:layout_width="25sp"
-                                android:layout_height="25sp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/region_pin_alt"
-                                android:backgroundTint="#000000"
-                                android:padding="5sp"/>
-                        </LinearLayout>
-
-                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
+                            android:paddingBottom="20dp"
+                            android:paddingTop="20dp"
+                            android:background="@drawable/corner_box_more_item"
                             android:orientation="horizontal">
 
                             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -234,70 +209,62 @@
                                 android:layout_gravity="center"
                                 android:orientation="vertical">
 
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Blachownia"
-                                    android:textSize="13sp"
-                                    android:textFontWeight="400"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#151515"/>
+                                <View
+                                    android:layout_width="30sp"
+                                    android:layout_height="30sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/region_pin_alt"
+                                    android:backgroundTint="#000000"
+                                    android:padding="5sp"/>
+                            </LinearLayout>
 
-                                <TextView
+                            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal">
+
+                                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Zabudowa jednorodzinna"
-                                    android:textSize="11sp"
-                                    android:textFontWeight="400"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#151515"/>
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Blachownia"
+                                        android:textSize="13sp"
+                                        android:textFontWeight="400"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="#151515"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Zabudowa jednorodzinna"
+                                        android:textSize="11sp"
+                                        android:textFontWeight="400"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="#151515"/>
+                                </LinearLayout>
                             </LinearLayout>
                         </LinearLayout>
                     </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:id="@+id/cisowa"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
 
                     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/cisowa"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:paddingEnd="10dp"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
-                        android:background="@drawable/corner_box_uslugi"
-                        android:layout_marginBottom="5dp"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
                         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:paddingEnd="15dp"
-                            android:paddingStart="15dp"
-                            android:paddingBottom="15dp"
-                            android:paddingTop="15dp"
-                            android:background="@drawable/corner_img_uslugi"
-                            android:orientation="vertical">
-
-                            <View
-                                android:layout_width="25sp"
-                                android:layout_height="25sp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/region_pin_alt"
-                                android:backgroundTint="#000000"
-                                android:padding="5sp"/>
-                        </LinearLayout>
-
-                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
+                            android:paddingBottom="20dp"
+                            android:paddingTop="20dp"
+                            android:background="@drawable/corner_box_more_item"
                             android:orientation="horizontal">
 
                             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -306,70 +273,62 @@
                                 android:layout_gravity="center"
                                 android:orientation="vertical">
 
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Cisowa, Miejsce Kłodnickie"
-                                    android:textSize="13sp"
-                                    android:textFontWeight="400"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#151515"/>
+                                <View
+                                    android:layout_width="30sp"
+                                    android:layout_height="30sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/region_pin_alt"
+                                    android:backgroundTint="#000000"
+                                    android:padding="5sp"/>
+                            </LinearLayout>
 
-                                <TextView
+                            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal">
+
+                                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Zabudowa jednorodzinna"
-                                    android:textSize="11sp"
-                                    android:textFontWeight="400"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#151515"/>
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Cisowa, Miejsce Kłodnickie"
+                                        android:textSize="13sp"
+                                        android:textFontWeight="400"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="#151515"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Zabudowa jednorodzinna"
+                                        android:textSize="11sp"
+                                        android:textFontWeight="400"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="#151515"/>
+                                </LinearLayout>
                             </LinearLayout>
                         </LinearLayout>
                     </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:id="@+id/kozle"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
 
                     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/kozle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:paddingEnd="10dp"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
-                        android:background="@drawable/corner_box_uslugi"
-                        android:layout_marginBottom="5dp"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
                         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:paddingEnd="15dp"
-                            android:paddingStart="15dp"
-                            android:paddingBottom="15dp"
-                            android:paddingTop="15dp"
-                            android:background="@drawable/corner_img_uslugi"
-                            android:orientation="vertical">
-
-                            <View
-                                android:layout_width="25sp"
-                                android:layout_height="25sp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/region_pin_alt"
-                                android:backgroundTint="#000000"
-                                android:padding="5sp"/>
-                        </LinearLayout>
-
-                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
+                            android:paddingBottom="20dp"
+                            android:paddingTop="20dp"
+                            android:background="@drawable/corner_box_more_item"
                             android:orientation="horizontal">
 
                             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -378,70 +337,62 @@
                                 android:layout_gravity="center"
                                 android:orientation="vertical">
 
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Koźle Zachód, Południe, Stare Miasto, Koźle Rogi, Wyspa, ul. Dunikowskiego, ul. Karpacka"
-                                    android:textSize="13sp"
-                                    android:textFontWeight="400"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#151515"/>
+                                <View
+                                    android:layout_width="30sp"
+                                    android:layout_height="30sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/region_pin_alt"
+                                    android:backgroundTint="#000000"
+                                    android:padding="5sp"/>
+                            </LinearLayout>
 
-                                <TextView
+                            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal">
+
+                                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Zabudowa jednorodzinna"
-                                    android:textSize="11sp"
-                                    android:textFontWeight="400"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#151515"/>
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Koźle Zachód, Południe, Stare Miasto, Koźle Rogi, Wyspa, ul. Dunikowskiego, ul. Karpacka"
+                                        android:textSize="13sp"
+                                        android:textFontWeight="400"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="#151515"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Zabudowa jednorodzinna"
+                                        android:textSize="11sp"
+                                        android:textFontWeight="400"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="#151515"/>
+                                </LinearLayout>
                             </LinearLayout>
                         </LinearLayout>
                     </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:id="@+id/kuzniczka"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
 
                     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/kuzniczka"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:paddingEnd="10dp"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
-                        android:background="@drawable/corner_box_uslugi"
-                        android:layout_marginBottom="5dp"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
                         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:paddingEnd="15dp"
-                            android:paddingStart="15dp"
-                            android:paddingBottom="15dp"
-                            android:paddingTop="15dp"
-                            android:background="@drawable/corner_img_uslugi"
-                            android:orientation="vertical">
-
-                            <View
-                                android:layout_width="25sp"
-                                android:layout_height="25sp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/region_pin_alt"
-                                android:backgroundTint="#000000"
-                                android:padding="5sp"/>
-                        </LinearLayout>
-
-                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
+                            android:paddingBottom="20dp"
+                            android:paddingTop="20dp"
+                            android:background="@drawable/corner_box_more_item"
                             android:orientation="horizontal">
 
                             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -450,70 +401,62 @@
                                 android:layout_gravity="center"
                                 android:orientation="vertical">
 
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Kuźniczka i Mała Kuźniczka"
-                                    android:textSize="13sp"
-                                    android:textFontWeight="400"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#151515"/>
+                                <View
+                                    android:layout_width="30sp"
+                                    android:layout_height="30sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/region_pin_alt"
+                                    android:backgroundTint="#000000"
+                                    android:padding="5sp"/>
+                            </LinearLayout>
 
-                                <TextView
+                            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal">
+
+                                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Zabudowa jednorodzinna"
-                                    android:textSize="11sp"
-                                    android:textFontWeight="400"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#151515"/>
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Kuźniczka i Mała Kuźniczka"
+                                        android:textSize="13sp"
+                                        android:textFontWeight="400"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="#151515"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Zabudowa jednorodzinna"
+                                        android:textSize="11sp"
+                                        android:textFontWeight="400"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="#151515"/>
+                                </LinearLayout>
                             </LinearLayout>
                         </LinearLayout>
                     </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:id="@+id/lenartowice"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
 
                     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/lenartowice"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:paddingEnd="10dp"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
-                        android:background="@drawable/corner_box_uslugi"
-                        android:layout_marginBottom="5dp"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
                         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:paddingEnd="15dp"
-                            android:paddingStart="15dp"
-                            android:paddingBottom="15dp"
-                            android:paddingTop="15dp"
-                            android:background="@drawable/corner_img_uslugi"
-                            android:orientation="vertical">
-
-                            <View
-                                android:layout_width="25sp"
-                                android:layout_height="25sp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/region_pin_alt"
-                                android:backgroundTint="#000000"
-                                android:padding="5sp"/>
-                        </LinearLayout>
-
-                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
+                            android:paddingBottom="20dp"
+                            android:paddingTop="20dp"
+                            android:background="@drawable/corner_box_more_item"
                             android:orientation="horizontal">
 
                             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -522,70 +465,62 @@
                                 android:layout_gravity="center"
                                 android:orientation="vertical">
 
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Lenartowice, Piastów, Powstańców Śląskich"
-                                    android:textSize="13sp"
-                                    android:textFontWeight="400"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#151515"/>
+                                <View
+                                    android:layout_width="30sp"
+                                    android:layout_height="30sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/region_pin_alt"
+                                    android:backgroundTint="#000000"
+                                    android:padding="5sp"/>
+                            </LinearLayout>
 
-                                <TextView
+                            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal">
+
+                                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Zabudowa jednorodzinna"
-                                    android:textSize="11sp"
-                                    android:textFontWeight="400"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#151515"/>
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Lenartowice, Piastów, Powstańców Śląskich"
+                                        android:textSize="13sp"
+                                        android:textFontWeight="400"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="#151515"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Zabudowa jednorodzinna"
+                                        android:textSize="11sp"
+                                        android:textFontWeight="400"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="#151515"/>
+                                </LinearLayout>
                             </LinearLayout>
                         </LinearLayout>
                     </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:id="@+id/pogorzelec"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
 
                     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/pogorzelec"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:paddingEnd="10dp"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
-                        android:background="@drawable/corner_box_uslugi"
-                        android:layout_marginBottom="5dp"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
                         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:paddingEnd="15dp"
-                            android:paddingStart="15dp"
-                            android:paddingBottom="15dp"
-                            android:paddingTop="15dp"
-                            android:background="@drawable/corner_img_uslugi"
-                            android:orientation="vertical">
-
-                            <View
-                                android:layout_width="25sp"
-                                android:layout_height="25sp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/region_pin_alt"
-                                android:backgroundTint="#000000"
-                                android:padding="5sp"/>
-                        </LinearLayout>
-
-                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
+                            android:paddingBottom="20dp"
+                            android:paddingTop="20dp"
+                            android:background="@drawable/corner_box_more_item"
                             android:orientation="horizontal">
 
                             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -594,70 +529,62 @@
                                 android:layout_gravity="center"
                                 android:orientation="vertical">
 
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Pogorzelec, Kłodnica (oprócz ul. Karpackiej, Dunikowskiego, Wyspa), Żabieniec, Koźle Port"
-                                    android:textSize="13sp"
-                                    android:textFontWeight="400"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#151515"/>
+                                <View
+                                    android:layout_width="30sp"
+                                    android:layout_height="30sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/region_pin_alt"
+                                    android:backgroundTint="#000000"
+                                    android:padding="5sp"/>
+                            </LinearLayout>
 
-                                <TextView
+                            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal">
+
+                                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Zabudowa jednorodzinna"
-                                    android:textSize="11sp"
-                                    android:textFontWeight="400"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#151515"/>
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Pogorzelec, Kłodnica (oprócz ul. Karpackiej, Dunikowskiego, Wyspa), Żabieniec, Koźle Port"
+                                        android:textSize="13sp"
+                                        android:textFontWeight="400"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="#151515"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Zabudowa jednorodzinna"
+                                        android:textSize="11sp"
+                                        android:textFontWeight="400"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="#151515"/>
+                                </LinearLayout>
                             </LinearLayout>
                         </LinearLayout>
                     </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:id="@+id/slawiecice"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
 
                     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/slawiecice"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:paddingEnd="10dp"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
-                        android:background="@drawable/corner_box_uslugi"
-                        android:layout_marginBottom="5dp"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
                         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:paddingEnd="15dp"
-                            android:paddingStart="15dp"
-                            android:paddingBottom="15dp"
-                            android:paddingTop="15dp"
-                            android:background="@drawable/corner_img_uslugi"
-                            android:orientation="vertical">
-
-                            <View
-                                android:layout_width="25sp"
-                                android:layout_height="25sp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/region_pin_alt"
-                                android:backgroundTint="#000000"
-                                android:padding="5sp"/>
-                        </LinearLayout>
-
-                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
+                            android:paddingBottom="20dp"
+                            android:paddingTop="20dp"
+                            android:background="@drawable/corner_box_more_item"
                             android:orientation="horizontal">
 
                             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -666,70 +593,62 @@
                                 android:layout_gravity="center"
                                 android:orientation="vertical">
 
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Sławięcice"
-                                    android:textSize="13sp"
-                                    android:textFontWeight="400"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#151515"/>
+                                <View
+                                    android:layout_width="30sp"
+                                    android:layout_height="30sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/region_pin_alt"
+                                    android:backgroundTint="#000000"
+                                    android:padding="5sp"/>
+                            </LinearLayout>
 
-                                <TextView
+                            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal">
+
+                                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Zabudowa jednorodzinna"
-                                    android:textSize="11sp"
-                                    android:textFontWeight="400"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#151515"/>
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Sławięcice"
+                                        android:textSize="13sp"
+                                        android:textFontWeight="400"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="#151515"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Zabudowa jednorodzinna"
+                                        android:textSize="11sp"
+                                        android:textFontWeight="400"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="#151515"/>
+                                </LinearLayout>
                             </LinearLayout>
                         </LinearLayout>
                     </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:id="@+id/srodmiescie"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
 
                     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/srodmiescie"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:paddingEnd="10dp"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
-                        android:background="@drawable/corner_box_uslugi"
-                        android:layout_marginBottom="5dp"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
                         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:paddingEnd="15dp"
-                            android:paddingStart="15dp"
-                            android:paddingBottom="15dp"
-                            android:paddingTop="15dp"
-                            android:background="@drawable/corner_img_uslugi"
-                            android:orientation="vertical">
-
-                            <View
-                                android:layout_width="25sp"
-                                android:layout_height="25sp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/region_pin_alt"
-                                android:backgroundTint="#000000"
-                                android:padding="5sp"/>
-                        </LinearLayout>
-
-                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
+                            android:paddingBottom="20dp"
+                            android:paddingTop="20dp"
+                            android:background="@drawable/corner_box_more_item"
                             android:orientation="horizontal">
 
                             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -738,70 +657,62 @@
                                 android:layout_gravity="center"
                                 android:orientation="vertical">
 
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Śródmieście"
-                                    android:textSize="13sp"
-                                    android:textFontWeight="400"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#151515"/>
+                                <View
+                                    android:layout_width="30sp"
+                                    android:layout_height="30sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/region_pin_alt"
+                                    android:backgroundTint="#000000"
+                                    android:padding="5sp"/>
+                            </LinearLayout>
 
-                                <TextView
+                            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal">
+
+                                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Zabudowa jednorodzinna"
-                                    android:textSize="11sp"
-                                    android:textFontWeight="400"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#151515"/>
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Śródmieście"
+                                        android:textSize="13sp"
+                                        android:textFontWeight="400"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="#151515"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Zabudowa jednorodzinna"
+                                        android:textSize="11sp"
+                                        android:textFontWeight="400"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="#151515"/>
+                                </LinearLayout>
                             </LinearLayout>
                         </LinearLayout>
                     </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:id="@+id/azotyw"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
 
                     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/azotyw"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:paddingEnd="10dp"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
-                        android:background="@drawable/corner_box_uslugi"
-                        android:layout_marginBottom="5dp"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
                         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:paddingEnd="15dp"
-                            android:paddingStart="15dp"
-                            android:paddingBottom="15dp"
-                            android:paddingTop="15dp"
-                            android:background="@drawable/corner_img_uslugi"
-                            android:orientation="vertical">
-
-                            <View
-                                android:layout_width="25sp"
-                                android:layout_height="25sp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/region_pin_alt"
-                                android:backgroundTint="#000000"
-                                android:padding="5sp"/>
-                        </LinearLayout>
-
-                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
+                            android:paddingBottom="20dp"
+                            android:paddingTop="20dp"
+                            android:background="@drawable/corner_box_more_item"
                             android:orientation="horizontal">
 
                             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -810,70 +721,62 @@
                                 android:layout_gravity="center"
                                 android:orientation="vertical">
 
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Azoty, Blachownia, Lenartowice, Piastów, Powstańców Śląskich, Sławięcice"
-                                    android:textSize="13sp"
-                                    android:textFontWeight="400"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#151515"/>
+                                <View
+                                    android:layout_width="30sp"
+                                    android:layout_height="30sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/region_pin_alt"
+                                    android:backgroundTint="#000000"
+                                    android:padding="5sp"/>
+                            </LinearLayout>
 
-                                <TextView
+                            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal">
+
+                                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Zabudowa wielorodzinna"
-                                    android:textSize="11sp"
-                                    android:textFontWeight="400"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#151515"/>
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Azoty, Blachownia, Lenartowice, Piastów, Powstańców Śląskich, Sławięcice"
+                                        android:textSize="13sp"
+                                        android:textFontWeight="400"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="#151515"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Zabudowa wielorodzinna"
+                                        android:textSize="11sp"
+                                        android:textFontWeight="400"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="#151515"/>
+                                </LinearLayout>
                             </LinearLayout>
                         </LinearLayout>
                     </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:id="@+id/kozlew"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
 
                     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/kozlew"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:paddingEnd="10dp"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
-                        android:background="@drawable/corner_box_uslugi"
-                        android:layout_marginBottom="5dp"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
                         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:paddingEnd="15dp"
-                            android:paddingStart="15dp"
-                            android:paddingBottom="15dp"
-                            android:paddingTop="15dp"
-                            android:background="@drawable/corner_img_uslugi"
-                            android:orientation="vertical">
-
-                            <View
-                                android:layout_width="25sp"
-                                android:layout_height="25sp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/region_pin_alt"
-                                android:backgroundTint="#000000"
-                                android:padding="5sp"/>
-                        </LinearLayout>
-
-                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
+                            android:paddingBottom="20dp"
+                            android:paddingTop="20dp"
+                            android:background="@drawable/corner_box_more_item"
                             android:orientation="horizontal">
 
                             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -882,70 +785,62 @@
                                 android:layout_gravity="center"
                                 android:orientation="vertical">
 
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Koźle Zachód, Południe, Stare Miasto, Koźle Rogi, Wyspa, ul. Dunikowskiego, ul. Karpacka"
-                                    android:textSize="13sp"
-                                    android:textFontWeight="400"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#151515"/>
+                                <View
+                                    android:layout_width="30sp"
+                                    android:layout_height="30sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/region_pin_alt"
+                                    android:backgroundTint="#000000"
+                                    android:padding="5sp"/>
+                            </LinearLayout>
 
-                                <TextView
+                            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal">
+
+                                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Zabudowa wielorodzinna"
-                                    android:textSize="11sp"
-                                    android:textFontWeight="400"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#151515"/>
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Koźle Zachód, Południe, Stare Miasto, Koźle Rogi, Wyspa, ul. Dunikowskiego, ul. Karpacka"
+                                        android:textSize="13sp"
+                                        android:textFontWeight="400"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="#151515"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Zabudowa wielorodzinna"
+                                        android:textSize="11sp"
+                                        android:textFontWeight="400"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="#151515"/>
+                                </LinearLayout>
                             </LinearLayout>
                         </LinearLayout>
                     </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:id="@+id/pogorzelecw"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
 
                     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/pogorzelecw"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:paddingEnd="10dp"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
-                        android:background="@drawable/corner_box_uslugi"
-                        android:layout_marginBottom="5dp"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
                         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:paddingEnd="15dp"
-                            android:paddingStart="15dp"
-                            android:paddingBottom="15dp"
-                            android:paddingTop="15dp"
-                            android:background="@drawable/corner_img_uslugi"
-                            android:orientation="vertical">
-
-                            <View
-                                android:layout_width="25sp"
-                                android:layout_height="25sp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/region_pin_alt"
-                                android:backgroundTint="#000000"
-                                android:padding="5sp"/>
-                        </LinearLayout>
-
-                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
+                            android:paddingBottom="20dp"
+                            android:paddingTop="20dp"
+                            android:background="@drawable/corner_box_more_item"
                             android:orientation="horizontal">
 
                             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -954,156 +849,76 @@
                                 android:layout_gravity="center"
                                 android:orientation="vertical">
 
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Pogorzelec, Kłodnica (oprócz ul. Karpackiej, Dunikowskiego, Wyspa), Żabieniec, Koźle Port"
-                                    android:textSize="13sp"
-                                    android:textFontWeight="400"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#151515"/>
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Zabudowa wielorodzinna"
-                                    android:textSize="11sp"
-                                    android:textFontWeight="400"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#151515"/>
+                                <View
+                                    android:layout_width="30sp"
+                                    android:layout_height="30sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/region_pin_alt"
+                                    android:backgroundTint="#000000"
+                                    android:padding="5sp"/>
                             </LinearLayout>
 
-                            <View
-                                android:layout_width="0dp"
-                                android:layout_gravity="center"
-                                android:layout_height="0dp"
-                                android:layout_weight="1" />
-
-                            <View
-                                android:layout_width="20sp"
-                                android:layout_height="20sp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/angle_circle_right"
-                                android:backgroundTint="#151515"
-                                android:padding="5sp"/>
-                        </LinearLayout>
-                    </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:id="@+id/srodmiesciewgr"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:paddingEnd="10dp"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
-                        android:background="@drawable/corner_box_uslugi"
-                        android:layout_marginBottom="5dp"
-                        android:orientation="horizontal">
-
-                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:paddingEnd="15dp"
-                            android:paddingStart="15dp"
-                            android:paddingBottom="15dp"
-                            android:paddingTop="15dp"
-                            android:background="@drawable/corner_img_uslugi"
-                            android:orientation="vertical">
-
-                            <View
-                                android:layout_width="25sp"
-                                android:layout_height="25sp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/region_pin_alt"
-                                android:backgroundTint="#000000"
-                                android:padding="5sp"/>
-                        </LinearLayout>
-
-                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:orientation="horizontal">
-
                             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
-                                android:orientation="vertical">
+                                android:orientation="horizontal">
 
-                                <TextView
+                                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Śródmieście MZBK i Wspólnoty Mieszkaniowe od Al. Jana Pawła II w stronę ul. Grunwaldzkiej"
-                                    android:textSize="13sp"
-                                    android:textFontWeight="400"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#151515"/>
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical">
 
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Zabudowa wielorodzinna"
-                                    android:textSize="11sp"
-                                    android:textFontWeight="400"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#151515"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Pogorzelec, Kłodnica (oprócz ul. Karpackiej, Dunikowskiego, Wyspa), Żabieniec, Koźle Port"
+                                        android:textSize="13sp"
+                                        android:textFontWeight="400"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="#151515"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Zabudowa wielorodzinna"
+                                        android:textSize="11sp"
+                                        android:textFontWeight="400"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="#151515"/>
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_gravity="center"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1" />
+
+                                <View
+                                    android:layout_width="20sp"
+                                    android:layout_height="20sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/angle_circle_right"
+                                    android:backgroundTint="#151515"
+                                    android:padding="5sp"/>
                             </LinearLayout>
                         </LinearLayout>
                     </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:id="@+id/srodmiesciewwp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
 
                     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/srodmiesciewgr"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:paddingEnd="10dp"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
-                        android:background="@drawable/corner_box_uslugi"
-                        android:layout_marginBottom="5dp"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
                         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:paddingEnd="15dp"
-                            android:paddingStart="15dp"
-                            android:paddingBottom="15dp"
-                            android:paddingTop="15dp"
-                            android:background="@drawable/corner_img_uslugi"
-                            android:orientation="vertical">
-
-                            <View
-                                android:layout_width="25sp"
-                                android:layout_height="25sp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/region_pin_alt"
-                                android:backgroundTint="#000000"
-                                android:padding="5sp"/>
-                        </LinearLayout>
-
-                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
+                            android:paddingBottom="20dp"
+                            android:paddingTop="20dp"
+                            android:background="@drawable/corner_box_more_item"
                             android:orientation="horizontal">
 
                             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -1112,70 +927,62 @@
                                 android:layout_gravity="center"
                                 android:orientation="vertical">
 
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Śródmieście MZBK i Wspólnoty Mieszkaniowe od Al. Jana Pawła II w stronę ul. Wojska Polskiego"
-                                    android:textSize="13sp"
-                                    android:textFontWeight="400"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#151515"/>
+                                <View
+                                    android:layout_width="30sp"
+                                    android:layout_height="30sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/region_pin_alt"
+                                    android:backgroundTint="#000000"
+                                    android:padding="5sp"/>
+                            </LinearLayout>
 
-                                <TextView
+                            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal">
+
+                                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Zabudowa wielorodzinna"
-                                    android:textSize="11sp"
-                                    android:textFontWeight="400"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#151515"/>
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Śródmieście MZBK i Wspólnoty Mieszkaniowe od Al. Jana Pawła II w stronę ul. Grunwaldzkiej"
+                                        android:textSize="13sp"
+                                        android:textFontWeight="400"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="#151515"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Zabudowa wielorodzinna"
+                                        android:textSize="11sp"
+                                        android:textFontWeight="400"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="#151515"/>
+                                </LinearLayout>
                             </LinearLayout>
                         </LinearLayout>
                     </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:id="@+id/srodmiesciewchemik"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
 
                     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/srodmiesciewwp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:paddingEnd="10dp"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
-                        android:background="@drawable/corner_box_uslugi"
-                        android:layout_marginBottom="5dp"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
                         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:paddingEnd="15dp"
-                            android:paddingStart="15dp"
-                            android:paddingBottom="15dp"
-                            android:paddingTop="15dp"
-                            android:background="@drawable/corner_img_uslugi"
-                            android:orientation="vertical">
-
-                            <View
-                                android:layout_width="25sp"
-                                android:layout_height="25sp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/region_pin_alt"
-                                android:backgroundTint="#000000"
-                                android:padding="5sp"/>
-                        </LinearLayout>
-
-                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
+                            android:paddingBottom="20dp"
+                            android:paddingTop="20dp"
+                            android:background="@drawable/corner_box_more_item"
                             android:orientation="horizontal">
 
                             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -1184,70 +991,62 @@
                                 android:layout_gravity="center"
                                 android:orientation="vertical">
 
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Śródmieście RSM CHEMIK"
-                                    android:textSize="13sp"
-                                    android:textFontWeight="400"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#151515"/>
+                                <View
+                                    android:layout_width="30sp"
+                                    android:layout_height="30sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/region_pin_alt"
+                                    android:backgroundTint="#000000"
+                                    android:padding="5sp"/>
+                            </LinearLayout>
 
-                                <TextView
+                            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal">
+
+                                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Zabudowa wielorodzinna"
-                                    android:textSize="11sp"
-                                    android:textFontWeight="400"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#151515"/>
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Śródmieście MZBK i Wspólnoty Mieszkaniowe od Al. Jana Pawła II w stronę ul. Wojska Polskiego"
+                                        android:textSize="13sp"
+                                        android:textFontWeight="400"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="#151515"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Zabudowa wielorodzinna"
+                                        android:textSize="11sp"
+                                        android:textFontWeight="400"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="#151515"/>
+                                </LinearLayout>
                             </LinearLayout>
                         </LinearLayout>
                     </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:id="@+id/firmy"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
 
                     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/srodmiesciewchemik"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:paddingEnd="10dp"
-                        android:paddingStart="10dp"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
-                        android:background="@drawable/corner_box_uslugi"
-                        android:layout_marginBottom="5dp"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
                         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:paddingEnd="15dp"
-                            android:paddingStart="15dp"
-                            android:paddingBottom="15dp"
-                            android:paddingTop="15dp"
-                            android:background="@drawable/corner_img_uslugi"
-                            android:orientation="vertical">
-
-                            <View
-                                android:layout_width="25sp"
-                                android:layout_height="25sp"
-                                android:layout_gravity="center"
-                                android:background="@drawable/region_pin_alt"
-                                android:backgroundTint="#000000"
-                                android:padding="5sp"/>
-                        </LinearLayout>
-
-                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
+                            android:paddingBottom="20dp"
+                            android:paddingTop="20dp"
+                            android:background="@drawable/corner_box_more_item"
                             android:orientation="horizontal">
 
                             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -1256,14 +1055,99 @@
                                 android:layout_gravity="center"
                                 android:orientation="vertical">
 
-                                <TextView
+                                <View
+                                    android:layout_width="30sp"
+                                    android:layout_height="30sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/region_pin_alt"
+                                    android:backgroundTint="#000000"
+                                    android:padding="5sp"/>
+                            </LinearLayout>
+
+                            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal">
+
+                                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Instytucje, firmy"
-                                    android:textSize="13sp"
-                                    android:textFontWeight="400"
-                                    android:layout_marginLeft="10dp"
-                                    android:textColor="#151515"/>
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Śródmieście RSM CHEMIK"
+                                        android:textSize="13sp"
+                                        android:textFontWeight="400"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="#151515"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Zabudowa wielorodzinna"
+                                        android:textSize="11sp"
+                                        android:textFontWeight="400"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="#151515"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/firmy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingBottom="20dp"
+                            android:paddingTop="20dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                                <View
+                                    android:layout_width="30sp"
+                                    android:layout_height="30sp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/region_pin_alt"
+                                    android:backgroundTint="#000000"
+                                    android:padding="5sp"/>
+                            </LinearLayout>
+
+                            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal">
+
+                                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Instytucje, firmy"
+                                        android:textSize="13sp"
+                                        android:textFontWeight="400"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="#151515"/>
+                                </LinearLayout>
                             </LinearLayout>
                         </LinearLayout>
                     </LinearLayout>
