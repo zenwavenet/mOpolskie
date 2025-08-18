@@ -1,4 +1,5 @@
 package net.gf.mopolskie
+
 import net.gf.mopolskie.utils.overrideTransitionCompat
 import net.gf.mopolskie.utils.setupModernStatusBar
 import android.content.Intent
@@ -21,6 +22,7 @@ class HelpActivity : ComponentActivity() {
             finish()
             overrideTransitionCompat()
         }
+
         val ServicesButton = findViewById<LinearLayout>(R.id.services)
         ServicesButton.setOnClickListener {
             val intent = Intent(this, ServicesActivity::class.java)
@@ -28,6 +30,7 @@ class HelpActivity : ComponentActivity() {
             finish()
             overrideTransitionCompat()
         }
+
         val MoreButton = findViewById<LinearLayout>(R.id.more)
         MoreButton.setOnClickListener {
             val intent = Intent(this, MoreActivity::class.java)

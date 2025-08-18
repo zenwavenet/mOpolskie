@@ -124,7 +124,6 @@ class AttractionActivity : ComponentActivity() {
     private fun displayAttractionsWithCategories(categories: Map<String, List<Attraction>>) {
         val attractionContainer = findViewById<LinearLayout>(R.id.attraction_container)
         if (attractionContainer == null) {
-            println("Nie znaleziono widoku attraction_container!")
             return
         }
         

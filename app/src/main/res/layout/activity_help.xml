@@ -106,10 +106,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Numer podstawowy"
-                    android:textColor="#151515"
-                    android:textSize="14dp"
+                    android:textSize="12sp"
+                    android:textFontWeight="500"
                     android:layout_marginBottom="10dp"
-                    android:textFontWeight="800" />
+                    android:textColor="#151515" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -174,10 +174,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Służby ratunkowe"
-                    android:textColor="#151515"
-                    android:textSize="14dp"
+                    android:textSize="12sp"
+                    android:textFontWeight="500"
                     android:layout_marginBottom="10dp"
-                    android:textFontWeight="800" />
+                    android:textColor="#151515" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -381,7 +381,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="WOPR (Wodne) i GOPR (Górskie)"
+                                android:text="WOPR i GOPR"
                                 android:textColor="#151515"
                                 android:textSize="10dp"
                                 android:textFontWeight="500" />
@@ -410,10 +410,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Służby techniczne i awarie"
-                    android:textColor="#151515"
-                    android:textSize="14dp"
+                    android:textSize="12sp"
+                    android:textFontWeight="500"
                     android:layout_marginBottom="10dp"
-                    android:textFontWeight="800" />
+                    android:textColor="#151515" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -450,7 +450,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Straż Ochrony Kolei (SOK)"
+                                android:text="Straż Ochrony Kolei"
                                 android:textColor="#151515"
                                 android:textSize="10dp"
                                 android:textFontWeight="500" />
@@ -492,7 +492,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Pomoc Drogowa (GDDKiA)"
+                                android:text="Pomoc Drogowa"
                                 android:textColor="#151515"
                                 android:textSize="10dp"
                                 android:textFontWeight="500" />
@@ -688,10 +688,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Wsparcie i pomoc społeczna"
-                    android:textColor="#151515"
-                    android:textSize="14dp"
+                    android:textSize="12sp"
+                    android:textFontWeight="500"
                     android:layout_marginBottom="10dp"
-                    android:textFontWeight="800" />
+                    android:textColor="#151515" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -896,7 +896,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Pomoc Medyczna (poza godzinami pracy)"
+                                android:text="Pomoc Medyczna"
                                 android:textColor="#151515"
                                 android:textSize="10dp"
                                 android:textFontWeight="500" />

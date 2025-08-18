@@ -170,7 +170,7 @@ class NoInternetActivity : ComponentActivity(), NetworkManager.NetworkConnection
         super.onResume()
 
         lifecycleScope.launch {
-            delay(1000) // Krótkie opóźnienie na wypadek zmiany ustawień
+            delay(1000)
             val isConnected = networkManager.hasInternetConnection()
             updateConnectionStatus(isConnected)
             

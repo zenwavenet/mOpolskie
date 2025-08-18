@@ -1,4 +1,5 @@
 package net.gf.mopolskie
+
 import net.gf.mopolskie.utils.overrideTransitionCompat
 import net.gf.mopolskie.utils.setupModernStatusBar
 import android.content.Intent
@@ -19,6 +20,7 @@ import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
+
 class WordActivity : ComponentActivity() {
     private lateinit var viewModel: WordViewModel
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,6 +28,7 @@ class WordActivity : ComponentActivity() {
         setContentView(R.layout.activity_word)
         viewModel = ViewModelProvider(this)[WordViewModel::class.java]
         setupModernStatusBar()
+
         val HelpButton = findViewById<LinearLayout>(R.id.help)
         HelpButton.setOnClickListener {
             val intent = Intent(this, HelpActivity::class.java)
@@ -33,6 +36,7 @@ class WordActivity : ComponentActivity() {
             finish()
             overrideTransitionCompat()
         }
+
         val MainButton = findViewById<LinearLayout>(R.id.pulpit)
         MainButton.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
@@ -40,6 +44,7 @@ class WordActivity : ComponentActivity() {
             finish()
             overrideTransitionCompat()
         }
+
         val ServicesButton = findViewById<LinearLayout>(R.id.services)
         ServicesButton.setOnClickListener {
             val intent = Intent(this, ServicesActivity::class.java)
@@ -47,6 +52,7 @@ class WordActivity : ComponentActivity() {
             finish()
             overrideTransitionCompat()
         }
+
         val MoreButton = findViewById<LinearLayout>(R.id.more)
         MoreButton.setOnClickListener {
             val intent = Intent(this, MoreActivity::class.java)
@@ -54,6 +60,7 @@ class WordActivity : ComponentActivity() {
             finish()
             overrideTransitionCompat()
         }
+
         lifecycleScope.launch {
             val success = viewModel.fetchWords()
             if (success) {
@@ -63,12 +70,13 @@ class WordActivity : ComponentActivity() {
             }
         }
     }
+
     private fun displayWords(words: List<Word>) {
         val wordContainer = findViewById<LinearLayout>(R.id.word_container)
         if (wordContainer == null) {
-            println("Nie znaleziono widoku word_container!")
             return
         }
+
         words.forEach { word ->
             val wordView = LayoutInflater.from(this).inflate(R.layout.word_item, null)
             val branchView: TextView = wordView.findViewById(R.id.word_branch)
@@ -86,6 +94,7 @@ class WordActivity : ComponentActivity() {
                         bottomMargin = 8
                     }
                 }
+
                 val icon = View(this).apply {
                     layoutParams = LinearLayout.LayoutParams(48, 48).apply {
                         rightMargin = 12
@@ -93,6 +102,7 @@ class WordActivity : ComponentActivity() {
                     setBackgroundResource(R.drawable.clock_five)
                     backgroundTintList = getColorStateList(R.color.icon_color)
                 }
+
                 val openText = TextView(this).apply {
                     text = "$day: $hours"
                     setTextColor(resources.getColor(android.R.color.black, theme))
@@ -104,10 +114,12 @@ class WordActivity : ComponentActivity() {
                     )
                     gravity = android.view.Gravity.CENTER_VERTICAL
                 }
+
                 row.addView(icon)
                 row.addView(openText)
                 openContainer.addView(row)
             }
+
             val phoneContainer: LinearLayout = wordView.findViewById(R.id.word_phone_container)
             word.phone.forEach { (type, number) ->
                 val row = LinearLayout(this).apply {
@@ -119,6 +131,7 @@ class WordActivity : ComponentActivity() {
                         bottomMargin = 8
                     }
                 }
+
                 val icon = View(this).apply {
                     layoutParams = LinearLayout.LayoutParams(48, 48).apply {
                         rightMargin = 12
@@ -126,6 +139,7 @@ class WordActivity : ComponentActivity() {
                     setBackgroundResource(R.drawable.phone_call)
                     backgroundTintList = getColorStateList(R.color.icon_color)
                 }
+
                 val phoneText = TextView(this).apply {
                     text = "$type: $number"
                     setTextColor(resources.getColor(android.R.color.black, theme))
@@ -137,6 +151,7 @@ class WordActivity : ComponentActivity() {
                     )
                     gravity = android.view.Gravity.CENTER_VERTICAL
                 }
+
                 row.addView(icon)
                 row.addView(phoneText)
                 phoneContainer.addView(row)

@@ -1,13 +1,16 @@
 package net.gf.mopolskie
+
 import net.gf.mopolskie.utils.overrideTransitionCompat
 import net.gf.mopolskie.utils.setupModernStatusBar
 import android.content.Intent
+import android.content.SharedPreferences
 import android.graphics.Color
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
+import android.view.View
 import androidx.activity.ComponentActivity
 import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.launch
@@ -15,16 +18,25 @@ import net.gf.mopolskie.endpoints.WasteEndpoints
 import net.gf.mopolskie.manager.WasteItem
 import net.gf.mopolskie.manager.WasteManager
 import net.gf.mopolskie.manager.WasteUtils
+import net.gf.mopolskie.manager.TrashManager
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
+
 class WywozSmieciCisekActivity : ComponentActivity() {
     private lateinit var wasteManager: WasteManager
+    private lateinit var trashManager: TrashManager
+    private lateinit var sharedPreferences: SharedPreferences
     private var selectedRegion: String? = null
+    private var isFavorite: Boolean = false
+    private var currentEndpointId: Int = -1
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         
         wasteManager = WasteManager()
+        trashManager = TrashManager(this)
+        sharedPreferences = getSharedPreferences("FavoriteRegions", MODE_PRIVATE)
         selectedRegion = intent.getStringExtra("region")
         
         if (selectedRegion != null) {
@@ -33,36 +45,46 @@ class WywozSmieciCisekActivity : ComponentActivity() {
             showRegionMenu()
         }
     }
+
     private fun showRegionMenu() {
         setContentView(R.layout.activity_waste_cisek)
         setupStatusBar()
         setupCommonNavigation()
         setupRegionButtons()
     }
+
     private fun showRegionData(region: String) {
         val regionConfig = getRegionConfig(region)
+        currentEndpointId = regionConfig.endpointId
         setContentView(regionConfig.layoutId)
         setupStatusBar()
         setupCommonNavigation()
+        setupFavoriteButton(region)
         loadWasteData(regionConfig.endpointId)
     }
+
     private fun setupStatusBar() {
         setupModernStatusBar()
     }
+
     private fun setupCommonNavigation() {
         findViewById<LinearLayout>(R.id.help)?.setOnClickListener {
             startActivityWithTransition(HelpActivity::class.java)
         }
+
         findViewById<LinearLayout>(R.id.pulpit)?.setOnClickListener {
             startActivityWithTransition(MainActivity::class.java)
         }
+
         findViewById<LinearLayout>(R.id.services)?.setOnClickListener {
             startActivityWithTransition(ServicesActivity::class.java)
         }
+
         findViewById<LinearLayout>(R.id.more)?.setOnClickListener {
             startActivityWithTransition(MoreActivity::class.java)
         }
     }
+
     private fun setupRegionButtons() {
         setupRegionButton(R.id.bycznicaw, "bycznica_w")
         setupRegionButton(R.id.bycznica, "bycznica")
@@ -71,6 +93,7 @@ class WywozSmieciCisekActivity : ComponentActivity() {
         setupRegionButton(R.id.cisekf, "kobylice_f")
         setupRegionButton(R.id.cisekw, "kobylice_w")
     }
+
     private fun setupRegionButton(buttonId: Int, region: String) {
         findViewById<LinearLayout>(buttonId)?.setOnClickListener {
             val intent = Intent(this, WywozSmieciCisekActivity::class.java)
@@ -80,6 +103,7 @@ class WywozSmieciCisekActivity : ComponentActivity() {
             overrideTransitionCompat()
         }
     }
+
     private fun loadWasteData(endpointId: Int) {
         lifecycleScope.launch {
             val success = wasteManager.fetchWaste(endpointId)
@@ -90,6 +114,7 @@ class WywozSmieciCisekActivity : ComponentActivity() {
             }
         }
     }
+
     private fun showWaste(items: List<WasteItem>) {
         val container = findViewById<LinearLayout>(R.id.waste_container) ?: return
         val todayBlock = findViewById<LinearLayout>(R.id.today_block) ?: return
@@ -106,15 +131,19 @@ class WywozSmieciCisekActivity : ComponentActivity() {
         val addedDates = mutableSetOf<String>()
         val nextDates = mutableListOf<WasteItem>()
         val todayDateParsed = dateFormat.parse(today)
+
         container.removeAllViews()
+
         items.forEach { item ->
             val itemDate = dateFormat.parse(item.date) ?: return@forEach
+
             if (item.date == today) {
                 todayWasteTypes.add(item.wasteType)
                 todayDateText.text = "Dzisiaj, ${displayDateFormat.format(itemDate)}"
             } else if (itemDate.after(todayDateParsed)) {
                 nextDates.add(item)
             }
+
             if (!addedDates.contains(item.date)) {
                 var dayOfWeek = dayOfWeekFormat.format(itemDate)
                 dayOfWeek = dayOfWeek.replaceFirstChar { it.uppercase() }
@@ -128,9 +157,13 @@ class WywozSmieciCisekActivity : ComponentActivity() {
                 container.addView(dateHeaderView)
                 addedDates.add(item.date)
             }
+
             val wasteView = LayoutInflater.from(this).inflate(R.layout.waste_item, container, false)
+
             wasteView.findViewById<TextView>(R.id.waste_type).text = item.wasteType
+
             val bg = Color.parseColor(WasteUtils.rgbToHex(item.backgroundColor))
+
             when (bg) {
                 Color.parseColor("#545353") -> wasteView.setBackgroundResource(R.drawable.corner_popiol)
                 Color.parseColor("#000000") -> wasteView.setBackgroundResource(R.drawable.corner_zmieszane)
@@ -140,6 +173,7 @@ class WywozSmieciCisekActivity : ComponentActivity() {
                 Color.parseColor("#024b8c") -> wasteView.setBackgroundResource(R.drawable.corner_papier)
                 else -> wasteView.setBackgroundResource(R.drawable.default_background)
             }
+
             container.addView(wasteView)
         }
         if (todayWasteTypes.isNotEmpty()) {
@@ -149,30 +183,37 @@ class WywozSmieciCisekActivity : ComponentActivity() {
             todayDateText.text = "Dzisiaj, $todayFormatted"
             todayWasteText.text = "Dzisiaj nic nie jest do wywiezienia"
         }
+
         if (nextDates.isNotEmpty()) {
             val sorted = nextDates.sortedBy {
                 dateFormat.parse(it.date)
             }
+
             val nearestDate = sorted.first().date
             val nearestWasteTypes = sorted.filter { it.date == nearestDate }.map { it.wasteType }
             val nextDateParsed = dateFormat.parse(nearestDate)!!
             val nextDateFormatted = displayDateFormat.format(nextDateParsed)
             val dayOfWeek = dayOfWeekFormat.format(nextDateParsed).replaceFirstChar { it.uppercase() }
+
             nextDateText.text = "$dayOfWeek, $nextDateFormatted"
             nextWasteText.text = nearestWasteTypes.joinToString(", ")
         } else {
             nextDateText.text = "Brak danych"
             nextWasteText.text = "-"
         }
+
         todayBlock.visibility = LinearLayout.VISIBLE
         calendarText.visibility = LinearLayout.VISIBLE
     }
+
     private fun startActivityWithTransition(activityClass: Class<*>) {
         val intent = Intent(this, activityClass)
+
         startActivity(intent)
         finish()
         overrideTransitionCompat()
     }
+
     private fun getRegionConfig(region: String): RegionConfig {
         return when (region) {
             "bycznica_w" -> RegionConfig(R.layout.waste_cisek_bycznica_w, WasteEndpoints.CISEK_BYCZNICA_W)
@@ -184,6 +225,48 @@ class WywozSmieciCisekActivity : ComponentActivity() {
             else -> RegionConfig(R.layout.waste_cisek_kobylice, WasteEndpoints.CISEK_KOBYLICE)
         }
     }
+
+    private fun setupFavoriteButton(region: String) {
+        val favoriteButton = findViewById<LinearLayout>(R.id.favoriteButton)
+        val favoriteIcon = findViewById<View>(R.id.favoriteIcon)
+        val favoriteText = findViewById<TextView>(R.id.favoriteText)
+        
+        if (favoriteButton != null && favoriteIcon != null && favoriteText != null) {
+
+            val currentSelectedEndpoint = trashManager.getSelectedEndpointId()
+            isFavorite = (currentSelectedEndpoint == currentEndpointId)
+
+            updateFavoriteUI(favoriteIcon, favoriteText)
+            
+            favoriteButton.setOnClickListener {
+                if (isFavorite) {
+                    Toast.makeText(this, "Ta gmina jest już ulubiona", Toast.LENGTH_SHORT).show()
+                } else {
+                    trashManager.setSelectedEndpoint(currentEndpointId)
+                    isFavorite = true
+                    updateFavoriteUI(favoriteIcon, favoriteText)
+                    
+                    val municipalityName = trashManager.getSelectedMunicipalityName()
+                    Toast.makeText(this, "Ulubiona gmina: $municipalityName", Toast.LENGTH_SHORT).show()
+                }
+            }
+        } else {
+            println("WywozSmieciCisekActivity: Nie znaleziono elementów UI dla favoriteButton")
+        }
+    }
+
+    private fun updateFavoriteUI(favoriteIcon: View, favoriteText: TextView) {
+        if (isFavorite) {
+            favoriteIcon.setBackgroundResource(R.drawable.ic_heart_filled)
+            favoriteIcon.backgroundTintList = android.content.res.ColorStateList.valueOf(Color.parseColor("#FF4444"))
+            favoriteText.text = "Ulubione"
+        } else {
+            favoriteIcon.setBackgroundResource(R.drawable.ic_heart_outline)
+            favoriteIcon.backgroundTintList = android.content.res.ColorStateList.valueOf(Color.parseColor("#999999"))
+            favoriteText.text = "Polub"
+        }
+    }
+
     data class RegionConfig(
         val layoutId: Int,
         val endpointId: Int

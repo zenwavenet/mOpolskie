@@ -179,7 +179,6 @@ class StarostwoActivity : ComponentActivity() {
 
             val departmentsContainer = locationView.findViewById<LinearLayout>(R.id.starostwo_departments_container)
             location.departments?.forEach { (departmentName, services) ->
-                // Header wydziału
                 val departmentHeader = createDepartmentHeader(departmentName)
                 departmentsContainer?.addView(departmentHeader)
 

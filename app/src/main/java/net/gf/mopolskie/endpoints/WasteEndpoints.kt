@@ -7,7 +7,7 @@ object WasteEndpoints {
     const val BLACHOWNIA = 448
     const val CISOWA = 450
     const val KOZLE = 444
-    const val KOZLE_W = 453
+    const val KOZLE_W = 456
     const val LENARTOWICE = 447
     const val POGORZELEC = 442
     const val POGORZELEC_W = 455
