@@ -493,5 +493,6 @@ class MainActivity : BaseActivity() {
             Intent(this, WywozSmieciKKActivity::class.java)
         }
         startActivity(intent)
+        overrideTransitionCompat()
     }
 }
