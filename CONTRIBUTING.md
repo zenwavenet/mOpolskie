@@ -13,7 +13,7 @@ Dziękujemy za zainteresowanie rozwojem aplikacji **mOpolskie**! Ten przewodnik 
 ### 1. Sklonuj repozytorium
 
 ```bash
-git clone https://github.com/gofluxpl/mOpolskie.git
+git clone https://github.com/zenwavenet/mOpolskie.git
 cd mOpolskie
 ```
 
