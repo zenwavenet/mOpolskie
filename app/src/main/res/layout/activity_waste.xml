@@ -239,6 +239,84 @@
                 </LinearLayout>
 
                 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/dobrodzien"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingBottom="20dp"
+                        android:paddingTop="20dp"
+                        android:background="@drawable/corner_box_more_item"
+                        android:orientation="horizontal">
+
+                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+
+                            <View
+                                android:layout_width="30sp"
+                                android:layout_height="30sp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/map_marker_home"
+                                android:backgroundTint="#000000"
+                                android:padding="5sp"/>
+                        </LinearLayout>
+
+                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal">
+
+                            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Gmina"
+                                    android:textSize="16sp"
+                                    android:textFontWeight="500"
+                                    android:layout_marginLeft="10dp"
+                                    android:textColor="#000000"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Dobrodzień"
+                                    android:textSize="13sp"
+                                    android:textFontWeight="400"
+                                    android:layout_marginLeft="10dp"
+                                    android:textColor="#151515"/>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_gravity="center"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <View
+                                android:layout_width="20sp"
+                                android:layout_height="20sp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/angle_small_right"
+                                android:backgroundTint="#151515"
+                                android:padding="5sp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                     android:id="@+id/kedzierzyn_kozle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

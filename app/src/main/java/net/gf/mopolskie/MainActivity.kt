@@ -23,9 +23,6 @@ import java.time.format.DateTimeFormatter
 import java.util.*
 
 class MainActivity : BaseActivity() {
-    private lateinit var dateText: TextView
-    private lateinit var dayText: TextView
-    private lateinit var timeText: TextView
     private lateinit var searchEditText: EditText
     private lateinit var viewPager: ViewPager2
     private lateinit var sliderAdapter: SliderAdapter
@@ -192,7 +189,6 @@ class MainActivity : BaseActivity() {
             
             listView.setOnItemClickListener { _, _, position, _ ->
                 try {
-                    val selectedSubject = subjects[position]
                     currentDialog?.dismiss()
                     showMunicipalitySelectionDialog()
                 } catch (e: Exception) {
@@ -220,7 +216,7 @@ class MainActivity : BaseActivity() {
 
     private fun showMunicipalitySelectionDialog() {
         try {
-            val municipalities = listOf("Cisek", "Kędzierzyn-Koźle")
+            val municipalities = listOf("Cisek", "Dobrodzień", "Kędzierzyn-Koźle")
             
             val listView = android.widget.ListView(this)
             val adapter = android.widget.ArrayAdapter(this, android.R.layout.simple_list_item_1, municipalities)
@@ -262,6 +258,7 @@ class MainActivity : BaseActivity() {
             val filteredEndpoints = endpoints.filter { (_, name) ->
                 when (municipality) {
                     "Cisek" -> name.startsWith("Cisek")
+                    "Dobrodzień" -> name.startsWith("Dobrodzień")
                     "Kędzierzyn-Koźle" -> name.startsWith("Kędzierzyn-Koźle")
                     else -> false
                 }
@@ -425,9 +422,6 @@ class MainActivity : BaseActivity() {
         }
 
         trashManager.setMigrationDone()
-
-        val currentEndpoint = trashManager.getSelectedEndpointId()
-        val currentName = trashManager.getSelectedMunicipalityName()
     }
     
     private fun clearAllOldFavorites() {
@@ -436,23 +430,6 @@ class MainActivity : BaseActivity() {
 
         val kkPrefs = getSharedPreferences("FavoriteRegionsKK", MODE_PRIVATE)
         kkPrefs.edit().clear().apply()
-    }
-
-    private fun emergencyReset() {
-        clearAllOldFavorites()
-        trashManager.forceFullReset()
-
-        sliderAdapter.refreshTrashData()
-    }
-
-    private fun forceNewSelection() {
-        trashManager.resetMigrationFlag()
-
-        trashManager.forceFullReset()
-
-        sliderAdapter.refreshTrashData()
-
-        showEndpointSelectionDialog()
     }
     
     private fun convertRegionToEndpoint(region: String): Int? {
@@ -480,6 +457,19 @@ class MainActivity : BaseActivity() {
             "srodmiescie_w_wp" -> 451
             "srodmiescie_w_chemik" -> 454
             "firmy" -> 499
+
+            "baki_j" -> 436
+            "baki_w" -> 439
+            "baki_f" -> 497
+            "blachow_j" -> 435
+            "blachow_w" -> 440
+            "blachow_f" -> 496
+            "dobrodzien_j" -> 438
+            "dobrodzien_w" -> 441
+            "dobrodzien_f" -> 494
+            "warlow_j" -> 437
+            "warlow_w" -> 434
+            "warlow_f" -> 495
             
             else -> null
         }
@@ -489,6 +479,8 @@ class MainActivity : BaseActivity() {
     private fun navigateToWasteActivity() {
         val intent = if (trashManager.isCisekMunicipality()) {
             Intent(this, WywozSmieciCisekActivity::class.java)
+        } else if (trashManager.isDobrodzienMunicipality()) {
+            Intent(this, WywozSmieciDobrodzienActivity::class.java)
         } else {
             Intent(this, WywozSmieciKKActivity::class.java)
         }

@@ -85,6 +85,10 @@
             android:name=".WordActivity"
             android:theme="@style/Theme.MOpolskie"/>
 
+        <activity
+            android:name=".LicenseActivity"
+            android:theme="@style/Theme.MOpolskie"/>
+
         <!--    ========    -->
         <!--    ATRAKCJE    -->
         <!--    ========    -->
@@ -127,6 +131,10 @@
 
         <activity
             android:name=".WywozSmieciKKActivity"
+            android:theme="@style/Theme.MOpolskie"/>
+
+        <activity
+            android:name=".WywozSmieciDobrodzienActivity"
             android:theme="@style/Theme.MOpolskie"/>
 
     </application>

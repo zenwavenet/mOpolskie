@@ -3,14 +3,16 @@ package net.gf.mopolskie
 import net.gf.mopolskie.utils.overrideTransitionCompat
 import net.gf.mopolskie.utils.setupModernStatusBar
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.widget.LinearLayout
+import android.widget.Toast
 import androidx.activity.ComponentActivity
 
-class WywozSmieciActivity : ComponentActivity() {
+class LicenseActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_waste)
+        setContentView(R.layout.activity_license)
         setupModernStatusBar()
 
         val HelpButton = findViewById<LinearLayout>(R.id.help)
@@ -40,30 +42,6 @@ class WywozSmieciActivity : ComponentActivity() {
         val MoreButton = findViewById<LinearLayout>(R.id.more)
         MoreButton.setOnClickListener {
             val intent = Intent(this, MoreActivity::class.java)
-            startActivity(intent)
-            finish()
-            overrideTransitionCompat()
-        }
-
-        val CisekButton = findViewById<LinearLayout>(R.id.cisek)
-        CisekButton.setOnClickListener {
-            val intent = Intent(this, WywozSmieciCisekActivity::class.java)
-            startActivity(intent)
-            finish()
-            overrideTransitionCompat()
-        }
-
-        val DobrodzienButton = findViewById<LinearLayout>(R.id.dobrodzien)
-        DobrodzienButton.setOnClickListener {
-            val intent = Intent(this, WywozSmieciDobrodzienActivity::class.java)
-            startActivity(intent)
-            finish()
-            overrideTransitionCompat()
-        }
-        
-        val KKButton = findViewById<LinearLayout>(R.id.kedzierzyn_kozle)
-        KKButton.setOnClickListener {
-            val intent = Intent(this, WywozSmieciKKActivity::class.java)
             startActivity(intent)
             finish()
             overrideTransitionCompat()

@@ -57,6 +57,14 @@ class AboutActivity : ComponentActivity() {
             overrideTransitionCompat()
         }
 
+        val LicenseButton = findViewById<LinearLayout>(R.id.license)
+        LicenseButton.setOnClickListener {
+            val intent = Intent(this, LicenseActivity::class.java)
+            startActivity(intent)
+            finish()
+            overrideTransitionCompat()
+        }
+
         findViewById<TextView>(R.id.url)?.setOnClickListener {
             openWebsite("https://zenwave.net")
         }

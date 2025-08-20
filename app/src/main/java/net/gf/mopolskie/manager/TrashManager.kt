@@ -42,7 +42,20 @@ class TrashManager(context: Context) {
         452 to "Kędzierzyn-Koźle - Grunwaldzka\n(wielorodzinne)",
         451 to "Kędzierzyn-Koźle - Waryńskiego/Piłsudskiego\n(wielorodzinne)",
         454 to "Kędzierzyn-Koźle - Chemik\n(wielorodzinne)",
-        499 to "Kędzierzyn-Koźle\n(firmy)"
+        499 to "Kędzierzyn-Koźle\n(firmy)",
+
+        436 to "Dobrodzień - Baki\n(jednorodzinne)",
+        439 to "Dobrodzień - Baki\n(wielorodzinne)",
+        497 to "Dobrodzień - Baki\n(firmy)",
+        435 to "Dobrodzień - Błachów\n(jednorodzinne)",
+        440 to "Dobrodzień - Błachów\n(wielorodzinne)",
+        496 to "Dobrodzień - Błachów\n(firmy)",
+        438 to "Dobrodzień - Dobrodzień\n(jednorodzinne)",
+        441 to "Dobrodzień - Dobrodzień\n(wielorodzinne)",
+        494 to "Dobrodzień - Dobrodzień\n(firmy)",
+        437 to "Dobrodzień - Warłów\n(jednorodzinne)",
+        434 to "Dobrodzień - Warłów\n(wielorodzinne)",
+        495 to "Dobrodzień - Warłów\n(firmy)"
     )
     
     fun getSelectedEndpointId(): Int? {
@@ -62,6 +75,11 @@ class TrashManager(context: Context) {
     fun isCisekMunicipality(): Boolean {
         val endpointId = getSelectedEndpointId()
         return endpointId != null && endpointId in listOf(364, 362, 462, 363, 361, 463)
+    }
+    
+    fun isDobrodzienMunicipality(): Boolean {
+        val endpointId = getSelectedEndpointId()
+        return endpointId != null && endpointId in listOf(436, 439, 497, 435, 440, 496, 438, 441, 494, 437, 434, 495)
     }
     
     fun setSelectedEndpoint(endpointId: Int) {

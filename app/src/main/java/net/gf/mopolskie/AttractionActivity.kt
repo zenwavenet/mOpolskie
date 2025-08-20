@@ -187,7 +187,7 @@ class AttractionActivity : ComponentActivity() {
             }
             
             addView(TextView(this@AttractionActivity).apply {
-                text = "Więcej informacji"
+                text = "Strona WWW"
                 setTextColor(resources.getColor(android.R.color.black, theme))
                 textSize = 14f
                 gravity = android.view.Gravity.CENTER

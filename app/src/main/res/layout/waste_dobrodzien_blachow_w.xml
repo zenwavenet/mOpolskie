@@ -119,7 +119,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Kędzierzyn-Koźle"
+                        android:text="Dobrodzień"
                         android:textSize="12sp"
                         android:textFontWeight="400"
                         android:textColor="#151515"/>
@@ -141,7 +141,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Pogorzelec, Kłodnica (oprócz ul. Karpackiej, Dunikowskiego, Wyspa), Żabieniec, Koźle Port"
+                        android:text="Błachów, Dąbrowica, Makowczyce, Myślina, Turza, Szemrowice"
                         android:textSize="12sp"
                         android:textFontWeight="400"
                         android:textColor="#151515"/>

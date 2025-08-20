@@ -24,4 +24,17 @@ object WasteEndpoints {
     const val CISEK_KOBYLICE = 364
     const val CISEK_KOBYLICE_W = 362
     const val CISEK_KOBYLICE_F = 462
+
+    const val DOBRODZIEN_BAKI_J = 436
+    const val DOBRODZIEN_BAKI_W = 439
+    const val DOBRODZIEN_BAKI_F = 497
+    const val DOBRODZIEN_BLACHOW_J = 435
+    const val DOBRODZIEN_BLACHOW_W = 440
+    const val DOBRODZIEN_BLACHOW_F = 496
+    const val DOBRODZIEN_J = 438
+    const val DOBRODZIEN_W = 441
+    const val DOBRODZIEN_F = 494
+    const val DOBRODZIEN_WARLOW_J = 437
+    const val DOBRODZIEN_WARLOW_W = 434
+    const val DOBRODZIEN_WARLOW_F = 495
 }

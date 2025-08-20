@@ -72,38 +72,6 @@
             android:orientation="vertical"
             android:padding="15dp">
 
-            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingEnd="10dp"
-                android:paddingStart="10dp"
-                android:paddingBottom="10dp"
-                android:paddingTop="10dp"
-                android:background="@drawable/circle_lv_main"
-                android:layout_marginBottom="5dp"
-                android:orientation="vertical">
-
-                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:paddingEnd="10dp"
-                    android:paddingStart="10dp"
-                    android:paddingBottom="10dp"
-                    android:paddingTop="10dp"
-                    android:orientation="vertical">
-
-                    <View
-                        android:layout_width="30sp"
-                        android:layout_height="30sp"
-                        android:layout_gravity="center"
-                        android:background="@drawable/info"
-                        android:backgroundTint="#2c548e"
-                        android:padding="5sp"/>
-                </LinearLayout>
-
-            </LinearLayout>
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

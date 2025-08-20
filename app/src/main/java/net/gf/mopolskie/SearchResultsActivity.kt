@@ -8,6 +8,7 @@ import android.widget.TextView
 import androidx.activity.ComponentActivity
 import androidx.core.widget.doOnTextChanged
 import net.gf.mopolskie.utils.overrideTransitionCompat
+import net.gf.mopolskie.utils.setupModernStatusBar
 
 class SearchResultsActivity : ComponentActivity() {
     
@@ -38,6 +39,7 @@ class SearchResultsActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_search_results)
+        setupModernStatusBar()
         
         initializeViews()
         setupSearchFunctionality()
